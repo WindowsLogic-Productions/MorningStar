@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using System.IO;
@@ -38,29 +38,40 @@ namespace MorningStar
             UInt16 ID;
         }
 
-        //
+        
         public class Profile
         {
             public
                 static List<String> ProfileList = new List<String>();
-            static Array SystemSection = new Array { "System", "State", "Color" };
+            String[] SystemSection = { "System", "State", "Color" };
         }
 
         void WriteErrorLog(String text, String caption)
         {
-            StreamWriter sw = new StreamWriter(new String(test) + "error.log", Encoding.Default);
-            try
-            {
-                sw.WriteLine();
-            }
-            finally
-            {
-                if(sw != null)
+           
+            DirectoryInfo[] cDirs = new DirectoryInfo(Properties.Settings.Default.Path).GetDirectories();
+
+            //new String(test) + "error.log", Encoding.Default
+            using (StreamWriter sw = new StreamWriter("error.log", true, Encoding.Default))
+                try
                 {
-                    sw.Close();
-                    sw.Dispose();
+                    sw.WriteLine();
                 }
-            }
+                finally
+                {
+                    if (sw != null)
+                    {
+                        sw.Close();
+                        sw.Dispose();
+                    }
+                }
+        }
+
+
+        void ApplicationThreadException(Object sender, ThreadExceptionEventArgs e)
+        {
+            WriteErrorLog(e.ToString(), "ThreadException");
+            //MTINFO.ERRORED = true;
         }
     }
 }
