@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace MorningStar
 {
     public partial class Main : Form
@@ -15,6 +16,13 @@ namespace MorningStar
         public Main()
         {
             InitializeComponent();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            //MICROSOFT WHY
+            stdafx s = new stdafx();
+            s.Converter();
         }
     }
 }

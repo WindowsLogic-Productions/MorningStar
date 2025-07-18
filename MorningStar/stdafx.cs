@@ -10,6 +10,8 @@ using System.IO;
 using System.Data;
 using System.Net;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
+using System.Data.Common;
 
 namespace MorningStar
 { 
@@ -46,11 +48,20 @@ namespace MorningStar
             String[] SystemSection = { "System", "State", "Color" };
         }
 
+
+        // To anyone reading this, know that if you change this once it works, it's on you to fix it, enough sanity was lost here today
+        // EDIT - 5 mins later, replace enough with too fkin much
         // KGT2KGAME
         //const uint P1_INPUT = 0x004259C0;
         //const uint P2_INPUT = 0x004259C4;
         //const uint SINGLE_CONTROL_HOOK = 0x00414712;
-        //const byte[] SINGLE_CONTROL_HOOK_CODE = (0xCC, 0x90, 0x90, 0x90, 0x90, 0x90);
+
+       // THIS ONE LINE WAS A CODING BREAKTHROUGH, BUT A MENTAL BREAKDOWN
+       // Two heads turned out to be better than one, probably saved like 60 seconds at best
+       // 61 GOTO 52
+       //END
+       // Tralalero tralala caused less pain
+        static byte[] SINGLE_CONTROL_HOOK_CODE = new byte[] { 0xCC, 0x90, 0x90, 0x90, 0x90, 0x90 };      
         //const uint VS_CONTROL_HOOK = 0x00414748;
         //const byte[] VS_CONTROL_HOOK_CODE[] = { 0x6A, 0x00 };
         //const uint STORY_KEY = 0x00414729;
@@ -158,7 +169,8 @@ namespace MorningStar
         const uint MAX_KEYWORD = 256;
         const uint MAX_PROFILE = 2048;
 
-        const byte[] TYMT_VERSION = BitConverter.GetBytes(6);
+        //const byte[] TYMT_VERSION = BitConverter.GetBytes(6);
+        public static byte[] TYMT_VERSTION = BitConverter.GetBytes(6);
         const uint TIME_OUT = 3000;
 
         void WriteErrorLog(String text, String caption)
@@ -187,6 +199,17 @@ namespace MorningStar
         {
             WriteErrorLog(e.ToString(), "ThreadException");
             //MTINFO.ERRORED = true;
+        }
+
+
+
+        // This is essentially a sanity checker now
+        public void Converter()
+        {
+            foreach (byte b in SINGLE_CONTROL_HOOK_CODE)
+            {
+                Console.WriteLine(b.ToString());
+            }
         }
     }
 }

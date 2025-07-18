@@ -63,7 +63,7 @@
             // startGameToolStripMenuItem
             // 
             this.startGameToolStripMenuItem.Name = "startGameToolStripMenuItem";
-            this.startGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.startGameToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.startGameToolStripMenuItem.Text = "Start game";
             // 
             // Main
@@ -75,6 +75,7 @@
             this.MainMenuStrip = this.menuMain;
             this.Name = "Main";
             this.Text = "MorningStar";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.menuMain.ResumeLayout(false);
             this.menuMain.PerformLayout();
             this.ResumeLayout(false);

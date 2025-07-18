@@ -1,0 +1,11 @@
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\bin\Debug\MorningStar.exe.config
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\bin\Debug\MorningStar.exe
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\bin\Debug\MorningStar.pdb
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\obj\Debug\MorningStar.csproj.AssemblyReference.cache
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\obj\Debug\MorningStar.Main.resources
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\obj\Debug\MorningStar.Properties.Resources.resources
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\obj\Debug\MorningStar.csproj.GenerateResource.cache
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\obj\Debug\MorningStar.csproj.CoreCompileInputs.cache
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\obj\Debug\MorningStar.exe
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\obj\Debug\MorningStar.pdb
+C:\Users\mikey\Documents\GitHub\MorningStar\MorningStar\obj\Debug\MorningStar.exe.config
