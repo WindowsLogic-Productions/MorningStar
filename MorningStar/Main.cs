@@ -20,9 +20,7 @@ namespace MorningStar
 
         private void Main_Load(object sender, EventArgs e)
         {
-            //MICROSOFT WHY
-            stdafx s = new stdafx();
-            s.Converter();
+            
         }
     }
 }
