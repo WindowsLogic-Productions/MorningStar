@@ -1,2 +1,2 @@
-# UltraPort
-A C# re-implementation of the LilithPort netplay client.
+# MorningStar
+A C#.NET re-implementation of the LilithPort netplay client.
