@@ -26,12 +26,108 @@ namespace MorningStar.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Path {
+        public string NAME {
             get {
-                return ((string)(this["Path"]));
+                return ((string)(this["NAME"]));
             }
             set {
-                this["Path"] = value;
+                this["NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string COMMENT {
+            get {
+                return ((string)(this["COMMENT"]));
+            }
+            set {
+                this["COMMENT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LOOKING {
+            get {
+                return ((string)(this["LOOKING"]));
+            }
+            set {
+                this["LOOKING"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string AVOIDING {
+            get {
+                return ((string)(this["AVOIDING"]));
+            }
+            set {
+                this["AVOIDING"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string REGION {
+            get {
+                return ((string)(this["REGION"]));
+            }
+            set {
+                this["REGION"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string GG {
+            get {
+                return ((string)(this["GG"]));
+            }
+            set {
+                this["GG"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint TYPE {
+            get {
+                return ((uint)(this["TYPE"]));
+            }
+            set {
+                this["TYPE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint NUM_VS {
+            get {
+                return ((uint)(this["NUM_VS"]));
+            }
+            set {
+                this["NUM_VS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint RESPONSE {
+            get {
+                return ((uint)(this["RESPONSE"]));
+            }
+            set {
+                this["RESPONSE"] = value;
             }
         }
     }

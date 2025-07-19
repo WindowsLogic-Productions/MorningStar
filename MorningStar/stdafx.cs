@@ -13,6 +13,7 @@ using System.Security.Permissions;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using System.Xml.Schema;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
@@ -24,16 +25,8 @@ namespace MorningStar
         public ref struct MemberInfo
         {
             IPEndPoint IP_EP;
-            String NAME;
-            String COMMENT;
-            String LOOKING;
-            String AVOIDING;
-            String REGION;
-            String GG;
             UInt16 ID;
-            uint TYPE;
-            uint NUM_VS;
-            uint RESPONSE;
+            // Find other MemberInfo in Properties.Settings.Default.
         }
 
         // Backup member information.
@@ -158,15 +151,16 @@ namespace MorningStar
         // Determines MS version integer.
         const uint MS_VERSION = 100;
 
-        // Maximums of sorts.
-        const uint MAX_NAME = 32;
-        const uint MAX_ARRAY = 64;
         const uint MAX_ID = 0x3FFF;
-        const uint MAX_TITLE = 256;
-        const uint MAX_PACKET = 512;
-        const uint MAX_WELCOME = 512;
-        const uint MAX_KEYWORD = 256;
-        const uint MAX_PROFILE = 2048;
+
+        // Reference of maximums.
+        //const uint MAX_NAME = 32;
+        //const uint MAX_ARRAY = 64;
+        //const uint MAX_TITLE = 256;
+        //const uint MAX_PACKET = 512;
+        //const uint MAX_WELCOME = 512;
+        //const uint MAX_KEYWORD = 256;
+        //const uint MAX_PROFILE = 2048;
 
         static byte[] TYMT_VERSTION = new byte[] { 6 };
         const uint TIME_OUT = 3000;
@@ -174,6 +168,7 @@ namespace MorningStar
         // Team rounds be wilding.
         const uint MAX_TEAM_ROUND = 4;
 
+        // Are you ready for the pain?
         struct MT_SP_INFORMATION
         {
             bool DEBUG;
@@ -190,11 +185,11 @@ namespace MorningStar
             uint PROCESS_ID;
             IntPtr HWND;
             bool CONTROL;  // 0:P1 1:P2
-            char P1_NAME[MAX_NAME];
-            char P2_NAME[MAX_NAME];
-            char ORIGINAL_TITLE[MAX_TITLE];
-            char TITLE[MAX_TITLE];
-            int VOLUME[21];
+            char P1_NAME, MAX_NAME;
+            char P2_NAME, MAX_NAME2;
+            char ORIGINAL_TITLE, MAX_TITLE;
+            char TITLE, MAX_TITLE;
+            int VOLUME;
             bool VERSION_CHECKED;
             uint P_HP;
             bool WINNER; // 0:P1 1:P2
@@ -204,11 +199,250 @@ namespace MorningStar
             bool ERRORED;
         }
 
-        // There are things that belong above this.
+        public struct MT_SP_OPTION
+        {
+            char PATH, MAX_PATH;
+            uint CONNECTION_TYPE;
+            char SERVER_NAME[MAX_NAME];
+            char CONNECTION_IP[MAX_ARRAY];
+            char WELCOME[MAX_WELCOME];
+            uint BOOKMARK_COUNT;
+            uint BOOKMARK_DELETED_COUNT;
+            char BOOKMARK_SERVER_NAME[MAX_TITLE][MAX_ARRAY];
+	        char BOOKMARK_CONNECTION_IP[MAX_NAME][MAX_ARRAY];
+	        char BOOKMARK_CONNECTION_TYPE[MAX_NAME][MAX_ARRAY];
+	        char BOOKMARK_PORT[MAX_NAME][MAX_ARRAY];
+	        char GAME_EXE[_MAX_PATH];
+            char REPLAY_FOLDER[_MAX_PATH];
+            char VS_SOUND[_MAX_PATH];
+            bool VS_SOUND_ENABLE;
+            char NOTICE_SOUND[_MAX_PATH];
+            bool NOTICE_SOUND_ENABLE;
+            char ENTER_SOUND[_MAX_PATH];
+            bool ENTER_SOUND_ENABLE;
+            char NAME_SOUND[_MAX_PATH];
+            bool NAME_SOUND_ENABLE;
+            char TALK_SOUND[_MAX_PATH];
+            bool TALK_SOUND_ENABLE;
+            char SEEK_SOUND[_MAX_PATH];
+            bool SEEK_SOUND_ENABLE;
+            char KEYWORD_SOUND[_MAX_PATH];
+            bool KEYWORD_SOUND_ENABLE;
+            char KEYWORD[MAX_KEYWORD];
+            char NAME[MAX_NAME];
+            char COMMENT[MAX_NAME];
+            char LOOKING[MAX_NAME];
+            char AVOIDING[MAX_NAME];
+            char REGION[MAX_NAME];
+            char GG[MAX_NAME];
+            bool GG_ENABLE;
+            uint PORT;
+            uint OPEN_PORT;
+            uint AUTO_SAVE;
+            uint MAX_CONNECTION;
+            uint BGM_VOLUME;
+            uint SE_VOLUME;
+            uint MAX_STAGE;
+            uint STAGE_SELECT;
+            uint ROUND;
+            uint TIMER;
+            bool TEAM_ROUND_HP;
+            uint SIMULATE_DELAY;
+            bool HIT_JUDGE;
+            bool DISPLAY_NAME;
+            bool DISPLAY_VERSUS;
+            bool DISPLAY_FRAMERATE;
+            bool DISPLAY_RAND;
+            bool REPLAY_DIVIDE;
+            bool CHANGE_WINDOW_SIZE;
+            uint CHAT_HISTORY;
+            uint DELAY;
+            uint INTERVAL;
+            uint REPLAY_VERSION;
+            bool RECORD_REPLAY;
+            bool ALLOW_SPECTATOR;
+            bool LOG_WORDWRAP;
+            bool LOG_LOCK;
+            bool LOG_FORMAT_RTF;
+            bool NAME_FLASH;
+            bool TALK_FLASH;
+            bool REST_CONNECT;
+            bool AFTER_REST;
+            bool AUTO_REST;
+            uint AUTO_REST_TIME;
+            bool GET_IP_ENABLE;
+            bool SHOW_GAME_OPTION;
+            bool SHOW_RESULT;
+            bool LOG_CLEAR_WITHOUT_WELCOME;
+            char PROFILE[MAX_ARRAY];
+            char PROFILE_LIST[MAX_PROFILE];
+            uint PROFILE_INDEX;
+            bool LEGACY_SERVER;
+            bool SHOW_REGION;
+            bool DARK_MODE;
+            bool SYS_TRAY;
+        }
+
+        public struct MT_SP_WINDOW_STATE
+        {
+            int LEFT;
+            int TOP;
+            int WIDTH;
+            int HEIGHT;
+            int SPLITTER;
+            int DIALOG_LEFT;
+            int DIALOG_TOP;
+        }
+
+        public struct MT_SP_COLOUR
+        {
+            uint SERVER_NAME;
+            uint HOST_NAME;
+            uint CLIENT_NAME;
+            uint REST_STATE;
+            uint VS_STATE;
+            uint WATCH_STATE;
+            uint SEEK_STATE;
+            uint SYSTEM_MESSAGE;
+            uint ERROR_MESSAGE;
+            uint DEBUG_MESSAGE;
+            uint NOTICE_BACK;
+            uint COMMENT_BACK;
+            uint SECRET;
+        }
+
+        public struct REPLAY_DATA
+        {
+            UInt16 KEY;
+            byte[] COUNT;
+        }
+
+        public struct REPLAY_INFO
+        {
+            char VERSION;
+            bool CONTROL;
+            UInt16 KEY[2];
+            byte[] COUNT[2];
+
+            std::deque<REPLAY_DATA> DEQUE[2];
+        }
+
+        public enum CONNECTION_TYPE
+        {
+            CT_SERVER,
+            CT_HOST,
+            CT_CLIENT,
+            CT_FREE,
+        }
+
+        public enum SERVER_MODE
+        {
+            SM_NORMAL,
+            SM_MIX,
+            SM_MATCH,
+            SM_NORA,
+        }
+
+        public enum MEMBER_STATE
+        {
+            MS_FREE,
+            MS_REST,
+            MS_VS,
+            MS_WATCH,
+            MS_COUCH,
+            MS_READY,
+            MS_SEEK,
+        }
+
+        public enum LIST_VIEW
+        {
+            LV_NAME,
+            LV_COMMENT,
+            LV_BLIND,
+        }
+
+        public enum RUN_TYPE
+        {
+            RT_FREE = 1,
+            RT_VS,
+            RT_PLAYBACK,
+            RT_WATCH,
+        }
+
+        public enum MT_SP_PACKET_HEADER
+        {
+            PH_PING,
+            PH_PONG,
+            PH_REQ_CONNECTION,   // 1:protocol 1:name_l n:name 1:comment_l n:comment
+            PH_REQ_CONNECTION_H, // HOST‚ÈÚ‘±—v‹
+            PH_RES_CONNECTION,   // 1:server_name_l n:server_name 2:ID 1:name_l n:name 1:comment_l n:comment 1:state
+            PH_MESSAGE,          // 2:ID 1:msg_l n:msg
+            PH_NOTICE,           // 1:len n:notice
+            PH_REQ_LIST,         // 2:ID 0‚Å‘Sˆõ•ª
+            PH_RES_LIST,         // 2:ID 1:name_l n:name 1:comment_l n:comment 1:state 4:IP 2:Port + ˆÃ†
+            PH_NEW_MEMBER,       // ã‚Æ“¯‚¶
+            PH_QUIT,             // 2:ID
+            PH_LOST,             // 2:ID
+            PH_CHANGE_STATE,     // 2:ID 1:STATE
+            PH_REQ_STATE,        // 2:ID
+            PH_RES_STATE,        // 2:ID 1:STATE
+            PH_CHANGE_COMMENT,   // 2:ID 1:comment_l n:comment
+            PH_DICE,             // 1:value
+            PH_REQ_VS,           // 2:ID 4:ŽÀsƒtƒ@ƒCƒ‹‚ÌƒnƒbƒVƒ…
+            PH_RES_VS,           // 1:state
+            PH_REQ_VS_PING,      // 1:ID 5ŒÂƒoƒ‰‚Åsend
+            PH_RES_VS_PONG,      // 1•bŠÔ‚É4ŒÂˆÈãŽóM‚Å‘ÎíŠJŽn
+            PH_REQ_VS_SETTING,   // 1:delay local‚Æhost‚Å‘å‚«‚È’l‚É‚ ‚í‚¹‚é
+            PH_RES_VS_SETTING,   // 1:delay 4:seed 1:max_stage 1:stage 1:round 1:timer
+            PH_VS_DATA,          // 4:frame n:data 4*delayŒÂ•ª‘—M
+            PH_REQ_VS_DATA,      // 4:frame ƒpƒPƒbƒg—ˆ‚Ä‚È‚¢‚Ì‚Å‹Ù‹}—v¿
+            PH_RES_VS_DATA,      // 4:frame 2:input
+            PH_VS_END,
+            PH_REQ_WATCH,        // 2:ID
+            PH_RES_WATCH,        // 1:state 2:P1ID 2:P2ID 4:seed 1:max_stage 1:stage 1:round 1:timer  state = 0:ŠÏíŠJŽn 1`:ŠÏí•s‰Â
+            PH_WATCH_DATA,       // 4:frame 40:10ƒtƒŒ[ƒ€•ª‚Ìƒf[ƒ^
+            PH_WATCH_END,        // 2:ID Ž©•ª‚Ì‚Æ“¯‚¶ID‚È‚çŠÏíI—¹A‘¼‚ÌID‚È‚çƒŠƒXƒg‚©‚çíœ
+            PH_SECRET,           // 1:type n:type‚²‚Æ‚É‚¢‚ë‚¢‚ë
+        }
+
+        public enum SECRET_TYPE
+        {
+            ST_PING,             // 4:time
+            ST_PONG,
+        }
+
+        public enum VERSUS_SEQUENCE {
+            VS_REQ,
+            VS_PING,
+            VS_SETTING,
+            VS_STANDBY,
+            VS_DATA,
+            VS_END,
+            VS_TIMEOUT,
+            VS_ERROR,
+        }
+
+        extern MT_SP_INFORMATION MTINFO;
+        extern MT_SP_OPTION MTOPTION;
+        extern MT_SP_WINDOW_STATE MTWS;
+        extern MT_SP_COLOR MTCOLOR;
 
         public class PacketPacker
         {
-
+            public
+                PacketPacker()
+                {
+                    Length = 0;
+                    Packet = new Array byte[] (MAX_PACKET);
+                }
+            protected
+                 ~PacketPackee()
+                {
+                if (Packet != null)
+                {
+                    Packet.dispose();
+                }
+                }
         }
 
         public class PacketDivider
@@ -235,6 +469,74 @@ namespace MorningStar
 
 		return data;
 	}
+
+        }
+
+        void WriteErrorLog(String text, String caption)
+        {
+            DirectoryInfo[] cDirs = new DirectoryInfo(Properties.Settings.Default.NAME).GetDirectories();
+            using (StreamWriter sw = new StreamWriter("error.log", true, Encoding.Default))
+                try
+                {
+                    sw.WriteLine();
+                }
+                finally
+                {
+                    if (sw != null)
+                    {
+                        sw.Close();
+                        sw.Dispose();
+                    }
+                }
+        }
+        
+        void ApplicationThreadException(Object sender, ThreadExceptionEventArgs e)
+        {
+            WriteErrorLog(e.ToString(), "ThreadException");
+            //MTINFO.ERRORED = true;
+
+            if (SERVER_MODE != true)
+            {
+                return;
+            }
+            MessageBox.Show("An exception occurred in the MorningStar thread and has been written to the error.log file.\n\nAttempt to recover?", "Thread Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            try
+            {
+                return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("MorningStar will now exit.", "Recovery Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                System.Windows.Forms.Application.Exit();
+            }
+        }
+
+        void ApplicationUnhandledException(Object sender, UnhandledExceptionEventArgs e)
+        {
+            WriteErrorLog(e.ToString(), "UnhandledException");
+            //MTINFO.ERRORED = true;
+
+            if (!MTINFO.SERVER_MODE)
+            {
+                MessageBox.Show("A unhandled exception occurred in the LilithPort thread and has been written to the error.log file.\n\nMorningStar will attempt to recover.", "Unhandled Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                try
+                {
+                    return;
+                }
+                catch (Exception ex){
+                    MessageBox.Show("MorningStar will now exit.", "Recovery Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    System.Windows.Forms.Application.Exit();
+                }
+            }
+        }
+
+        void LoadMTOption()
+        {
+
+        }
+
+        void SaveMTOption()
+        {
 
         }
     }
