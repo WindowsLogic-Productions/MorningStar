@@ -46,25 +46,6 @@ namespace MorningStar
             // Find other MT_SP_INFORMATION settings in Properties.Settings.Default.
         }
 
-        public struct MT_SP_OPTION
-        {
-            bool REST_CONNECT;
-            bool AFTER_REST;
-            bool AUTO_REST;
-            uint AUTO_REST_TIME;
-            bool GET_IP_ENABLE;
-            bool SHOW_GAME_OPTION;
-            bool SHOW_RESULT;
-            bool LOG_CLEAR_WITHOUT_WELCOME;
-            char PROFILE;
-            char PROFILE_LIST;
-            uint PROFILE_INDEX;
-            bool LEGACY_SERVER;
-            bool SHOW_REGION;
-            bool DARK_MODE;
-            bool SYS_TRAY;
-        }
-
         public struct MT_SP_WINDOW_STATE
         {
             int LEFT;

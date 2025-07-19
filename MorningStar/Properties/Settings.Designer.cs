@@ -1110,5 +1110,183 @@ namespace MorningStar.Properties {
                 this["TALK_FLASH"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool REST_CONNECT {
+            get {
+                return ((bool)(this["REST_CONNECT"]));
+            }
+            set {
+                this["REST_CONNECT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AFTER_REST {
+            get {
+                return ((bool)(this["AFTER_REST"]));
+            }
+            set {
+                this["AFTER_REST"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AUTO_REST {
+            get {
+                return ((bool)(this["AUTO_REST"]));
+            }
+            set {
+                this["AUTO_REST"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AUTO_REST_TIME {
+            get {
+                return ((bool)(this["AUTO_REST_TIME"]));
+            }
+            set {
+                this["AUTO_REST_TIME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GET_IP_ENABLE {
+            get {
+                return ((bool)(this["GET_IP_ENABLE"]));
+            }
+            set {
+                this["GET_IP_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SHOW_GAME_OPTION {
+            get {
+                return ((bool)(this["SHOW_GAME_OPTION"]));
+            }
+            set {
+                this["SHOW_GAME_OPTION"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SHOW_RESULT {
+            get {
+                return ((bool)(this["SHOW_RESULT"]));
+            }
+            set {
+                this["SHOW_RESULT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LOG_CLEAR_WITHOUT_WELCOME {
+            get {
+                return ((bool)(this["LOG_CLEAR_WITHOUT_WELCOME"]));
+            }
+            set {
+                this["LOG_CLEAR_WITHOUT_WELCOME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char PROFILE {
+            get {
+                return ((char)(this["PROFILE"]));
+            }
+            set {
+                this["PROFILE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char PROFILE_LIST {
+            get {
+                return ((char)(this["PROFILE_LIST"]));
+            }
+            set {
+                this["PROFILE_LIST"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint PROFILE_INDEX {
+            get {
+                return ((uint)(this["PROFILE_INDEX"]));
+            }
+            set {
+                this["PROFILE_INDEX"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LEGACY_SERVER {
+            get {
+                return ((bool)(this["LEGACY_SERVER"]));
+            }
+            set {
+                this["LEGACY_SERVER"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SHOW_REGION {
+            get {
+                return ((bool)(this["SHOW_REGION"]));
+            }
+            set {
+                this["SHOW_REGION"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DARK_MODE {
+            get {
+                return ((bool)(this["DARK_MODE"]));
+            }
+            set {
+                this["DARK_MODE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SYS_TRAY {
+            get {
+                return ((bool)(this["SYS_TRAY"]));
+            }
+            set {
+                this["SYS_TRAY"] = value;
+            }
+        }
     }
 }
