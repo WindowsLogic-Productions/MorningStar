@@ -41,94 +41,13 @@ namespace MorningStar
         // The only things that can't be moved are IntPtr declarations.
         public struct MT_SP_INFORMATION
         {
-            uint STAGE_SELECT;
-            uint ROUND;
-            uint TIMER;
             IntPtr PROCESS;
-            uint PROCESS_ID;
             IntPtr HWND;
-            bool CONTROL;  // 0:P1 1:P2
-            char P1_NAME;
-            char P2_NAME;
-            char ORIGINAL_TITLE;
-            char TITLE;
-            int VOLUME;
-            bool VERSION_CHECKED;
-            uint P_HP;
-            bool WINNER; // 0:P1 1:P2
-            bool TEAM_ROUND_HP;
-            bool SERVER_MODE;
-            uint SERVER_MODE_PORT;
-            bool ERRORED;
+            // Find other MT_SP_INFORMATION settings in Properties.Settings.Default.
         }
 
         public struct MT_SP_OPTION
         {
-            char PATH, MAX_PATH;
-            uint CONNECTION_TYPE;
-            char SERVER_NAME[MAX_NAME];
-            char CONNECTION_IP[MAX_ARRAY];
-            char WELCOME[MAX_WELCOME];
-            uint BOOKMARK_COUNT;
-            uint BOOKMARK_DELETED_COUNT;
-            char BOOKMARK_SERVER_NAME[MAX_TITLE][MAX_ARRAY];
-	        char BOOKMARK_CONNECTION_IP[MAX_NAME][MAX_ARRAY];
-	        char BOOKMARK_CONNECTION_TYPE[MAX_NAME][MAX_ARRAY];
-	        char BOOKMARK_PORT[MAX_NAME][MAX_ARRAY];
-	        char GAME_EXE[_MAX_PATH];
-            char REPLAY_FOLDER[_MAX_PATH];
-            char VS_SOUND[_MAX_PATH];
-            bool VS_SOUND_ENABLE;
-            char NOTICE_SOUND[_MAX_PATH];
-            bool NOTICE_SOUND_ENABLE;
-            char ENTER_SOUND[_MAX_PATH];
-            bool ENTER_SOUND_ENABLE;
-            char NAME_SOUND[_MAX_PATH];
-            bool NAME_SOUND_ENABLE;
-            char TALK_SOUND[_MAX_PATH];
-            bool TALK_SOUND_ENABLE;
-            char SEEK_SOUND[_MAX_PATH];
-            bool SEEK_SOUND_ENABLE;
-            char KEYWORD_SOUND[_MAX_PATH];
-            bool KEYWORD_SOUND_ENABLE;
-            char KEYWORD[MAX_KEYWORD];
-            char NAME[MAX_NAME];
-            char COMMENT[MAX_NAME];
-            char LOOKING[MAX_NAME];
-            char AVOIDING[MAX_NAME];
-            char REGION[MAX_NAME];
-            char GG[MAX_NAME];
-            bool GG_ENABLE;
-            uint PORT;
-            uint OPEN_PORT;
-            uint AUTO_SAVE;
-            uint MAX_CONNECTION;
-            uint BGM_VOLUME;
-            uint SE_VOLUME;
-            uint MAX_STAGE;
-            uint STAGE_SELECT;
-            uint ROUND;
-            uint TIMER;
-            bool TEAM_ROUND_HP;
-            uint SIMULATE_DELAY;
-            bool HIT_JUDGE;
-            bool DISPLAY_NAME;
-            bool DISPLAY_VERSUS;
-            bool DISPLAY_FRAMERATE;
-            bool DISPLAY_RAND;
-            bool REPLAY_DIVIDE;
-            bool CHANGE_WINDOW_SIZE;
-            uint CHAT_HISTORY;
-            uint DELAY;
-            uint INTERVAL;
-            uint REPLAY_VERSION;
-            bool RECORD_REPLAY;
-            bool ALLOW_SPECTATOR;
-            bool LOG_WORDWRAP;
-            bool LOG_LOCK;
-            bool LOG_FORMAT_RTF;
-            bool NAME_FLASH;
-            bool TALK_FLASH;
             bool REST_CONNECT;
             bool AFTER_REST;
             bool AUTO_REST;
@@ -137,8 +56,8 @@ namespace MorningStar
             bool SHOW_GAME_OPTION;
             bool SHOW_RESULT;
             bool LOG_CLEAR_WITHOUT_WELCOME;
-            char PROFILE[MAX_ARRAY];
-            char PROFILE_LIST[MAX_PROFILE];
+            char PROFILE;
+            char PROFILE_LIST;
             uint PROFILE_INDEX;
             bool LEGACY_SERVER;
             bool SHOW_REGION;
@@ -184,7 +103,7 @@ namespace MorningStar
         {
             char VERSION;
             bool CONTROL;
-            UInt16 KEY[2];
+            UInt16 KEY;
             byte[] COUNT[2];
 
             std::deque<REPLAY_DATA> DEQUE[2];
@@ -425,6 +344,9 @@ namespace MorningStar
 
         public class PacketPacker
         {
+            int Length;
+            Array Packet;
+
             public
                 PacketPacker()
                 {
@@ -497,9 +419,9 @@ namespace MorningStar
         void ApplicationThreadException(Object sender, ThreadExceptionEventArgs e)
         {
             WriteErrorLog(e.ToString(), "ThreadException");
-            //MTINFO.ERRORED = true;
+            Properties.Settings.Default.ERRORED = true;
 
-            if (SERVER_MODE != true)
+            if (Properties.Settings.Default.SERVER_MODE != true)
             {
                 return;
             }
@@ -519,9 +441,9 @@ namespace MorningStar
         void ApplicationUnhandledException(Object sender, UnhandledExceptionEventArgs e)
         {
             WriteErrorLog(e.ToString(), "UnhandledException");
-            //MTINFO.ERRORED = true;
+            Properties.Settings.Default.ERRORED = true;
 
-            if (!MTINFO.SERVER_MODE)
+            if (Properties.Settings.Default.SERVER_MODE != true)
             {
                 MessageBox.Show("A unhandled exception occurred in the LilithPort thread and has been written to the error.log file.\n\nMorningStar will attempt to recover.", "Unhandled Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 try

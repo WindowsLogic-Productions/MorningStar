@@ -214,5 +214,901 @@ namespace MorningStar.Properties {
                 this["MAX_STAGE"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint STAGE_SELECT {
+            get {
+                return ((uint)(this["STAGE_SELECT"]));
+            }
+            set {
+                this["STAGE_SELECT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint ROUND {
+            get {
+                return ((uint)(this["ROUND"]));
+            }
+            set {
+                this["ROUND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint TIMER {
+            get {
+                return ((uint)(this["TIMER"]));
+            }
+            set {
+                this["TIMER"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint PROCESS_ID {
+            get {
+                return ((uint)(this["PROCESS_ID"]));
+            }
+            set {
+                this["PROCESS_ID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CONTROL {
+            get {
+                return ((bool)(this["CONTROL"]));
+            }
+            set {
+                this["CONTROL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char P1_NAME {
+            get {
+                return ((char)(this["P1_NAME"]));
+            }
+            set {
+                this["P1_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char P2_NAME {
+            get {
+                return ((char)(this["P2_NAME"]));
+            }
+            set {
+                this["P2_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char ORIGINAL_TITLE {
+            get {
+                return ((char)(this["ORIGINAL_TITLE"]));
+            }
+            set {
+                this["ORIGINAL_TITLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char TITLE {
+            get {
+                return ((char)(this["TITLE"]));
+            }
+            set {
+                this["TITLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int VOLUME {
+            get {
+                return ((int)(this["VOLUME"]));
+            }
+            set {
+                this["VOLUME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool VERSION_CHECKED {
+            get {
+                return ((bool)(this["VERSION_CHECKED"]));
+            }
+            set {
+                this["VERSION_CHECKED"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint P_HP {
+            get {
+                return ((uint)(this["P_HP"]));
+            }
+            set {
+                this["P_HP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WINNER {
+            get {
+                return ((bool)(this["WINNER"]));
+            }
+            set {
+                this["WINNER"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TEAM_ROUND_HP {
+            get {
+                return ((bool)(this["TEAM_ROUND_HP"]));
+            }
+            set {
+                this["TEAM_ROUND_HP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SERVER_MODE {
+            get {
+                return ((bool)(this["SERVER_MODE"]));
+            }
+            set {
+                this["SERVER_MODE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint SERVER_MODE_PORT {
+            get {
+                return ((uint)(this["SERVER_MODE_PORT"]));
+            }
+            set {
+                this["SERVER_MODE_PORT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ERRORED {
+            get {
+                return ((bool)(this["ERRORED"]));
+            }
+            set {
+                this["ERRORED"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char PATH {
+            get {
+                return ((char)(this["PATH"]));
+            }
+            set {
+                this["PATH"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint CONNECTION_TYPE {
+            get {
+                return ((uint)(this["CONNECTION_TYPE"]));
+            }
+            set {
+                this["CONNECTION_TYPE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char SERVER_NAME {
+            get {
+                return ((char)(this["SERVER_NAME"]));
+            }
+            set {
+                this["SERVER_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char CONNECTION_IP {
+            get {
+                return ((char)(this["CONNECTION_IP"]));
+            }
+            set {
+                this["CONNECTION_IP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char WELCOME {
+            get {
+                return ((char)(this["WELCOME"]));
+            }
+            set {
+                this["WELCOME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint BOOKMARK_COUNT {
+            get {
+                return ((uint)(this["BOOKMARK_COUNT"]));
+            }
+            set {
+                this["BOOKMARK_COUNT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint BOOKMARK_DELETED_COUNT {
+            get {
+                return ((uint)(this["BOOKMARK_DELETED_COUNT"]));
+            }
+            set {
+                this["BOOKMARK_DELETED_COUNT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char BOOKMARK_SERVER_NAME {
+            get {
+                return ((char)(this["BOOKMARK_SERVER_NAME"]));
+            }
+            set {
+                this["BOOKMARK_SERVER_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char BOOKMARK_CONNECTION_IP {
+            get {
+                return ((char)(this["BOOKMARK_CONNECTION_IP"]));
+            }
+            set {
+                this["BOOKMARK_CONNECTION_IP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char BOOKMARK_CONNECTION_TYPE {
+            get {
+                return ((char)(this["BOOKMARK_CONNECTION_TYPE"]));
+            }
+            set {
+                this["BOOKMARK_CONNECTION_TYPE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char BOOKMARK_PORT {
+            get {
+                return ((char)(this["BOOKMARK_PORT"]));
+            }
+            set {
+                this["BOOKMARK_PORT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char GAME_EXE {
+            get {
+                return ((char)(this["GAME_EXE"]));
+            }
+            set {
+                this["GAME_EXE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char REPLAY_FOLDER {
+            get {
+                return ((char)(this["REPLAY_FOLDER"]));
+            }
+            set {
+                this["REPLAY_FOLDER"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char VS_SOUND {
+            get {
+                return ((char)(this["VS_SOUND"]));
+            }
+            set {
+                this["VS_SOUND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool VS_SOUND_ENABLE {
+            get {
+                return ((bool)(this["VS_SOUND_ENABLE"]));
+            }
+            set {
+                this["VS_SOUND_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char NOTICE_SOUND {
+            get {
+                return ((char)(this["NOTICE_SOUND"]));
+            }
+            set {
+                this["NOTICE_SOUND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NOTICE_SOUND_ENABLE {
+            get {
+                return ((bool)(this["NOTICE_SOUND_ENABLE"]));
+            }
+            set {
+                this["NOTICE_SOUND_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char ENTER_SOUND {
+            get {
+                return ((char)(this["ENTER_SOUND"]));
+            }
+            set {
+                this["ENTER_SOUND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ENTER_SOUND_ENABLE {
+            get {
+                return ((bool)(this["ENTER_SOUND_ENABLE"]));
+            }
+            set {
+                this["ENTER_SOUND_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char NAME_SOUND {
+            get {
+                return ((char)(this["NAME_SOUND"]));
+            }
+            set {
+                this["NAME_SOUND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NAME_SOUND_ENABLE {
+            get {
+                return ((bool)(this["NAME_SOUND_ENABLE"]));
+            }
+            set {
+                this["NAME_SOUND_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char TALK_SOUND {
+            get {
+                return ((char)(this["TALK_SOUND"]));
+            }
+            set {
+                this["TALK_SOUND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TALK_SOUND_ENABLE {
+            get {
+                return ((bool)(this["TALK_SOUND_ENABLE"]));
+            }
+            set {
+                this["TALK_SOUND_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char SEEK_SOUND {
+            get {
+                return ((char)(this["SEEK_SOUND"]));
+            }
+            set {
+                this["SEEK_SOUND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SEEK_SOUND_ENABLE {
+            get {
+                return ((bool)(this["SEEK_SOUND_ENABLE"]));
+            }
+            set {
+                this["SEEK_SOUND_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char KEYWORD_SOUND {
+            get {
+                return ((char)(this["KEYWORD_SOUND"]));
+            }
+            set {
+                this["KEYWORD_SOUND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool KEYWORD_SOUND_ENABLE {
+            get {
+                return ((bool)(this["KEYWORD_SOUND_ENABLE"]));
+            }
+            set {
+                this["KEYWORD_SOUND_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char KEYWORD {
+            get {
+                return ((char)(this["KEYWORD"]));
+            }
+            set {
+                this["KEYWORD"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char CHAR_NAME {
+            get {
+                return ((char)(this["CHAR_NAME"]));
+            }
+            set {
+                this["CHAR_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char CHAR_COMMENT {
+            get {
+                return ((char)(this["CHAR_COMMENT"]));
+            }
+            set {
+                this["CHAR_COMMENT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char CHAR_LOOKING {
+            get {
+                return ((char)(this["CHAR_LOOKING"]));
+            }
+            set {
+                this["CHAR_LOOKING"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char CHAR_AVOIDING {
+            get {
+                return ((char)(this["CHAR_AVOIDING"]));
+            }
+            set {
+                this["CHAR_AVOIDING"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char CHAR_REGION {
+            get {
+                return ((char)(this["CHAR_REGION"]));
+            }
+            set {
+                this["CHAR_REGION"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public char CHAR_GG {
+            get {
+                return ((char)(this["CHAR_GG"]));
+            }
+            set {
+                this["CHAR_GG"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool GG_ENABLE {
+            get {
+                return ((bool)(this["GG_ENABLE"]));
+            }
+            set {
+                this["GG_ENABLE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint PORT {
+            get {
+                return ((uint)(this["PORT"]));
+            }
+            set {
+                this["PORT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint OPEN_PORT {
+            get {
+                return ((uint)(this["OPEN_PORT"]));
+            }
+            set {
+                this["OPEN_PORT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint AUTO_SAVE {
+            get {
+                return ((uint)(this["AUTO_SAVE"]));
+            }
+            set {
+                this["AUTO_SAVE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint MAX_CONNECTION {
+            get {
+                return ((uint)(this["MAX_CONNECTION"]));
+            }
+            set {
+                this["MAX_CONNECTION"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint BGM_VOLUME {
+            get {
+                return ((uint)(this["BGM_VOLUME"]));
+            }
+            set {
+                this["BGM_VOLUME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint SE_VOLUME {
+            get {
+                return ((uint)(this["SE_VOLUME"]));
+            }
+            set {
+                this["SE_VOLUME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint SIMULATE_DELAY {
+            get {
+                return ((uint)(this["SIMULATE_DELAY"]));
+            }
+            set {
+                this["SIMULATE_DELAY"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool HIT_JUDGE {
+            get {
+                return ((bool)(this["HIT_JUDGE"]));
+            }
+            set {
+                this["HIT_JUDGE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DISPLAY_NAME {
+            get {
+                return ((bool)(this["DISPLAY_NAME"]));
+            }
+            set {
+                this["DISPLAY_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DISPLAY_VERSUS {
+            get {
+                return ((bool)(this["DISPLAY_VERSUS"]));
+            }
+            set {
+                this["DISPLAY_VERSUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DISPLAY_FRAMERATE {
+            get {
+                return ((bool)(this["DISPLAY_FRAMERATE"]));
+            }
+            set {
+                this["DISPLAY_FRAMERATE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DISPLAY_RAND {
+            get {
+                return ((bool)(this["DISPLAY_RAND"]));
+            }
+            set {
+                this["DISPLAY_RAND"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool REPLAY_DIVIDE {
+            get {
+                return ((bool)(this["REPLAY_DIVIDE"]));
+            }
+            set {
+                this["REPLAY_DIVIDE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CHANGE_WINDOW_SIZE {
+            get {
+                return ((bool)(this["CHANGE_WINDOW_SIZE"]));
+            }
+            set {
+                this["CHANGE_WINDOW_SIZE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint CHAT_HISTORY {
+            get {
+                return ((uint)(this["CHAT_HISTORY"]));
+            }
+            set {
+                this["CHAT_HISTORY"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint DELAY {
+            get {
+                return ((uint)(this["DELAY"]));
+            }
+            set {
+                this["DELAY"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint INTERVAL {
+            get {
+                return ((uint)(this["INTERVAL"]));
+            }
+            set {
+                this["INTERVAL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint REPLAY_VERSION {
+            get {
+                return ((uint)(this["REPLAY_VERSION"]));
+            }
+            set {
+                this["REPLAY_VERSION"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RECORD_REPLAY {
+            get {
+                return ((bool)(this["RECORD_REPLAY"]));
+            }
+            set {
+                this["RECORD_REPLAY"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ALLOW_SPECTATOR {
+            get {
+                return ((bool)(this["ALLOW_SPECTATOR"]));
+            }
+            set {
+                this["ALLOW_SPECTATOR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LOG_WORDWRAP {
+            get {
+                return ((bool)(this["LOG_WORDWRAP"]));
+            }
+            set {
+                this["LOG_WORDWRAP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LOG_LOCK {
+            get {
+                return ((bool)(this["LOG_LOCK"]));
+            }
+            set {
+                this["LOG_LOCK"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LOG_FORMAT_RTF {
+            get {
+                return ((bool)(this["LOG_FORMAT_RTF"]));
+            }
+            set {
+                this["LOG_FORMAT_RTF"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NAME_FLASH {
+            get {
+                return ((bool)(this["NAME_FLASH"]));
+            }
+            set {
+                this["NAME_FLASH"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool TALK_FLASH {
+            get {
+                return ((bool)(this["TALK_FLASH"]));
+            }
+            set {
+                this["TALK_FLASH"] = value;
+            }
+        }
     }
 }
