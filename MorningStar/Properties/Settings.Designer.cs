@@ -130,5 +130,89 @@ namespace MorningStar.Properties {
                 this["RESPONSE"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DEBUG {
+            get {
+                return ((bool)(this["DEBUG"]));
+            }
+            set {
+                this["DEBUG"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RAND_SEARCH {
+            get {
+                return ((bool)(this["RAND_SEARCH"]));
+            }
+            set {
+                this["RAND_SEARCH"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool INITIALISED {
+            get {
+                return ((bool)(this["INITIALISED"]));
+            }
+            set {
+                this["INITIALISED"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SHOW_TOP {
+            get {
+                return ((bool)(this["SHOW_TOP"]));
+            }
+            set {
+                this["SHOW_TOP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool KGT2K {
+            get {
+                return ((bool)(this["KGT2K"]));
+            }
+            set {
+                this["KGT2K"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint SEED {
+            get {
+                return ((uint)(this["SEED"]));
+            }
+            set {
+                this["SEED"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint MAX_STAGE {
+            get {
+                return ((uint)(this["MAX_STAGE"]));
+            }
+            set {
+                this["MAX_STAGE"] = value;
+            }
+        }
     }
 }
