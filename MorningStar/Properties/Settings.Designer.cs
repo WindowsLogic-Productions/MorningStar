@@ -1288,5 +1288,245 @@ namespace MorningStar.Properties {
                 this["SYS_TRAY"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int LEFT {
+            get {
+                return ((int)(this["LEFT"]));
+            }
+            set {
+                this["LEFT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int TOP {
+            get {
+                return ((int)(this["TOP"]));
+            }
+            set {
+                this["TOP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int WIDTH {
+            get {
+                return ((int)(this["WIDTH"]));
+            }
+            set {
+                this["WIDTH"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int HEIGHT {
+            get {
+                return ((int)(this["HEIGHT"]));
+            }
+            set {
+                this["HEIGHT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int SPLITTER {
+            get {
+                return ((int)(this["SPLITTER"]));
+            }
+            set {
+                this["SPLITTER"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int DIALOG_LEFT {
+            get {
+                return ((int)(this["DIALOG_LEFT"]));
+            }
+            set {
+                this["DIALOG_LEFT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int DIALOG_TOP {
+            get {
+                return ((int)(this["DIALOG_TOP"]));
+            }
+            set {
+                this["DIALOG_TOP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_SERVER_NAME {
+            get {
+                return ((uint)(this["UINT_SERVER_NAME"]));
+            }
+            set {
+                this["UINT_SERVER_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_HOST_NAME {
+            get {
+                return ((uint)(this["UINT_HOST_NAME"]));
+            }
+            set {
+                this["UINT_HOST_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_CLIENT_NAME {
+            get {
+                return ((uint)(this["UINT_CLIENT_NAME"]));
+            }
+            set {
+                this["UINT_CLIENT_NAME"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_REST_STATE {
+            get {
+                return ((uint)(this["UINT_REST_STATE"]));
+            }
+            set {
+                this["UINT_REST_STATE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_VS_STATE {
+            get {
+                return ((uint)(this["UINT_VS_STATE"]));
+            }
+            set {
+                this["UINT_VS_STATE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_WATCH_STATUS {
+            get {
+                return ((uint)(this["UINT_WATCH_STATUS"]));
+            }
+            set {
+                this["UINT_WATCH_STATUS"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_SEEK_STATE {
+            get {
+                return ((uint)(this["UINT_SEEK_STATE"]));
+            }
+            set {
+                this["UINT_SEEK_STATE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_SYSTEM_MESSAGE {
+            get {
+                return ((uint)(this["UINT_SYSTEM_MESSAGE"]));
+            }
+            set {
+                this["UINT_SYSTEM_MESSAGE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_ERROR_MESSAGE {
+            get {
+                return ((uint)(this["UINT_ERROR_MESSAGE"]));
+            }
+            set {
+                this["UINT_ERROR_MESSAGE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_DEBUG_MESSAGE {
+            get {
+                return ((uint)(this["UINT_DEBUG_MESSAGE"]));
+            }
+            set {
+                this["UINT_DEBUG_MESSAGE"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_NOTICE_BACK {
+            get {
+                return ((uint)(this["UINT_NOTICE_BACK"]));
+            }
+            set {
+                this["UINT_NOTICE_BACK"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_COMMENT_BACK {
+            get {
+                return ((uint)(this["UINT_COMMENT_BACK"]));
+            }
+            set {
+                this["UINT_COMMENT_BACK"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint UINT_SECRET {
+            get {
+                return ((uint)(this["UINT_SECRET"]));
+            }
+            set {
+                this["UINT_SECRET"] = value;
+            }
+        }
     }
 }

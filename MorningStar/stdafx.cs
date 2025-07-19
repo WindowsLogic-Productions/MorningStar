@@ -46,34 +46,6 @@ namespace MorningStar
             // Find other MT_SP_INFORMATION settings in Properties.Settings.Default.
         }
 
-        public struct MT_SP_WINDOW_STATE
-        {
-            int LEFT;
-            int TOP;
-            int WIDTH;
-            int HEIGHT;
-            int SPLITTER;
-            int DIALOG_LEFT;
-            int DIALOG_TOP;
-        }
-
-        public struct MT_SP_COLOUR
-        {
-            uint SERVER_NAME;
-            uint HOST_NAME;
-            uint CLIENT_NAME;
-            uint REST_STATE;
-            uint VS_STATE;
-            uint WATCH_STATE;
-            uint SEEK_STATE;
-            uint SYSTEM_MESSAGE;
-            uint ERROR_MESSAGE;
-            uint DEBUG_MESSAGE;
-            uint NOTICE_BACK;
-            uint COMMENT_BACK;
-            uint SECRET;
-        }
-
         public struct REPLAY_DATA
         {
             UInt16 KEY;
