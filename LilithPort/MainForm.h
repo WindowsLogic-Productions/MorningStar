@@ -211,7 +211,7 @@ private: System::Windows::Forms::Button^  buttonRest;
 private: System::Windows::Forms::Button^  buttonPlay;
 private: System::Windows::Forms::Button^  buttonSeek;
 private: System::Windows::Forms::Button^  buttonClear;
-private: System::Windows::Forms::CheckBox^  checkAutoScroll;
+
 
 
 
@@ -347,7 +347,6 @@ private: System::Windows::Forms::CheckBox^  checkAutoScroll;
 			this->settingsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripSeparator18 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->exitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->checkAutoScroll = (gcnew System::Windows::Forms::CheckBox());
 			ReloadListToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->splitContainer1))->BeginInit();
@@ -742,7 +741,6 @@ private: System::Windows::Forms::CheckBox^  checkAutoScroll;
 			this->LogLockToolStripMenuItem->ShortcutKeys = System::Windows::Forms::Keys::F4;
 			this->LogLockToolStripMenuItem->Size = System::Drawing::Size(247, 22);
 			this->LogLockToolStripMenuItem->Text = L"Auto &scroll chat";
-			this->LogLockToolStripMenuItem->Visible = false;
 			this->LogLockToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::LogLockToolStripMenuItem_Click);
 			// 
 			// toolStripSeparator7
@@ -1320,18 +1318,6 @@ private: System::Windows::Forms::CheckBox^  checkAutoScroll;
 			this->exitToolStripMenuItem->Text = L"Exit";
 			this->exitToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::exitToolStripMenuItem_Click);
 			// 
-			// checkAutoScroll
-			// 
-			this->checkAutoScroll->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->checkAutoScroll->AutoSize = true;
-			this->checkAutoScroll->Location = System::Drawing::Point(662, 397);
-			this->checkAutoScroll->Name = L"checkAutoScroll";
-			this->checkAutoScroll->Size = System::Drawing::Size(110, 17);
-			this->checkAutoScroll->TabIndex = 10;
-			this->checkAutoScroll->Text = L"Enable auto-scroll";
-			this->checkAutoScroll->UseVisualStyleBackColor = true;
-			this->checkAutoScroll->CheckedChanged += gcnew System::EventHandler(this, &MainForm::checkAutoScroll_CheckedChanged);
-			// 
 			// MainForm
 			// 
 			this->AllowDrop = true;
@@ -1339,7 +1325,6 @@ private: System::Windows::Forms::CheckBox^  checkAutoScroll;
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->ClientSize = System::Drawing::Size(784, 441);
-			this->Controls->Add(this->checkAutoScroll);
 			this->Controls->Add(this->buttonClear);
 			this->Controls->Add(this->buttonSeek);
 			this->Controls->Add(this->buttonPlay);
@@ -2033,9 +2018,10 @@ private: System::Windows::Forms::CheckBox^  checkAutoScroll;
 				// ”­Œ¾‚Å‰¹‚ðÄ¶
 				if(MTOPTION.TALK_SOUND_ENABLE && !inkeyword){
 					try{
-						Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.TALK_SOUND));
-						wav->Play();
+						/*Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.TALK_SOUND));
+						wav->Play();*/
 						WindowFlash();
+						notifyIconSysTray->ShowBalloonTip(1, "MorningStar - Notification", "A new message was sent in the chat.", ToolTipIcon::Info);
 					}
 					catch(Exception^){
 					}
@@ -2133,8 +2119,9 @@ private: System::Windows::Forms::CheckBox^  checkAutoScroll;
 			// Play a chosen sound on member join.
 			if(MTOPTION.ENTER_SOUND_ENABLE){
 				try{
-					Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.ENTER_SOUND));
-					wav->Play();
+					/*Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.ENTER_SOUND));
+					wav->Play();*/
+					notifyIconSysTray->ShowBalloonTip(1, "MorningStar - Notification", "A user joined the chat.", ToolTipIcon::Info);
 				}
 				catch(Exception^){
 				}
@@ -2245,6 +2232,11 @@ private: System::Windows::Forms::CheckBox^  checkAutoScroll;
 
 		void WriteWhatsNew(){
 			WriteMessage(
+				L"\n"
+				L"~.Version 2.1.0.0.~\n"
+				L"\n"
+				L"- Added native real-time notifications to replace every old sound alert setting.\n"
+				L"- Reverted auto-scroll option back to a menu item due to causing an exception at runtime.\n"
 				L"\n"
 				L"~.Version 2.0.0.0.~\n"
 				L"\n"
@@ -3936,10 +3928,6 @@ private: System::Windows::Forms::CheckBox^  checkAutoScroll;
 		 }
 		System::Void buttonClear_Click(System::Object^  sender, System::EventArgs^  e) {
 			ClearLog();
-		 }
-		System::Void checkAutoScroll_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-			checkAutoScroll->Checked ^= 1;
-			MTOPTION.LOG_LOCK = LogLockToolStripMenuItem->Checked;
 		 }
 #pragma endregion
 };

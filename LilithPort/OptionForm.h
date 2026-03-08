@@ -57,10 +57,10 @@ namespace LilithPort {
 	private: System::Windows::Forms::Button^  buttonReplayFolder;
 	private: System::Windows::Forms::Button^  buttonGameExe;
 	private: System::Windows::Forms::TextBox^  textBoxReplayFolder;
-	private: System::Windows::Forms::TextBox^  textBoxVSSound;
-	private: System::Windows::Forms::Button^  buttonNoticeSound;
-	private: System::Windows::Forms::Button^  buttonVSSound;
-	private: System::Windows::Forms::TextBox^  textBoxNoticeSound;
+
+
+
+
 	private: System::Windows::Forms::TabControl^  tabControlOption;
 	private: System::Windows::Forms::TabPage^  tabPageGame;
 	private: System::Windows::Forms::GroupBox^  groupBoxRun;
@@ -100,11 +100,11 @@ namespace LilithPort {
 	private: System::Windows::Forms::Button^  buttonClientName;
 	private: System::Windows::Forms::Button^  buttonHostName;
 	private: System::Windows::Forms::Button^  buttonServerName;
-	private: System::Windows::Forms::GroupBox^  groupBoxNoticeSound;
-	private: System::Windows::Forms::GroupBox^  groupBoxVSSound;
-	private: System::Windows::Forms::GroupBox^  groupBoxEnterSound;
-	private: System::Windows::Forms::TextBox^  textBoxEnterSound;
-	private: System::Windows::Forms::Button^  buttonEnterSound;
+
+
+
+
+
 	private: System::Windows::Forms::GroupBox^  groupBoxReplayFolder;
 	private: System::Windows::Forms::GroupBox^  groupBoxGameExe;
 	private: System::Windows::Forms::GroupBox^  groupBoxSimulate;
@@ -135,40 +135,40 @@ namespace LilithPort {
 	private: System::Windows::Forms::TextBox^  IPtextBox;
 	private: System::Windows::Forms::Label^  discriptionlabel;
 	private: System::Windows::Forms::Button^  AddPortbutton;
-private: System::Windows::Forms::GroupBox^  groupBoxName;
-
-
-	private: System::Windows::Forms::Button^  buttonNameSound;
-
-
-
-private: System::Windows::Forms::TextBox^  textBoxNameSound;
 
 
 
 
 
-private: System::Windows::Forms::GroupBox^  groupBoxTalkSound;
-private: System::Windows::Forms::CheckBox^  checkBoxNameSound;
-private: System::Windows::Forms::CheckBox^  checkBoxEnterSound;
-private: System::Windows::Forms::CheckBox^  checkBoxNoticeSound;
-private: System::Windows::Forms::CheckBox^  checkBoxVSSound;
-private: System::Windows::Forms::CheckBox^  checkBoxTalkSound;
-private: System::Windows::Forms::Button^  buttonTalkSound;
-private: System::Windows::Forms::TextBox^  textBoxTalkSound;
 
-private: System::Windows::Forms::Button^  buttonNoticeSoundPlay;
 
-private: System::Windows::Forms::Button^  buttonVSSoundPlay;
-private: System::Windows::Forms::Button^  buttonEnterSoundPlay;
-private: System::Windows::Forms::Button^  buttonTalkSoundPlay;
-private: System::Windows::Forms::Button^  buttonNameSoundPlay;
-private: System::Windows::Forms::GroupBox^  groupBoxSeekSound;
-private: System::Windows::Forms::Button^  buttonSeekSound;
 
-private: System::Windows::Forms::TextBox^  textBoxSeekSound;
-private: System::Windows::Forms::Button^  buttonSeekSoundPlay;
-private: System::Windows::Forms::CheckBox^  checkBoxSeekSound;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -213,12 +213,12 @@ private: System::Windows::Forms::GroupBox^  groupBoxSysTray;
 private: System::Windows::Forms::CheckBox^  checkBoxSysTray;
 private: System::Windows::Forms::CheckBox^  chkMuteBGM;
 private: System::Windows::Forms::CheckBox^  chkMuteSE;
-private: System::Windows::Forms::GroupBox^  groupBoxNotif;
-private: System::Windows::Forms::Label^  labelNotif;
-private: System::Windows::Forms::CheckBox^  checkBoxKeywordSound;
-private: System::Windows::Forms::Label^  labelKeywordSound;
-private: System::Windows::Forms::TextBox^  textBoxKeyword;
-private: System::Windows::Forms::GroupBox^  groupBoxKeyword;
+
+
+
+
+
+
 private: System::Windows::Forms::GroupBox^  groupBoxLog;
 private: System::Windows::Forms::CheckBox^  checkBoxLogClearWithoutWelcome;
 private: System::Windows::Forms::RadioButton^  radioButtonLogTXT;
@@ -226,6 +226,42 @@ private: System::Windows::Forms::RadioButton^  radioButtonLogRTF;
 private: System::Windows::Forms::CheckBox^  checkBoxShowGameOption;
 private: System::Windows::Forms::CheckBox^  checkBoxGetIP;
 private: System::Windows::Forms::Button^  buttonApply;
+private: System::Windows::Forms::GroupBox^  groupBoxNotif;
+private: System::Windows::Forms::GroupBox^  groupBoxKeyword;
+private: System::Windows::Forms::CheckBox^  checkBoxKeywordSound;
+private: System::Windows::Forms::TextBox^  textBoxKeyword;
+private: System::Windows::Forms::GroupBox^  groupBoxNoticeSound;
+private: System::Windows::Forms::Button^  buttonNoticeSoundPlay;
+private: System::Windows::Forms::TextBox^  textBoxNoticeSound;
+private: System::Windows::Forms::Button^  buttonNoticeSound;
+private: System::Windows::Forms::GroupBox^  groupBoxTalkSound;
+private: System::Windows::Forms::Button^  buttonTalkSoundPlay;
+private: System::Windows::Forms::Button^  buttonTalkSound;
+private: System::Windows::Forms::TextBox^  textBoxTalkSound;
+private: System::Windows::Forms::Label^  labelKeywordSound;
+private: System::Windows::Forms::GroupBox^  groupBoxName;
+private: System::Windows::Forms::Button^  buttonNameSoundPlay;
+private: System::Windows::Forms::Button^  buttonNameSound;
+private: System::Windows::Forms::TextBox^  textBoxNameSound;
+private: System::Windows::Forms::GroupBox^  groupBoxSeekSound;
+private: System::Windows::Forms::Button^  buttonSeekSoundPlay;
+private: System::Windows::Forms::Button^  buttonSeekSound;
+private: System::Windows::Forms::TextBox^  textBoxSeekSound;
+private: System::Windows::Forms::GroupBox^  groupBoxEnterSound;
+private: System::Windows::Forms::Button^  buttonEnterSoundPlay;
+private: System::Windows::Forms::TextBox^  textBoxEnterSound;
+private: System::Windows::Forms::Button^  buttonEnterSound;
+private: System::Windows::Forms::GroupBox^  groupBoxVSSound;
+private: System::Windows::Forms::Button^  buttonVSSoundPlay;
+private: System::Windows::Forms::TextBox^  textBoxVSSound;
+private: System::Windows::Forms::Button^  buttonVSSound;
+private: System::Windows::Forms::CheckBox^  checkBoxNoticeSound;
+private: System::Windows::Forms::CheckBox^  checkBoxSeekSound;
+private: System::Windows::Forms::CheckBox^  checkBoxVSSound;
+private: System::Windows::Forms::CheckBox^  checkBoxEnterSound;
+private: System::Windows::Forms::Label^  labelNotif;
+private: System::Windows::Forms::CheckBox^  checkBoxTalkSound;
+private: System::Windows::Forms::CheckBox^  checkBoxNameSound;
 
 
 
@@ -264,37 +300,37 @@ private: System::ComponentModel::IContainer^  components;
 			this->groupBoxKeyword = (gcnew System::Windows::Forms::GroupBox());
 			this->checkBoxKeywordSound = (gcnew System::Windows::Forms::CheckBox());
 			this->textBoxKeyword = (gcnew System::Windows::Forms::TextBox());
-			this->labelKeywordSound = (gcnew System::Windows::Forms::Label());
-			this->groupBoxSeekSound = (gcnew System::Windows::Forms::GroupBox());
-			this->buttonSeekSoundPlay = (gcnew System::Windows::Forms::Button());
-			this->checkBoxSeekSound = (gcnew System::Windows::Forms::CheckBox());
-			this->buttonSeekSound = (gcnew System::Windows::Forms::Button());
-			this->textBoxSeekSound = (gcnew System::Windows::Forms::TextBox());
-			this->groupBoxName = (gcnew System::Windows::Forms::GroupBox());
-			this->buttonNameSoundPlay = (gcnew System::Windows::Forms::Button());
-			this->buttonNameSound = (gcnew System::Windows::Forms::Button());
-			this->textBoxNameSound = (gcnew System::Windows::Forms::TextBox());
 			this->groupBoxNoticeSound = (gcnew System::Windows::Forms::GroupBox());
 			this->buttonNoticeSoundPlay = (gcnew System::Windows::Forms::Button());
-			this->checkBoxNoticeSound = (gcnew System::Windows::Forms::CheckBox());
 			this->textBoxNoticeSound = (gcnew System::Windows::Forms::TextBox());
 			this->buttonNoticeSound = (gcnew System::Windows::Forms::Button());
-			this->groupBoxVSSound = (gcnew System::Windows::Forms::GroupBox());
-			this->buttonVSSoundPlay = (gcnew System::Windows::Forms::Button());
-			this->checkBoxVSSound = (gcnew System::Windows::Forms::CheckBox());
-			this->textBoxVSSound = (gcnew System::Windows::Forms::TextBox());
-			this->buttonVSSound = (gcnew System::Windows::Forms::Button());
 			this->groupBoxTalkSound = (gcnew System::Windows::Forms::GroupBox());
 			this->buttonTalkSoundPlay = (gcnew System::Windows::Forms::Button());
 			this->buttonTalkSound = (gcnew System::Windows::Forms::Button());
 			this->textBoxTalkSound = (gcnew System::Windows::Forms::TextBox());
-			this->checkBoxTalkSound = (gcnew System::Windows::Forms::CheckBox());
-			this->labelNotif = (gcnew System::Windows::Forms::Label());
+			this->labelKeywordSound = (gcnew System::Windows::Forms::Label());
+			this->groupBoxName = (gcnew System::Windows::Forms::GroupBox());
+			this->buttonNameSoundPlay = (gcnew System::Windows::Forms::Button());
+			this->buttonNameSound = (gcnew System::Windows::Forms::Button());
+			this->textBoxNameSound = (gcnew System::Windows::Forms::TextBox());
+			this->groupBoxSeekSound = (gcnew System::Windows::Forms::GroupBox());
+			this->buttonSeekSoundPlay = (gcnew System::Windows::Forms::Button());
+			this->buttonSeekSound = (gcnew System::Windows::Forms::Button());
+			this->textBoxSeekSound = (gcnew System::Windows::Forms::TextBox());
 			this->groupBoxEnterSound = (gcnew System::Windows::Forms::GroupBox());
 			this->buttonEnterSoundPlay = (gcnew System::Windows::Forms::Button());
-			this->checkBoxEnterSound = (gcnew System::Windows::Forms::CheckBox());
 			this->textBoxEnterSound = (gcnew System::Windows::Forms::TextBox());
 			this->buttonEnterSound = (gcnew System::Windows::Forms::Button());
+			this->groupBoxVSSound = (gcnew System::Windows::Forms::GroupBox());
+			this->buttonVSSoundPlay = (gcnew System::Windows::Forms::Button());
+			this->textBoxVSSound = (gcnew System::Windows::Forms::TextBox());
+			this->buttonVSSound = (gcnew System::Windows::Forms::Button());
+			this->checkBoxNoticeSound = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBoxSeekSound = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBoxVSSound = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBoxEnterSound = (gcnew System::Windows::Forms::CheckBox());
+			this->labelNotif = (gcnew System::Windows::Forms::Label());
+			this->checkBoxTalkSound = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBoxNameSound = (gcnew System::Windows::Forms::CheckBox());
 			this->tabPagePath = (gcnew System::Windows::Forms::TabPage());
 			this->groupBoxLog = (gcnew System::Windows::Forms::GroupBox());
@@ -403,12 +439,12 @@ private: System::ComponentModel::IContainer^  components;
 			this->tabPageSound->SuspendLayout();
 			this->groupBoxNotif->SuspendLayout();
 			this->groupBoxKeyword->SuspendLayout();
-			this->groupBoxSeekSound->SuspendLayout();
-			this->groupBoxName->SuspendLayout();
 			this->groupBoxNoticeSound->SuspendLayout();
-			this->groupBoxVSSound->SuspendLayout();
 			this->groupBoxTalkSound->SuspendLayout();
+			this->groupBoxName->SuspendLayout();
+			this->groupBoxSeekSound->SuspendLayout();
 			this->groupBoxEnterSound->SuspendLayout();
+			this->groupBoxVSSound->SuspendLayout();
 			this->tabPagePath->SuspendLayout();
 			this->groupBoxLog->SuspendLayout();
 			this->groupBoxSysTray->SuspendLayout();
@@ -494,13 +530,16 @@ private: System::ComponentModel::IContainer^  components;
 			// groupBoxNotif
 			// 
 			this->groupBoxNotif->Controls->Add(this->groupBoxKeyword);
-			this->groupBoxNotif->Controls->Add(this->groupBoxTalkSound);
+			this->groupBoxNotif->Controls->Add(this->checkBoxNoticeSound);
+			this->groupBoxNotif->Controls->Add(this->checkBoxSeekSound);
+			this->groupBoxNotif->Controls->Add(this->checkBoxVSSound);
+			this->groupBoxNotif->Controls->Add(this->checkBoxEnterSound);
 			this->groupBoxNotif->Controls->Add(this->labelNotif);
-			this->groupBoxNotif->Controls->Add(this->groupBoxEnterSound);
+			this->groupBoxNotif->Controls->Add(this->checkBoxTalkSound);
 			this->groupBoxNotif->Controls->Add(this->checkBoxNameSound);
 			this->groupBoxNotif->Location = System::Drawing::Point(6, 6);
 			this->groupBoxNotif->Name = L"groupBoxNotif";
-			this->groupBoxNotif->Size = System::Drawing::Size(528, 267);
+			this->groupBoxNotif->Size = System::Drawing::Size(528, 174);
 			this->groupBoxNotif->TabIndex = 8;
 			this->groupBoxNotif->TabStop = false;
 			this->groupBoxNotif->Text = L"Notification Settings";
@@ -509,14 +548,16 @@ private: System::ComponentModel::IContainer^  components;
 			// 
 			this->groupBoxKeyword->Controls->Add(this->checkBoxKeywordSound);
 			this->groupBoxKeyword->Controls->Add(this->textBoxKeyword);
-			this->groupBoxKeyword->Controls->Add(this->labelKeywordSound);
-			this->groupBoxKeyword->Controls->Add(this->groupBoxSeekSound);
-			this->groupBoxKeyword->Controls->Add(this->groupBoxName);
 			this->groupBoxKeyword->Controls->Add(this->groupBoxNoticeSound);
+			this->groupBoxKeyword->Controls->Add(this->groupBoxTalkSound);
+			this->groupBoxKeyword->Controls->Add(this->labelKeywordSound);
+			this->groupBoxKeyword->Controls->Add(this->groupBoxName);
+			this->groupBoxKeyword->Controls->Add(this->groupBoxSeekSound);
+			this->groupBoxKeyword->Controls->Add(this->groupBoxEnterSound);
 			this->groupBoxKeyword->Controls->Add(this->groupBoxVSSound);
-			this->groupBoxKeyword->Location = System::Drawing::Point(9, 69);
+			this->groupBoxKeyword->Location = System::Drawing::Point(6, 93);
 			this->groupBoxKeyword->Name = L"groupBoxKeyword";
-			this->groupBoxKeyword->Size = System::Drawing::Size(513, 73);
+			this->groupBoxKeyword->Size = System::Drawing::Size(513, 71);
 			this->groupBoxKeyword->TabIndex = 11;
 			this->groupBoxKeyword->TabStop = false;
 			this->groupBoxKeyword->Text = L"Notify on keyword(s)";
@@ -541,6 +582,98 @@ private: System::ComponentModel::IContainer^  components;
 			this->textBoxKeyword->TabIndex = 6;
 			this->textBoxKeyword->TextChanged += gcnew System::EventHandler(this, &OptionForm::textBoxKeyword_TextChanged);
 			// 
+			// groupBoxNoticeSound
+			// 
+			this->groupBoxNoticeSound->Controls->Add(this->buttonNoticeSoundPlay);
+			this->groupBoxNoticeSound->Controls->Add(this->textBoxNoticeSound);
+			this->groupBoxNoticeSound->Controls->Add(this->buttonNoticeSound);
+			this->groupBoxNoticeSound->Location = System::Drawing::Point(248, 64);
+			this->groupBoxNoticeSound->Name = L"groupBoxNoticeSound";
+			this->groupBoxNoticeSound->Size = System::Drawing::Size(32, 56);
+			this->groupBoxNoticeSound->TabIndex = 2;
+			this->groupBoxNoticeSound->TabStop = false;
+			this->groupBoxNoticeSound->Text = L"Announcement";
+			this->groupBoxNoticeSound->Visible = false;
+			// 
+			// buttonNoticeSoundPlay
+			// 
+			this->buttonNoticeSoundPlay->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->buttonNoticeSoundPlay->Location = System::Drawing::Point(457, 21);
+			this->buttonNoticeSoundPlay->Name = L"buttonNoticeSoundPlay";
+			this->buttonNoticeSoundPlay->Size = System::Drawing::Size(65, 22);
+			this->buttonNoticeSoundPlay->TabIndex = 4;
+			this->buttonNoticeSoundPlay->Text = L"Play";
+			this->buttonNoticeSoundPlay->UseVisualStyleBackColor = true;
+			this->buttonNoticeSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonNoticeSoundPlay_Click);
+			// 
+			// textBoxNoticeSound
+			// 
+			this->textBoxNoticeSound->AllowDrop = true;
+			this->textBoxNoticeSound->Location = System::Drawing::Point(11, 22);
+			this->textBoxNoticeSound->Name = L"textBoxNoticeSound";
+			this->textBoxNoticeSound->Size = System::Drawing::Size(304, 20);
+			this->textBoxNoticeSound->TabIndex = 1;
+			this->textBoxNoticeSound->TextChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
+			this->textBoxNoticeSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxNoticeSound_DragDrop);
+			this->textBoxNoticeSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
+			// 
+			// buttonNoticeSound
+			// 
+			this->buttonNoticeSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->buttonNoticeSound->Location = System::Drawing::Point(321, 21);
+			this->buttonNoticeSound->Name = L"buttonNoticeSound";
+			this->buttonNoticeSound->Size = System::Drawing::Size(65, 22);
+			this->buttonNoticeSound->TabIndex = 2;
+			this->buttonNoticeSound->Text = L"Browse...";
+			this->buttonNoticeSound->UseVisualStyleBackColor = true;
+			this->buttonNoticeSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonNoticeSound_Click);
+			// 
+			// groupBoxTalkSound
+			// 
+			this->groupBoxTalkSound->Controls->Add(this->buttonTalkSoundPlay);
+			this->groupBoxTalkSound->Controls->Add(this->buttonTalkSound);
+			this->groupBoxTalkSound->Controls->Add(this->textBoxTalkSound);
+			this->groupBoxTalkSound->Location = System::Drawing::Point(451, 63);
+			this->groupBoxTalkSound->Name = L"groupBoxTalkSound";
+			this->groupBoxTalkSound->Size = System::Drawing::Size(53, 51);
+			this->groupBoxTalkSound->TabIndex = 5;
+			this->groupBoxTalkSound->TabStop = false;
+			this->groupBoxTalkSound->Text = L"Play sound on chat message";
+			this->groupBoxTalkSound->Visible = false;
+			// 
+			// buttonTalkSoundPlay
+			// 
+			this->buttonTalkSoundPlay->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->buttonTalkSoundPlay->Location = System::Drawing::Point(442, 18);
+			this->buttonTalkSoundPlay->Name = L"buttonTalkSoundPlay";
+			this->buttonTalkSoundPlay->Size = System::Drawing::Size(65, 22);
+			this->buttonTalkSoundPlay->TabIndex = 3;
+			this->buttonTalkSoundPlay->Text = L"Play";
+			this->buttonTalkSoundPlay->UseVisualStyleBackColor = true;
+			this->buttonTalkSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonTalkSoundPlay_Click);
+			// 
+			// buttonTalkSound
+			// 
+			this->buttonTalkSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->buttonTalkSound->Location = System::Drawing::Point(306, 18);
+			this->buttonTalkSound->Name = L"buttonTalkSound";
+			this->buttonTalkSound->Size = System::Drawing::Size(65, 22);
+			this->buttonTalkSound->TabIndex = 1;
+			this->buttonTalkSound->Text = L"Browse...";
+			this->buttonTalkSound->UseVisualStyleBackColor = true;
+			this->buttonTalkSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonTalkSound_Click);
+			// 
+			// textBoxTalkSound
+			// 
+			this->textBoxTalkSound->AllowDrop = true;
+			this->textBoxTalkSound->Location = System::Drawing::Point(10, 20);
+			this->textBoxTalkSound->Name = L"textBoxTalkSound";
+			this->textBoxTalkSound->Size = System::Drawing::Size(290, 20);
+			this->textBoxTalkSound->TabIndex = 0;
+			this->textBoxTalkSound->TextChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
+			this->textBoxTalkSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxTalkSound_DragDrop);
+			this->textBoxTalkSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
+			// 
 			// labelKeywordSound
 			// 
 			this->labelKeywordSound->AutoSize = true;
@@ -551,73 +684,14 @@ private: System::ComponentModel::IContainer^  components;
 			this->labelKeywordSound->Text = L"If enabled, will send a notification when a keyword is mentioned. Separate multip" 
 				L"le words with\r\ncommas (,)";
 			// 
-			// groupBoxSeekSound
-			// 
-			this->groupBoxSeekSound->Controls->Add(this->buttonSeekSoundPlay);
-			this->groupBoxSeekSound->Controls->Add(this->checkBoxSeekSound);
-			this->groupBoxSeekSound->Controls->Add(this->buttonSeekSound);
-			this->groupBoxSeekSound->Controls->Add(this->textBoxSeekSound);
-			this->groupBoxSeekSound->Location = System::Drawing::Point(364, 58);
-			this->groupBoxSeekSound->Name = L"groupBoxSeekSound";
-			this->groupBoxSeekSound->Size = System::Drawing::Size(89, 56);
-			this->groupBoxSeekSound->TabIndex = 6;
-			this->groupBoxSeekSound->TabStop = false;
-			this->groupBoxSeekSound->Text = L"Challenge Request";
-			this->groupBoxSeekSound->Visible = false;
-			// 
-			// buttonSeekSoundPlay
-			// 
-			this->buttonSeekSoundPlay->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonSeekSoundPlay->Location = System::Drawing::Point(457, 21);
-			this->buttonSeekSoundPlay->Name = L"buttonSeekSoundPlay";
-			this->buttonSeekSoundPlay->Size = System::Drawing::Size(65, 22);
-			this->buttonSeekSoundPlay->TabIndex = 3;
-			this->buttonSeekSoundPlay->Text = L"Play";
-			this->buttonSeekSoundPlay->UseVisualStyleBackColor = true;
-			this->buttonSeekSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonSeekSoundPlay_Click);
-			// 
-			// checkBoxSeekSound
-			// 
-			this->checkBoxSeekSound->AutoSize = true;
-			this->checkBoxSeekSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxSeekSound->Location = System::Drawing::Point(392, 23);
-			this->checkBoxSeekSound->Name = L"checkBoxSeekSound";
-			this->checkBoxSeekSound->Size = System::Drawing::Size(65, 18);
-			this->checkBoxSeekSound->TabIndex = 2;
-			this->checkBoxSeekSound->Text = L"Enable";
-			this->checkBoxSeekSound->UseVisualStyleBackColor = true;
-			this->checkBoxSeekSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
-			// 
-			// buttonSeekSound
-			// 
-			this->buttonSeekSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonSeekSound->Location = System::Drawing::Point(321, 19);
-			this->buttonSeekSound->Name = L"buttonSeekSound";
-			this->buttonSeekSound->Size = System::Drawing::Size(65, 22);
-			this->buttonSeekSound->TabIndex = 1;
-			this->buttonSeekSound->Text = L"Browse...";
-			this->buttonSeekSound->UseVisualStyleBackColor = true;
-			this->buttonSeekSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonSeekSound_Click);
-			// 
-			// textBoxSeekSound
-			// 
-			this->textBoxSeekSound->AllowDrop = true;
-			this->textBoxSeekSound->Location = System::Drawing::Point(10, 20);
-			this->textBoxSeekSound->Name = L"textBoxSeekSound";
-			this->textBoxSeekSound->Size = System::Drawing::Size(305, 20);
-			this->textBoxSeekSound->TabIndex = 0;
-			this->textBoxSeekSound->TextChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
-			this->textBoxSeekSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSeekSound_DragDrop);
-			this->textBoxSeekSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
-			// 
 			// groupBoxName
 			// 
 			this->groupBoxName->Controls->Add(this->buttonNameSoundPlay);
 			this->groupBoxName->Controls->Add(this->buttonNameSound);
 			this->groupBoxName->Controls->Add(this->textBoxNameSound);
-			this->groupBoxName->Location = System::Drawing::Point(281, 61);
+			this->groupBoxName->Location = System::Drawing::Point(365, 64);
 			this->groupBoxName->Name = L"groupBoxName";
-			this->groupBoxName->Size = System::Drawing::Size(77, 53);
+			this->groupBoxName->Size = System::Drawing::Size(21, 53);
 			this->groupBoxName->TabIndex = 4;
 			this->groupBoxName->TabStop = false;
 			this->groupBoxName->Text = L"Nickname Mentioned";
@@ -656,74 +730,106 @@ private: System::ComponentModel::IContainer^  components;
 			this->textBoxNameSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxNameSound_DragDrop);
 			this->textBoxNameSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
 			// 
-			// groupBoxNoticeSound
+			// groupBoxSeekSound
 			// 
-			this->groupBoxNoticeSound->Controls->Add(this->buttonNoticeSoundPlay);
-			this->groupBoxNoticeSound->Controls->Add(this->checkBoxNoticeSound);
-			this->groupBoxNoticeSound->Controls->Add(this->textBoxNoticeSound);
-			this->groupBoxNoticeSound->Controls->Add(this->buttonNoticeSound);
-			this->groupBoxNoticeSound->Location = System::Drawing::Point(198, 61);
-			this->groupBoxNoticeSound->Name = L"groupBoxNoticeSound";
-			this->groupBoxNoticeSound->Size = System::Drawing::Size(77, 56);
-			this->groupBoxNoticeSound->TabIndex = 2;
-			this->groupBoxNoticeSound->TabStop = false;
-			this->groupBoxNoticeSound->Text = L"Announcement";
-			this->groupBoxNoticeSound->Visible = false;
+			this->groupBoxSeekSound->Controls->Add(this->buttonSeekSoundPlay);
+			this->groupBoxSeekSound->Controls->Add(this->buttonSeekSound);
+			this->groupBoxSeekSound->Controls->Add(this->textBoxSeekSound);
+			this->groupBoxSeekSound->Location = System::Drawing::Point(286, 64);
+			this->groupBoxSeekSound->Name = L"groupBoxSeekSound";
+			this->groupBoxSeekSound->Size = System::Drawing::Size(35, 56);
+			this->groupBoxSeekSound->TabIndex = 6;
+			this->groupBoxSeekSound->TabStop = false;
+			this->groupBoxSeekSound->Text = L"Challenge Request";
+			this->groupBoxSeekSound->Visible = false;
 			// 
-			// buttonNoticeSoundPlay
+			// buttonSeekSoundPlay
 			// 
-			this->buttonNoticeSoundPlay->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonNoticeSoundPlay->Location = System::Drawing::Point(457, 21);
-			this->buttonNoticeSoundPlay->Name = L"buttonNoticeSoundPlay";
-			this->buttonNoticeSoundPlay->Size = System::Drawing::Size(65, 22);
-			this->buttonNoticeSoundPlay->TabIndex = 4;
-			this->buttonNoticeSoundPlay->Text = L"Play";
-			this->buttonNoticeSoundPlay->UseVisualStyleBackColor = true;
-			this->buttonNoticeSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonNoticeSoundPlay_Click);
+			this->buttonSeekSoundPlay->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->buttonSeekSoundPlay->Location = System::Drawing::Point(457, 21);
+			this->buttonSeekSoundPlay->Name = L"buttonSeekSoundPlay";
+			this->buttonSeekSoundPlay->Size = System::Drawing::Size(65, 22);
+			this->buttonSeekSoundPlay->TabIndex = 3;
+			this->buttonSeekSoundPlay->Text = L"Play";
+			this->buttonSeekSoundPlay->UseVisualStyleBackColor = true;
+			this->buttonSeekSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonSeekSoundPlay_Click);
 			// 
-			// checkBoxNoticeSound
+			// buttonSeekSound
 			// 
-			this->checkBoxNoticeSound->AutoSize = true;
-			this->checkBoxNoticeSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxNoticeSound->Location = System::Drawing::Point(392, 25);
-			this->checkBoxNoticeSound->Name = L"checkBoxNoticeSound";
-			this->checkBoxNoticeSound->Size = System::Drawing::Size(65, 18);
-			this->checkBoxNoticeSound->TabIndex = 3;
-			this->checkBoxNoticeSound->Text = L"Enable";
-			this->checkBoxNoticeSound->UseVisualStyleBackColor = true;
-			this->checkBoxNoticeSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
+			this->buttonSeekSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->buttonSeekSound->Location = System::Drawing::Point(321, 19);
+			this->buttonSeekSound->Name = L"buttonSeekSound";
+			this->buttonSeekSound->Size = System::Drawing::Size(65, 22);
+			this->buttonSeekSound->TabIndex = 1;
+			this->buttonSeekSound->Text = L"Browse...";
+			this->buttonSeekSound->UseVisualStyleBackColor = true;
+			this->buttonSeekSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonSeekSound_Click);
 			// 
-			// textBoxNoticeSound
+			// textBoxSeekSound
 			// 
-			this->textBoxNoticeSound->AllowDrop = true;
-			this->textBoxNoticeSound->Location = System::Drawing::Point(11, 22);
-			this->textBoxNoticeSound->Name = L"textBoxNoticeSound";
-			this->textBoxNoticeSound->Size = System::Drawing::Size(304, 20);
-			this->textBoxNoticeSound->TabIndex = 1;
-			this->textBoxNoticeSound->TextChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
-			this->textBoxNoticeSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxNoticeSound_DragDrop);
-			this->textBoxNoticeSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
+			this->textBoxSeekSound->AllowDrop = true;
+			this->textBoxSeekSound->Location = System::Drawing::Point(10, 20);
+			this->textBoxSeekSound->Name = L"textBoxSeekSound";
+			this->textBoxSeekSound->Size = System::Drawing::Size(305, 20);
+			this->textBoxSeekSound->TabIndex = 0;
+			this->textBoxSeekSound->TextChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
+			this->textBoxSeekSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSeekSound_DragDrop);
+			this->textBoxSeekSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
 			// 
-			// buttonNoticeSound
+			// groupBoxEnterSound
 			// 
-			this->buttonNoticeSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonNoticeSound->Location = System::Drawing::Point(321, 21);
-			this->buttonNoticeSound->Name = L"buttonNoticeSound";
-			this->buttonNoticeSound->Size = System::Drawing::Size(65, 22);
-			this->buttonNoticeSound->TabIndex = 2;
-			this->buttonNoticeSound->Text = L"Browse...";
-			this->buttonNoticeSound->UseVisualStyleBackColor = true;
-			this->buttonNoticeSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonNoticeSound_Click);
+			this->groupBoxEnterSound->Controls->Add(this->buttonEnterSoundPlay);
+			this->groupBoxEnterSound->Controls->Add(this->textBoxEnterSound);
+			this->groupBoxEnterSound->Controls->Add(this->buttonEnterSound);
+			this->groupBoxEnterSound->Location = System::Drawing::Point(392, 61);
+			this->groupBoxEnterSound->Name = L"groupBoxEnterSound";
+			this->groupBoxEnterSound->Size = System::Drawing::Size(53, 56);
+			this->groupBoxEnterSound->TabIndex = 3;
+			this->groupBoxEnterSound->TabStop = false;
+			this->groupBoxEnterSound->Text = L"Play sound on member join";
+			this->groupBoxEnterSound->Visible = false;
+			// 
+			// buttonEnterSoundPlay
+			// 
+			this->buttonEnterSoundPlay->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->buttonEnterSoundPlay->Location = System::Drawing::Point(442, 20);
+			this->buttonEnterSoundPlay->Name = L"buttonEnterSoundPlay";
+			this->buttonEnterSoundPlay->Size = System::Drawing::Size(65, 22);
+			this->buttonEnterSoundPlay->TabIndex = 4;
+			this->buttonEnterSoundPlay->Text = L"Play";
+			this->buttonEnterSoundPlay->UseVisualStyleBackColor = true;
+			this->buttonEnterSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonEnterSoundPlay_Click);
+			// 
+			// textBoxEnterSound
+			// 
+			this->textBoxEnterSound->AllowDrop = true;
+			this->textBoxEnterSound->Location = System::Drawing::Point(11, 22);
+			this->textBoxEnterSound->Name = L"textBoxEnterSound";
+			this->textBoxEnterSound->Size = System::Drawing::Size(289, 20);
+			this->textBoxEnterSound->TabIndex = 1;
+			this->textBoxEnterSound->TextChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
+			this->textBoxEnterSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxEnterSound_DragDrop);
+			this->textBoxEnterSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
+			// 
+			// buttonEnterSound
+			// 
+			this->buttonEnterSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->buttonEnterSound->Location = System::Drawing::Point(306, 20);
+			this->buttonEnterSound->Name = L"buttonEnterSound";
+			this->buttonEnterSound->Size = System::Drawing::Size(65, 22);
+			this->buttonEnterSound->TabIndex = 2;
+			this->buttonEnterSound->Text = L"Browse...";
+			this->buttonEnterSound->UseVisualStyleBackColor = true;
+			this->buttonEnterSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonEnterSound_Click);
 			// 
 			// groupBoxVSSound
 			// 
 			this->groupBoxVSSound->Controls->Add(this->buttonVSSoundPlay);
-			this->groupBoxVSSound->Controls->Add(this->checkBoxVSSound);
 			this->groupBoxVSSound->Controls->Add(this->textBoxVSSound);
 			this->groupBoxVSSound->Controls->Add(this->buttonVSSound);
-			this->groupBoxVSSound->Location = System::Drawing::Point(115, 63);
+			this->groupBoxVSSound->Location = System::Drawing::Point(330, 64);
 			this->groupBoxVSSound->Name = L"groupBoxVSSound";
-			this->groupBoxVSSound->Size = System::Drawing::Size(77, 56);
+			this->groupBoxVSSound->Size = System::Drawing::Size(29, 56);
 			this->groupBoxVSSound->TabIndex = 1;
 			this->groupBoxVSSound->TabStop = false;
 			this->groupBoxVSSound->Text = L"Challenge Notification";
@@ -739,18 +845,6 @@ private: System::ComponentModel::IContainer^  components;
 			this->buttonVSSoundPlay->Text = L"Play";
 			this->buttonVSSoundPlay->UseVisualStyleBackColor = true;
 			this->buttonVSSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonVSSoundPlay_Click);
-			// 
-			// checkBoxVSSound
-			// 
-			this->checkBoxVSSound->AutoSize = true;
-			this->checkBoxVSSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxVSSound->Location = System::Drawing::Point(392, 25);
-			this->checkBoxVSSound->Name = L"checkBoxVSSound";
-			this->checkBoxVSSound->Size = System::Drawing::Size(65, 18);
-			this->checkBoxVSSound->TabIndex = 3;
-			this->checkBoxVSSound->Text = L"Enable";
-			this->checkBoxVSSound->UseVisualStyleBackColor = true;
-			this->checkBoxVSSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
 			// textBoxVSSound
 			// 
@@ -774,63 +868,53 @@ private: System::ComponentModel::IContainer^  components;
 			this->buttonVSSound->UseVisualStyleBackColor = true;
 			this->buttonVSSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonVSSound_Click);
 			// 
-			// groupBoxTalkSound
+			// checkBoxNoticeSound
 			// 
-			this->groupBoxTalkSound->Controls->Add(this->buttonTalkSoundPlay);
-			this->groupBoxTalkSound->Controls->Add(this->buttonTalkSound);
-			this->groupBoxTalkSound->Controls->Add(this->textBoxTalkSound);
-			this->groupBoxTalkSound->Controls->Add(this->checkBoxTalkSound);
-			this->groupBoxTalkSound->Location = System::Drawing::Point(9, 209);
-			this->groupBoxTalkSound->Name = L"groupBoxTalkSound";
-			this->groupBoxTalkSound->Size = System::Drawing::Size(513, 51);
-			this->groupBoxTalkSound->TabIndex = 5;
-			this->groupBoxTalkSound->TabStop = false;
-			this->groupBoxTalkSound->Text = L"Play sound on chat message";
+			this->checkBoxNoticeSound->AutoSize = true;
+			this->checkBoxNoticeSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->checkBoxNoticeSound->Location = System::Drawing::Point(238, 69);
+			this->checkBoxNoticeSound->Name = L"checkBoxNoticeSound";
+			this->checkBoxNoticeSound->Size = System::Drawing::Size(240, 18);
+			this->checkBoxNoticeSound->TabIndex = 3;
+			this->checkBoxNoticeSound->Text = L"Enable notification on server announcement";
+			this->checkBoxNoticeSound->UseVisualStyleBackColor = true;
+			this->checkBoxNoticeSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
-			// buttonTalkSoundPlay
+			// checkBoxSeekSound
 			// 
-			this->buttonTalkSoundPlay->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonTalkSoundPlay->Location = System::Drawing::Point(442, 18);
-			this->buttonTalkSoundPlay->Name = L"buttonTalkSoundPlay";
-			this->buttonTalkSoundPlay->Size = System::Drawing::Size(65, 22);
-			this->buttonTalkSoundPlay->TabIndex = 3;
-			this->buttonTalkSoundPlay->Text = L"Play";
-			this->buttonTalkSoundPlay->UseVisualStyleBackColor = true;
-			this->buttonTalkSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonTalkSoundPlay_Click);
+			this->checkBoxSeekSound->AutoSize = true;
+			this->checkBoxSeekSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->checkBoxSeekSound->Location = System::Drawing::Point(74, 253);
+			this->checkBoxSeekSound->Name = L"checkBoxSeekSound";
+			this->checkBoxSeekSound->Size = System::Drawing::Size(221, 18);
+			this->checkBoxSeekSound->TabIndex = 2;
+			this->checkBoxSeekSound->Text = L"Enable notification on challenge request";
+			this->checkBoxSeekSound->UseVisualStyleBackColor = true;
+			this->checkBoxSeekSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
-			// buttonTalkSound
+			// checkBoxVSSound
 			// 
-			this->buttonTalkSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonTalkSound->Location = System::Drawing::Point(306, 18);
-			this->buttonTalkSound->Name = L"buttonTalkSound";
-			this->buttonTalkSound->Size = System::Drawing::Size(65, 22);
-			this->buttonTalkSound->TabIndex = 1;
-			this->buttonTalkSound->Text = L"Browse...";
-			this->buttonTalkSound->UseVisualStyleBackColor = true;
-			this->buttonTalkSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonTalkSound_Click);
+			this->checkBoxVSSound->AutoSize = true;
+			this->checkBoxVSSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->checkBoxVSSound->Location = System::Drawing::Point(74, 277);
+			this->checkBoxVSSound->Name = L"checkBoxVSSound";
+			this->checkBoxVSSound->Size = System::Drawing::Size(186, 18);
+			this->checkBoxVSSound->TabIndex = 3;
+			this->checkBoxVSSound->Text = L"Enable notification on challenge ";
+			this->checkBoxVSSound->UseVisualStyleBackColor = true;
+			this->checkBoxVSSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
-			// textBoxTalkSound
+			// checkBoxEnterSound
 			// 
-			this->textBoxTalkSound->AllowDrop = true;
-			this->textBoxTalkSound->Location = System::Drawing::Point(10, 20);
-			this->textBoxTalkSound->Name = L"textBoxTalkSound";
-			this->textBoxTalkSound->Size = System::Drawing::Size(290, 20);
-			this->textBoxTalkSound->TabIndex = 0;
-			this->textBoxTalkSound->TextChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
-			this->textBoxTalkSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxTalkSound_DragDrop);
-			this->textBoxTalkSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
-			// 
-			// checkBoxTalkSound
-			// 
-			this->checkBoxTalkSound->AutoSize = true;
-			this->checkBoxTalkSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxTalkSound->Location = System::Drawing::Point(377, 20);
-			this->checkBoxTalkSound->Name = L"checkBoxTalkSound";
-			this->checkBoxTalkSound->Size = System::Drawing::Size(65, 18);
-			this->checkBoxTalkSound->TabIndex = 2;
-			this->checkBoxTalkSound->Text = L"Enable";
-			this->checkBoxTalkSound->UseVisualStyleBackColor = true;
-			this->checkBoxTalkSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
+			this->checkBoxEnterSound->AutoSize = true;
+			this->checkBoxEnterSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->checkBoxEnterSound->Location = System::Drawing::Point(9, 69);
+			this->checkBoxEnterSound->Name = L"checkBoxEnterSound";
+			this->checkBoxEnterSound->Size = System::Drawing::Size(176, 18);
+			this->checkBoxEnterSound->TabIndex = 3;
+			this->checkBoxEnterSound->Text = L"Enable notification on user join";
+			this->checkBoxEnterSound->UseVisualStyleBackColor = true;
+			this->checkBoxEnterSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
 			// labelNotif
 			// 
@@ -842,63 +926,17 @@ private: System::ComponentModel::IContainer^  components;
 			this->labelNotif->Text = L"Below you can enable/disable real-time notifications. These will also flash the t" 
 				L"askbar/window on\r\nnotification.";
 			// 
-			// groupBoxEnterSound
+			// checkBoxTalkSound
 			// 
-			this->groupBoxEnterSound->Controls->Add(this->buttonEnterSoundPlay);
-			this->groupBoxEnterSound->Controls->Add(this->checkBoxEnterSound);
-			this->groupBoxEnterSound->Controls->Add(this->textBoxEnterSound);
-			this->groupBoxEnterSound->Controls->Add(this->buttonEnterSound);
-			this->groupBoxEnterSound->Location = System::Drawing::Point(9, 147);
-			this->groupBoxEnterSound->Name = L"groupBoxEnterSound";
-			this->groupBoxEnterSound->Size = System::Drawing::Size(513, 56);
-			this->groupBoxEnterSound->TabIndex = 3;
-			this->groupBoxEnterSound->TabStop = false;
-			this->groupBoxEnterSound->Text = L"Play sound on member join";
-			// 
-			// buttonEnterSoundPlay
-			// 
-			this->buttonEnterSoundPlay->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonEnterSoundPlay->Location = System::Drawing::Point(442, 20);
-			this->buttonEnterSoundPlay->Name = L"buttonEnterSoundPlay";
-			this->buttonEnterSoundPlay->Size = System::Drawing::Size(65, 22);
-			this->buttonEnterSoundPlay->TabIndex = 4;
-			this->buttonEnterSoundPlay->Text = L"Play";
-			this->buttonEnterSoundPlay->UseVisualStyleBackColor = true;
-			this->buttonEnterSoundPlay->Click += gcnew System::EventHandler(this, &OptionForm::buttonEnterSoundPlay_Click);
-			// 
-			// checkBoxEnterSound
-			// 
-			this->checkBoxEnterSound->AutoSize = true;
-			this->checkBoxEnterSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxEnterSound->Location = System::Drawing::Point(377, 22);
-			this->checkBoxEnterSound->Name = L"checkBoxEnterSound";
-			this->checkBoxEnterSound->Size = System::Drawing::Size(65, 18);
-			this->checkBoxEnterSound->TabIndex = 3;
-			this->checkBoxEnterSound->Text = L"Enable";
-			this->checkBoxEnterSound->UseVisualStyleBackColor = true;
-			this->checkBoxEnterSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
-			// 
-			// textBoxEnterSound
-			// 
-			this->textBoxEnterSound->AllowDrop = true;
-			this->textBoxEnterSound->Location = System::Drawing::Point(11, 22);
-			this->textBoxEnterSound->Name = L"textBoxEnterSound";
-			this->textBoxEnterSound->Size = System::Drawing::Size(289, 20);
-			this->textBoxEnterSound->TabIndex = 1;
-			this->textBoxEnterSound->TextChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
-			this->textBoxEnterSound->DragDrop += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxEnterSound_DragDrop);
-			this->textBoxEnterSound->DragEnter += gcnew System::Windows::Forms::DragEventHandler(this, &OptionForm::textBoxSound_DragEnter);
-			// 
-			// buttonEnterSound
-			// 
-			this->buttonEnterSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonEnterSound->Location = System::Drawing::Point(306, 20);
-			this->buttonEnterSound->Name = L"buttonEnterSound";
-			this->buttonEnterSound->Size = System::Drawing::Size(65, 22);
-			this->buttonEnterSound->TabIndex = 2;
-			this->buttonEnterSound->Text = L"Browse...";
-			this->buttonEnterSound->UseVisualStyleBackColor = true;
-			this->buttonEnterSound->Click += gcnew System::EventHandler(this, &OptionForm::buttonEnterSound_Click);
+			this->checkBoxTalkSound->AutoSize = true;
+			this->checkBoxTalkSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->checkBoxTalkSound->Location = System::Drawing::Point(238, 45);
+			this->checkBoxTalkSound->Name = L"checkBoxTalkSound";
+			this->checkBoxTalkSound->Size = System::Drawing::Size(203, 18);
+			this->checkBoxTalkSound->TabIndex = 2;
+			this->checkBoxTalkSound->Text = L"Enable notification on chat message";
+			this->checkBoxTalkSound->UseVisualStyleBackColor = true;
+			this->checkBoxTalkSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
 			// checkBoxNameSound
 			// 
@@ -1316,9 +1354,9 @@ private: System::ComponentModel::IContainer^  components;
 			this->checkBoxTeamRoundHP->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->checkBoxTeamRoundHP->Location = System::Drawing::Point(6, 19);
 			this->checkBoxTeamRoundHP->Name = L"checkBoxTeamRoundHP";
-			this->checkBoxTeamRoundHP->Size = System::Drawing::Size(191, 18);
+			this->checkBoxTeamRoundHP->Size = System::Drawing::Size(195, 18);
 			this->checkBoxTeamRoundHP->TabIndex = 0;
-			this->checkBoxTeamRoundHP->Text = L"Carry over health between rounds";
+			this->checkBoxTeamRoundHP->Text = L"Carry over health between rounds*";
 			this->checkBoxTeamRoundHP->UseVisualStyleBackColor = true;
 			this->checkBoxTeamRoundHP->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
@@ -2110,6 +2148,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->buttonApply->Text = L"button1";
 			this->buttonApply->UseVisualStyleBackColor = true;
 			this->buttonApply->Visible = false;
+			this->buttonApply->Click += gcnew System::EventHandler(this, &OptionForm::buttonApply_Click_1);
 			// 
 			// OptionForm
 			// 
@@ -2139,18 +2178,18 @@ private: System::ComponentModel::IContainer^  components;
 			this->groupBoxNotif->PerformLayout();
 			this->groupBoxKeyword->ResumeLayout(false);
 			this->groupBoxKeyword->PerformLayout();
-			this->groupBoxSeekSound->ResumeLayout(false);
-			this->groupBoxSeekSound->PerformLayout();
-			this->groupBoxName->ResumeLayout(false);
-			this->groupBoxName->PerformLayout();
 			this->groupBoxNoticeSound->ResumeLayout(false);
 			this->groupBoxNoticeSound->PerformLayout();
-			this->groupBoxVSSound->ResumeLayout(false);
-			this->groupBoxVSSound->PerformLayout();
 			this->groupBoxTalkSound->ResumeLayout(false);
 			this->groupBoxTalkSound->PerformLayout();
+			this->groupBoxName->ResumeLayout(false);
+			this->groupBoxName->PerformLayout();
+			this->groupBoxSeekSound->ResumeLayout(false);
+			this->groupBoxSeekSound->PerformLayout();
 			this->groupBoxEnterSound->ResumeLayout(false);
 			this->groupBoxEnterSound->PerformLayout();
+			this->groupBoxVSSound->ResumeLayout(false);
+			this->groupBoxVSSound->PerformLayout();
 			this->tabPagePath->ResumeLayout(false);
 			this->groupBoxLog->ResumeLayout(false);
 			this->groupBoxLog->PerformLayout();
@@ -2828,6 +2867,14 @@ private: System::ComponentModel::IContainer^  components;
 			catch(Exception^){
 			}
 		}
+		System::Void checkBoxKeywordSound_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			 buttonApply->Enabled = true;
+		}
+		System::Void textBoxKeyword_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+			 buttonApply->Enabled = true;
+		}
+		System::Void buttonApply_Click_1(System::Object^  sender, System::EventArgs^  e) {
+		}
 #pragma endregion
 #pragma region Game
 		System::Void numericUpDownStage_ValueChanged(System::Object^  sender, System::EventArgs^  e) {
@@ -3075,11 +3122,6 @@ private: System::ComponentModel::IContainer^  components;
 			buttonApply->Enabled = true;
 		}
 #pragma endregion
-private: System::Void checkBoxKeywordSound_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-			 buttonApply->Enabled = true;
-		 }
-private: System::Void textBoxKeyword_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 buttonApply->Enabled = true;
-		 }
+
 };
 }
