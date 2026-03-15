@@ -3237,7 +3237,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 		}
 		// Get the version string of MorningStar.
 		System::Void toolStripMenuItemVersion_Click(System::Object^  sender, System::EventArgs^  e) {
-			WriteMessage("MorningStar 2.0.0.0 by WindowsLogic Productions.\n", SystemMessageColor);
+			WriteMessage("MorningStar 2.1.0.0 by WindowsLogic Productions.\n", SystemMessageColor);
 			WriteMessage("Donate towards development: https://paypal.me/windowslogic \n\n", SystemMessageColor);
 		}
 
