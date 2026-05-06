@@ -16,7 +16,7 @@ using namespace System::Security::Permissions;
 [assembly:AssemblyConfigurationAttribute("")];
 [assembly:AssemblyCompanyAttribute("")];
 [assembly:AssemblyProductAttribute("MorningStar")];
-[assembly:AssemblyCopyrightAttribute("Copyright © 2025 WindowsLogic Productions.")];
+[assembly:AssemblyCopyrightAttribute("Copyright © 2026 WindowsLogic Productions.")];
 [assembly:AssemblyTrademarkAttribute("")];
 [assembly:AssemblyCultureAttribute("")];
 

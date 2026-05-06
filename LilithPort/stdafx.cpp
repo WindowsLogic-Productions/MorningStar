@@ -8,7 +8,7 @@ extern CRITICAL_SECTION CS_CAPTION;
 using namespace System::Collections;
 using namespace System::Diagnostics;
 
-// —Ž‚¿‚é‘O‚ÉƒGƒ‰[“à—e‚ðƒƒMƒ“ƒO
+// Write error log to file.
 void WriteErrorLog(String^ text, String^ caption)
 {
 	IO::StreamWriter^ sw = gcnew IO::StreamWriter(gcnew String(MTOPTION.PATH) + "error.log", true, Encoding::Default);
@@ -28,7 +28,6 @@ void WriteErrorLog(String^ text, String^ caption)
 		}
 	}
 }
-
 // Modern thread exception.
 void ApplicationThreadException(Object^ sender, Threading::ThreadExceptionEventArgs^ e)
 {
@@ -45,7 +44,6 @@ void ApplicationThreadException(Object^ sender, Threading::ThreadExceptionEventA
 		}
 	}
 }
-
 // Modern unhandled exception.
 void ApplicationUnhandledException(Object^ sender, UnhandledExceptionEventArgs^ e)
 {
@@ -865,7 +863,7 @@ void UPnP_PortOpenClose(bool s, bool auto_close){ /* open:close, auto:manual */
 			}
 			return;
 		}
-		if(MTINFO.DEBUG){Debug::WriteLine("UPnP > Successful acquisition of UDP port port mapping information");}
+		if(MTINFO.DEBUG){Debug::WriteLine("UPnP > Successful acquisition of UDP port mapping information");}
 
 		
 		// ƒ|[ƒgÝ’è‚ª‘¶Ý‚·‚é‚©Šm”F@à–¾•¶Æ‡

@@ -661,12 +661,10 @@ namespace LilithPort {
 #pragma endregion
 #pragma region Variables
 	protected:
-
 		// StartupForm.cpp
 		bool StartupForm::CheckValidate();
 
 	private:
-
 		// Loads startup settings.
 		static bool ConnectionStart = false;
 #pragma endregion
@@ -845,8 +843,6 @@ namespace LilithPort {
 				return;
 			}
 			ConnectionStart = true;
-			
-			
 
 			this->Close();
 		}

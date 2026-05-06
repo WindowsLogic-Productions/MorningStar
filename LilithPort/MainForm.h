@@ -927,7 +927,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			this->toolStripMenuItemVersion->Name = L"toolStripMenuItemVersion";
 			this->toolStripMenuItemVersion->ShortcutKeys = System::Windows::Forms::Keys::F2;
 			this->toolStripMenuItemVersion->Size = System::Drawing::Size(285, 22);
-			this->toolStripMenuItemVersion->Text = L"&About";
+			this->toolStripMenuItemVersion->Text = L"&About MorningStar";
 			this->toolStripMenuItemVersion->Click += gcnew System::EventHandler(this, &MainForm::toolStripMenuItemVersion_Click);
 			// 
 			// splitContainer1
@@ -1083,7 +1083,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			this->richTextBoxLog->Location = System::Drawing::Point(0, 0);
 			this->richTextBoxLog->Name = L"richTextBoxLog";
 			this->richTextBoxLog->ReadOnly = true;
-			this->richTextBoxLog->Size = System::Drawing::Size(606, 339);
+			this->richTextBoxLog->Size = System::Drawing::Size(606, 361);
 			this->richTextBoxLog->TabIndex = 0;
 			this->richTextBoxLog->TabStop = false;
 			this->richTextBoxLog->Text = L"";
@@ -1102,6 +1102,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			// contextMenuItemCopy
 			// 
 			this->contextMenuItemCopy->Name = L"contextMenuItemCopy";
+			this->contextMenuItemCopy->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::C));
 			this->contextMenuItemCopy->Size = System::Drawing::Size(133, 22);
 			this->contextMenuItemCopy->Text = L"&Copy";
 			this->contextMenuItemCopy->Click += gcnew System::EventHandler(this, &MainForm::contextMenuItemCopy_Click);
@@ -1128,7 +1129,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			// 
 			this->buttonReconnect->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->buttonReconnect->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"buttonReconnect.Image")));
-			this->buttonReconnect->Location = System::Drawing::Point(177, 392);
+			this->buttonReconnect->Location = System::Drawing::Point(176, 400);
 			this->buttonReconnect->Name = L"buttonReconnect";
 			this->buttonReconnect->Size = System::Drawing::Size(48, 25);
 			this->buttonReconnect->TabIndex = 5;
@@ -1140,7 +1141,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			// 
 			this->buttonRest->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->buttonRest->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"buttonRest.Image")));
-			this->buttonRest->Location = System::Drawing::Point(231, 392);
+			this->buttonRest->Location = System::Drawing::Point(230, 400);
 			this->buttonRest->Name = L"buttonRest";
 			this->buttonRest->Size = System::Drawing::Size(48, 25);
 			this->buttonRest->TabIndex = 6;
@@ -1152,7 +1153,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			// 
 			this->buttonPlay->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->buttonPlay->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"buttonPlay.Image")));
-			this->buttonPlay->Location = System::Drawing::Point(285, 392);
+			this->buttonPlay->Location = System::Drawing::Point(284, 400);
 			this->buttonPlay->Name = L"buttonPlay";
 			this->buttonPlay->Size = System::Drawing::Size(48, 25);
 			this->buttonPlay->TabIndex = 7;
@@ -1164,7 +1165,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			// 
 			this->buttonSeek->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->buttonSeek->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"buttonSeek.Image")));
-			this->buttonSeek->Location = System::Drawing::Point(339, 392);
+			this->buttonSeek->Location = System::Drawing::Point(338, 400);
 			this->buttonSeek->Name = L"buttonSeek";
 			this->buttonSeek->Size = System::Drawing::Size(48, 25);
 			this->buttonSeek->TabIndex = 8;
@@ -1176,7 +1177,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			// 
 			this->buttonClear->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->buttonClear->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"buttonClear.Image")));
-			this->buttonClear->Location = System::Drawing::Point(393, 392);
+			this->buttonClear->Location = System::Drawing::Point(392, 400);
 			this->buttonClear->Name = L"buttonClear";
 			this->buttonClear->Size = System::Drawing::Size(48, 25);
 			this->buttonClear->TabIndex = 9;
@@ -1187,7 +1188,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			// buttonRefresh
 			// 
 			this->buttonRefresh->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
-			this->buttonRefresh->Location = System::Drawing::Point(20, 393);
+			this->buttonRefresh->Location = System::Drawing::Point(19, 401);
 			this->buttonRefresh->Name = L"buttonRefresh";
 			this->buttonRefresh->Size = System::Drawing::Size(138, 23);
 			this->buttonRefresh->TabIndex = 4;
@@ -1198,13 +1199,16 @@ private: System::Windows::Forms::Button^  buttonClear;
 			// 
 			// statusStrip1
 			// 
+			this->statusStrip1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->statusStrip1->BackColor = System::Drawing::Color::Transparent;
+			this->statusStrip1->Dock = System::Windows::Forms::DockStyle::None;
 			this->statusStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {this->toolStripStatusLabel1, 
 				this->toolStripDropDownButtonProfile});
-			this->statusStrip1->Location = System::Drawing::Point(0, 419);
+			this->statusStrip1->Location = System::Drawing::Point(455, 402);
 			this->statusStrip1->Name = L"statusStrip1";
 			this->statusStrip1->RightToLeft = System::Windows::Forms::RightToLeft::No;
-			this->statusStrip1->Size = System::Drawing::Size(784, 22);
+			this->statusStrip1->Size = System::Drawing::Size(121, 22);
+			this->statusStrip1->SizingGrip = false;
 			this->statusStrip1->TabIndex = 3;
 			this->statusStrip1->Text = L"statusStrip1";
 			// 
@@ -3217,30 +3221,72 @@ private: System::Windows::Forms::Button^  buttonClear;
 		}
 #pragma endregion
 #pragma region Commands
-		// Opens the MorningStar Settings form.
-		System::Void toolStripMenuItemSetting_Click(System::Object^  sender, System::EventArgs^  e) {
-			LoadSettings();
+		// Starts the selected game executable in a single player simulation.
+		System::Void GameStartToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			StartGame(RT_FREE);			
 		}
-#pragma endregion
-#pragma region Options
+		// Starts the selected game executable in a single player simulation (without replay).
+		System::Void GameStartNoReplayToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			StartGameNoReplay();
+		}
+		// Ä‹N“®
+		System::Void RestartToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			Reconnect();
+		}
+		// Leaves as the server, shutting it down and dropping all players.
+		System::Void LeaveToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			if(MTOPTION.CONNECTION_TYPE == CT_SERVER) {
+				if(MessageBox::Show("This will shut down the server and drop all players.\nAre you sure you want to do this?", "Leave", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == ::DialogResult::Yes){
+				}else{
+					return;
+				}
+			}
+			// Leaves the server, dropping you to Free Play mode.
+			if(MTOPTION.CONNECTION_TYPE == CT_HOST || MTOPTION.CONNECTION_TYPE == CT_CLIENT){
+				if(MessageBox::Show("This will disconnect you from the server.\nContinue?", "Leave", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == ::DialogResult::Yes){
+				}else{
+					return;
+				}
+			}
 
-#pragma endregion
-#pragma endregion
-		
-		// Get a comprehensive command and shortcut list.
-		System::Void toolStripMenuItemViewCommand_Click(System::Object^  sender, System::EventArgs^  e) {
-			WriteCommandList();
+			Leave(true);
 		}
-		// Change the username list on the left-hand side of the main window.
-		System::Void toolStripMenuItemChangeList_Click(System::Object^  sender, System::EventArgs^  e) {
-			ChangeListView(true);
+		// Sets and unsets user in rest mode which stops players from fighting them.
+		System::Void RestToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			ToggleRest();
 		}
-		// Get the version string of MorningStar.
-		System::Void toolStripMenuItemVersion_Click(System::Object^  sender, System::EventArgs^  e) {
-			WriteMessage("MorningStar 2.1.0.0 by WindowsLogic Productions.\n", SystemMessageColor);
-			WriteMessage("Donate towards development: https://paypal.me/windowslogic \n\n", SystemMessageColor);
+		// Makes your name glow blue to indicate you are seeking a fight with another user.
+		System::Void SeekToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			ChangeSeek();
 		}
+		// Clears the entire chat log.
+		System::Void ClearToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			ClearLog();
+		}
+		// Reloads the list of users connected to the server. Useful if join packets are lost.
+		System::Void ReloadListToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			ReloadList();
+		}
+		// Toggles whether hit boxes and other debugging information appears when the game executable is ran.
+		System::Void ToggleHitJudgeToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			MTOPTION.HIT_JUDGE ^= 1;
+			if(MTINFO.INITIALIZED && MTINFO.PROCESS != NULL){
+				DWORD b = MTOPTION.HIT_JUDGE;
 
+				if(MTINFO.KGT2K){
+					WriteProcessMemory(MTINFO.PROCESS, (LPVOID)HIT_JUDGE, &b, 4, NULL);
+				}
+				else{
+					WriteProcessMemory(MTINFO.PROCESS, (LPVOID)HIT_JUDGE_95, &b, 4, NULL);
+				}
+			}
+		}
+		// Retrieves your outside IP address.
+		System::Void GetIPToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			GetIPAddress();
+		}
+#pragma endregion
+#pragma region Bookmarks
 		// Adds the current server to your bookmarks with a maximum of 10.
 		System::Void toolStripMenuItemAddBookMark_Click(System::Object^  sender, System::EventArgs^  e) {
 			if((MTOPTION.BOOKMARK_COUNT - MTOPTION.BOOKMARK_DELETED_COUNT) > 10) {
@@ -3285,21 +3331,6 @@ private: System::Windows::Forms::Button^  buttonClear;
 
 			SaveMTOption();
 		}
-		// Reconnects the client with the selected address appearing in the "Address / IP" area so you can connect to that server.
-		System::Void toolStripMenuItemBookMark_Click(System::Object^ sender, System::EventArgs^ e) {
-			UINT tmpInt = (UINT)((ToolStripMenuItem^)sender)->Tag;
-
-			if(MessageBox::Show(((ToolStripMenuItem^)sender)->Text+" Selected", "Connect to Bookmark?", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == ::DialogResult::Yes){
-			}else{
-				return;
-			}
-
-			_tcscpy_s(MTOPTION.CONNECTION_IP,   MTOPTION.BOOKMARK_CONNECTION_IP[tmpInt]);
-			MTOPTION.CONNECTION_TYPE = (UINT)_ttoi(MTOPTION.BOOKMARK_CONNECTION_TYPE[tmpInt]);
-			MTOPTION.OPEN_PORT       = (UINT)_ttoi(MTOPTION.BOOKMARK_PORT[tmpInt]);
-
-			Restart();
-		}
 		// Deletes the selected bookmark.
 		System::Void toolStripMenuItemDelBookMark_Click(System::Object^ sender, System::EventArgs^ e) {
 			Object^ tmpTag;
@@ -3317,116 +3348,26 @@ private: System::Windows::Forms::Button^  buttonClear;
 				SaveMTOption();
 			}
 		}
+		// Reconnects the client with the selected address appearing in the "Address / IP" area so you can connect to that server.
+		System::Void toolStripMenuItemBookMark_Click(System::Object^ sender, System::EventArgs^ e) {
+			UINT tmpInt = (UINT)((ToolStripMenuItem^)sender)->Tag;
 
-		// Starts the selected game executable in a single player simulation.
-		System::Void GameStartToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			StartGame(RT_FREE);			
-		}
-		// Starts the selected game executable in a single player simulation (without replay).
-		System::Void GameStartNoReplayToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			StartGameNoReplay();
-		}
-		// Ä‹N“®
-		System::Void RestartToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			Reconnect();
-		}
-
-		// Leaves as the server, shutting it down and dropping all players.
-		System::Void LeaveToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			if(MTOPTION.CONNECTION_TYPE == CT_SERVER) {
-				if(MessageBox::Show("This will shut down the server and drop all players.\nAre you sure you want to do this?", "Leave", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == ::DialogResult::Yes){
-				}else{
-					return;
-				}
-			}
-			// Leaves the server, dropping you to Free Play mode.
-			if(MTOPTION.CONNECTION_TYPE == CT_HOST || MTOPTION.CONNECTION_TYPE == CT_CLIENT){
-				if(MessageBox::Show("This will disconnect you from the server.\nContinue?", "Leave", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == ::DialogResult::Yes){
-				}else{
-					return;
-				}
+			if(MessageBox::Show(((ToolStripMenuItem^)sender)->Text+" Selected", "Connect to Bookmark?", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == ::DialogResult::Yes){
+			}else{
+				return;
 			}
 
-			Leave(true);
+			_tcscpy_s(MTOPTION.CONNECTION_IP,   MTOPTION.BOOKMARK_CONNECTION_IP[tmpInt]);
+			MTOPTION.CONNECTION_TYPE = (UINT)_ttoi(MTOPTION.BOOKMARK_CONNECTION_TYPE[tmpInt]);
+			MTOPTION.OPEN_PORT       = (UINT)_ttoi(MTOPTION.BOOKMARK_PORT[tmpInt]);
+
+			Restart();
 		}
-
-		// Sets and unsets user in rest mode which stops players from fighting them.
-		System::Void RestToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			ToggleRest();
-		}
-
-		// Makes your name glow blue to indicate you are seeking a fight with another user.
-		System::Void SeekToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			ChangeSeek();
-		}
-
-		// Clears the entire chat log.
-		System::Void ClearToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			ClearLog();
-		}
-
-		// Toggles whether hit boxes and other debugging information appears when the game executable is ran.
-		System::Void ToggleHitJudgeToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			MTOPTION.HIT_JUDGE ^= 1;
-			if(MTINFO.INITIALIZED && MTINFO.PROCESS != NULL){
-				DWORD b = MTOPTION.HIT_JUDGE;
-
-				if(MTINFO.KGT2K){
-					WriteProcessMemory(MTINFO.PROCESS, (LPVOID)HIT_JUDGE, &b, 4, NULL);
-				}
-				else{
-					WriteProcessMemory(MTINFO.PROCESS, (LPVOID)HIT_JUDGE_95, &b, 4, NULL);
-				}
-			}
-		}
-		
-		// If checked, saves replays into the user's desired directory, referenced in the MorningStar Settings.
-		System::Void toolStripMenuItemRecordReplay_Click(System::Object^  sender, System::EventArgs^  e) {
-			toolStripMenuItemRecordReplay->Checked ^= 1;
-
-			MTOPTION.RECORD_REPLAY = toolStripMenuItemRecordReplay->Checked;
-		}
-		
-		System::Void toolStripMenuItemAllowSpectator_Click(System::Object^  sender, System::EventArgs^  e) {
-			toolStripMenuItemAllowSpectator->Checked ^= 1;
-
-			MTOPTION.ALLOW_SPECTATOR = toolStripMenuItemAllowSpectator->Checked;
-
-			if(toolStripMenuItemAllowSpectator->Checked == false && UDP != nullptr){
-				array<BYTE>^ send = gcnew array<BYTE>(3){ PH_WATCH_END };
-
-				Monitor::Enter(InputHistory);
-				try{
-					for(int i = 0; i < SpectatorList->Count; i++){
-						Array::Copy(BitConverter::GetBytes(SpectatorList[i]->ID), 0, send, 1, 2);
-						UDP->BeginSend(send, send->Length, SpectatorList[i]->IP_EP, gcnew AsyncCallback(SendPackets), UDP);
-					}
-
-					SpectatorList->Clear();
-				}
-				finally{
-					Monitor::Exit(InputHistory);
-				}
-			}
-		}
-
-		// Retrieves your outside IP address.
-		System::Void GetIPToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			GetIPAddress();
-		}
-		// Enables or disables chat auto-scrolling whenever there's a new message.
-		System::Void LogLockToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			LogLockToolStripMenuItem->Checked ^= 1;
-			MTOPTION.LOG_LOCK = LogLockToolStripMenuItem->Checked;
-		}
-		// Reloads the list of users connected to the server. Useful if join packets are lost.
-		System::Void ReloadListToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			ReloadList();
-		}
-		// Enables or disables resting after a netplay fight.
-		System::Void toolStripMenuItemAfterRest_Click(System::Object^  sender, System::EventArgs^  e) {
-			toolStripMenuItemAfterRest->Checked ^= 1;
-			MTOPTION.AFTER_REST = toolStripMenuItemAfterRest->Checked;
+#pragma endregion
+#pragma region Options
+		// Opens the MorningStar Settings form.
+		System::Void toolStripMenuItemSetting_Click(System::Object^  sender, System::EventArgs^  e) {
+			LoadSettings();
 		}
 		// Sets the delay in a single player simulation environment.
 		System::Void toolStripMenuItemDelayAuto_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -3476,11 +3417,149 @@ private: System::Windows::Forms::Button^  buttonClear;
 		System::Void toolStripMenuItemDelay12_Click(System::Object^  sender, System::EventArgs^  e) {
 			ResetDelay(12);
 		}
+		// If checked, saves replays into the user's desired directory, referenced in the MorningStar Settings.
+		System::Void toolStripMenuItemRecordReplay_Click(System::Object^  sender, System::EventArgs^  e) {
+			toolStripMenuItemRecordReplay->Checked ^= 1;
 
-		System::Void contextMenuItemCopy_Click(System::Object^  sender, System::EventArgs^  e) {
-			richTextBoxLog->Copy();
+			MTOPTION.RECORD_REPLAY = toolStripMenuItemRecordReplay->Checked;
 		}
+		//If checked, allows other users to spectate your match.
+		System::Void toolStripMenuItemAllowSpectator_Click(System::Object^  sender, System::EventArgs^  e) {
+			toolStripMenuItemAllowSpectator->Checked ^= 1;
 
+			MTOPTION.ALLOW_SPECTATOR = toolStripMenuItemAllowSpectator->Checked;
+
+			if(toolStripMenuItemAllowSpectator->Checked == false && UDP != nullptr){
+				array<BYTE>^ send = gcnew array<BYTE>(3){ PH_WATCH_END };
+
+				Monitor::Enter(InputHistory);
+				try{
+					for(int i = 0; i < SpectatorList->Count; i++){
+						Array::Copy(BitConverter::GetBytes(SpectatorList[i]->ID), 0, send, 1, 2);
+						UDP->BeginSend(send, send->Length, SpectatorList[i]->IP_EP, gcnew AsyncCallback(SendPackets), UDP);
+					}
+
+					SpectatorList->Clear();
+				}
+				finally{
+					Monitor::Exit(InputHistory);
+				}
+			}
+		}
+		// Determines if the log text should be wrapped at the end of the window or not.·
+		System::Void toolStripMenuItemWordWrap_Click(System::Object^ sender, System::EventArgs^  e) {
+			ChangeLogWordWrap();
+		}
+		// Enables or disables chat auto-scrolling whenever there's a new message.
+		System::Void LogLockToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			LogLockToolStripMenuItem->Checked ^= 1;
+			MTOPTION.LOG_LOCK = LogLockToolStripMenuItem->Checked;
+		}
+		// Toggles rest as soon as the server initialises or you join another server as a host/client.
+		System::Void restOnconnectToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			restOnconnectToolStripMenuItem->Checked ^= 1;
+			MTOPTION.REST_CONNECT = restOnconnectToolStripMenuItem->Checked;
+		}
+		// Enables or disables resting after a netplay fight.
+		System::Void toolStripMenuItemAfterRest_Click(System::Object^  sender, System::EventArgs^  e) {
+			toolStripMenuItemAfterRest->Checked ^= 1;
+			MTOPTION.AFTER_REST = toolStripMenuItemAfterRest->Checked;
+		}
+		// If checked, enables auto resting after a specified period of time.
+		System::Void toolStripMenuItemAutoRestEnable_Click(System::Object^  sender, System::EventArgs^  e) {
+			toolStripMenuItemAutoRestEnable->Checked ^= 1;
+			MTOPTION.AUTO_REST = toolStripMenuItemAutoRestEnable->Checked;
+			if(MTOPTION.AUTO_REST){
+				if(UDP != nullptr && AutoRestThread == nullptr && MemberList[0]->STATE == MS_FREE){
+					AutoRestThread = gcnew Thread(gcnew ThreadStart(this, &MainForm::RunAutoRest));
+					AutoRestThread->Start();
+				}
+			}else{
+				if(AutoRestThread != nullptr && AutoRestThread->IsAlive){
+					AutoRestRanging = false;
+					AutoRestThread->Abort();
+					AutoRestThread = nullptr;
+				}
+			}
+		}
+		// Auto rest after 5 minutes.
+		System::Void toolStripMenuItemAutoRestTime5_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(5);
+			toolStripMenuItemAutoRestTime5->Checked = 1;
+		}
+		// Auto rest after 10 minutes.
+		System::Void toolStripMenuItemAutoRestTime10_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(10);
+			toolStripMenuItemAutoRestTime10->Checked = 1;
+		}
+		// Auto rest after 15 minutes.
+		System::Void toolStripMenuItemAutoRestTime15_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(15);
+			toolStripMenuItemAutoRestTime15->Checked = 1;
+		}
+		// Auto rest after 20 minutes.
+		System::Void toolStripMenuItemAutoRestTime20_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(20);
+			toolStripMenuItemAutoRestTime20->Checked = 1;
+		}
+		// Auto rest after 30 minutes.
+		System::Void toolStripMenuItemAutoRestTime30_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(30);
+			toolStripMenuItemAutoRestTime30->Checked = 1;
+		}
+		// Auto rest after 60 minutes.
+		System::Void toolStripMenuItemAutoRestTime60_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(60);
+			toolStripMenuItemAutoRestTime60->Checked = 1;
+		}
+		// Auto rest after 120 minutes.
+		System::Void toolStripMenuItemAutoRestTime120_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(120);
+			toolStripMenuItemAutoRestTime120->Checked = 1;
+		}
+		// Auto rest after 8 hours.
+		System::Void toolStripMenuItemAutoRestTime8h_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(480);
+			toolStripMenuItemAutoRestTime8h->Checked = 1;
+		 }
+		// Auto rest after 12 hours.
+		System::Void toolStripMenuItem12h_Click(System::Object^  sender, System::EventArgs^  e) {
+			SetAutoRestTime(720);
+			toolStripMenuItem12h->Checked = 1;
+		 }
+		System::Void toolStripMenuItemDelay_Click(System::Object^  sender, System::EventArgs^  e) {
+			 }
+#pragma endregion
+#pragma region Help
+		// Sends user to FM95/FM2K server invite link.
+		System::Void dFighterMaker952ndDiscordServerToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			Process::Start("https://discord.gg/5W73Qe9ucp");
+		 }
+		// Get a comprehensive command and shortcut list.
+		System::Void toolStripMenuItemViewCommand_Click(System::Object^  sender, System::EventArgs^  e) {
+			WriteCommandList();
+		}
+		// Change the username list on the left-hand side of the main window.
+		System::Void toolStripMenuItemChangeList_Click(System::Object^  sender, System::EventArgs^  e) {
+			ChangeListView(true);
+		}
+		// Sends user to GitHub releases page so they can see if there's a new update.
+		System::Void checkForUpdatesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			Process::Start("https://github.com/windowslogic-productions/M0rningStar/releases");
+		}
+		// Writes the update log of the application to the chat log.
+		System::Void whatsNewToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+			WriteWhatsNew();
+		}
+		// Get the version string of MorningStar.
+		System::Void toolStripMenuItemVersion_Click(System::Object^  sender, System::EventArgs^  e) {
+			WriteMessage("MorningStar 2.1.0.0 by WindowsLogic Productions.\n", SystemMessageColor);
+			WriteMessage("Donate towards development: https://paypal.me/windowslogic \n\n", SystemMessageColor);
+		}
+#pragma endregion
+#pragma endregion	
+#pragma region Main
+		//Log link click.
 		System::Void richTextBoxLog_LinkClicked(System::Object^  sender, System::Windows::Forms::LinkClickedEventArgs^  e) {
 			// ‹­§I—¹‘Îô
 			try{
@@ -3490,25 +3569,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 				WriteMessage("Invalid string link.\n", ErrorMessageColor);
 			}
 		}
-
-		System::Void toolStripMenuItemVS_Click(System::Object^  sender, System::EventArgs^  e) {
-			if(listBoxMember->SelectedIndex == -1){
-				return;
-			}
-
-			if(ListView == LV_BLIND){
-				RandomVersus();
-			}
-			else if(MTOPTION.CONNECTION_TYPE == CT_FREE || listBoxMember->SelectedIndex == 0){
-				StartGame(RT_FREE);
-			}
-			else{
-				StartGame(RT_VS);
-			}
-
-		}
-
-		// “_–ÅŠÖ”
+		// Window flashing code.
 		System::Void WindowFlash() {
 			// ƒEƒBƒ“ƒhƒE“_–Å
 			FLASHWINFO stfi;
@@ -3520,160 +3581,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			stfi.dwTimeout = 0;
 			FlashWindowEx(&stfi);
 		}
-
-		System::Void toolStripMenuItemWatch_Click(System::Object^  sender, System::EventArgs^  e) {
-			
-			if(listBoxMember->SelectedIndex == -1){return;}
-
-			int state = MemberList[0]->STATE;
-			array<BYTE>^ send = gcnew array<BYTE>(3);
-
-			if(state == MS_FREE || state == MS_REST){
-				StartGame(RT_FREE);
-
-				this->TopMost = true;
-
-				MessageBox::Show("Please close the game window that just appeared.","Spectate Mode");
-
-				this->TopMost = false;
-
-				// ŠÏíŠJŽn
-				if(state == MS_FREE) ChangeState((BYTE)MS_WATCH);
-				if(state == MS_REST) ChangeState((BYTE)MS_COUCH);
-
-				WatchTarget = MemberList[listBoxMember->SelectedIndex]->IP_EP;
-				TargetID    = MemberList[listBoxMember->SelectedIndex]->ID;
-				WatchFrame  = 0;
-
-				send[0] = PH_REQ_WATCH;
-				Array::Copy(BitConverter::GetBytes(MemberList[0]->ID), 0, send, 1, 2);
-				UDP->BeginSend(send, send->Length, WatchTarget, gcnew AsyncCallback(SendPackets), UDP);
-
-				toolStripMenuItemWatch->Text = gcnew String("Stop spectating");
-			}
-			else{
-				QuitWatch(true);
-			}
-		}
-
-		System::Void toolStripMenuItemPing_Click(System::Object^  sender, System::EventArgs^  e) {
-			if(listBoxMember->SelectedIndex == -1){return;}
-
-			int si = listBoxMember->SelectedIndex;
-			array<BYTE>^ ping = gcnew array<BYTE>(1){ PH_PING };
-
-			Ping = timeGetTime();
-			UDP->BeginSend(ping, 1, MemberList[si]->IP_EP, gcnew AsyncCallback(SendPackets), UDP);
-		}
-
-		// –¼‘O‚ðƒRƒs[
-		System::Void toolStripMenuItemClipBoardCopy_Click(System::Object^  sender, System::EventArgs^  e) {
-			if(listBoxMember->SelectedIndex == -1){return;}
-
-			int si = listBoxMember->SelectedIndex;
-			System::Windows::Forms::Clipboard::SetDataObject(MemberList[si]->NAME, true);
-		}
-
-		// ƒLƒbƒN
-		System::Void toolStripMenuItemKick_Click(System::Object^  sender, System::EventArgs^  e) {
-			if(listBoxMember->SelectedIndex == -1 || MTOPTION.CONNECTION_TYPE != CT_SERVER){return;}
-
-			int index = listBoxMember->SelectedIndex;
-			int id = MemberList[index]->ID;
-
-			if(MessageBox::Show(String::Format("[ {0} ](ID:{1}) will be kicked.\nAre you sure you want to kick?", MemberList[index]->NAME, MemberList[index]->ID), "KICK", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == ::DialogResult::Yes){
-			}else{
-				return;
-			}
-			
-			try{
-				// –{l‚É’Ê’m
-				array<BYTE>^ send = gcnew array<BYTE>(3){ PH_LOST, 0xFF, 0xFF };
-				UDP->BeginSend(send, send->Length, MemberList[index]->IP_EP, gcnew AsyncCallback(SendPackets), UDP);
-
-				if(ListView != LV_BLIND){
-					WriteTime(0, SystemMessageColor);
-					WriteMessage(String::Format("{0}(ID:{1}) was kicked.\n", MemberList[index]->NAME, MemberList[index]->ID), SystemMessageColor);
-				}
-				if(MemberList[0]->STATE == MS_WATCH || MemberList[0]->STATE == MS_COUCH){
-					if(TargetID == MemberList[index]->ID){
-						QuitWatch(false);
-					}
-				}
-
-				// ƒOƒbƒoƒC
-				MemberList->RemoveAt(index);
-				listBoxMember->Items->RemoveAt(index);
-
-				// ‘¼‚Ìƒƒ“ƒo[‚É’Ê’m
-				array<BYTE>^ quit = gcnew array<BYTE>(3){ PH_QUIT };
-				Array::Copy(BitConverter::GetBytes(id), 0, quit, 1, 2);
-
-				for(int i = 1; i < MemberList->Count; i++){
-					UDP->BeginSend(quit, quit->Length, MemberList[i]->IP_EP, gcnew AsyncCallback(SendPackets), UDP);
-					if(MTINFO.DEBUG){
-						WriteMessage(String::Format("{0} was notified.\n", MemberList[i]->ID), DebugMessageColor);
-					}
-				}
-			}
-			catch(Exception^ e){
-				if(MTINFO.DEBUG){
-					WriteMessage(String::Format("{0}\n", e->ToString()), DebugMessageColor);
-				}
-			}
-			
-		}
-
-		System::Void contextMenuStripMember_Opening(System::Object^  sender, System::ComponentModel::CancelEventArgs^  e) {
-			
-			toolStripMenuItemKick->Enabled     = false;
-
-			if(listBoxMember->SelectedIndex == -1){
-				toolStripMenuItemVS->Enabled			= false;
-				toolStripMenuItemWatch->Enabled			= false;
-				toolStripMenuItemPing->Enabled			= false;
-				toolStripMenuItemClipBoardCopy->Enabled	= false;
-				return;
-			}
-
-			int state = MemberList[listBoxMember->SelectedIndex]->STATE;
-
-			toolStripMenuItemVS->Enabled			= false;
-			toolStripMenuItemWatch->Enabled			= true;
-			toolStripMenuItemPing->Enabled			= true;
-			toolStripMenuItemClipBoardCopy->Enabled	= true;
-
-			if(( ( state == MS_FREE || state == MS_SEEK) && ( MemberList[0]->STATE == MS_FREE || MemberList[0]->STATE == MS_SEEK )) || ListView == LV_BLIND){
-				toolStripMenuItemVS->Enabled       = true;
-			}
-			if(listBoxMember->SelectedIndex == 0){
-				if(state != MS_WATCH && state != MS_COUCH){
-					toolStripMenuItemWatch->Enabled = false;
-				}
-				toolStripMenuItemPing->Enabled = false;
-				toolStripMenuItemKick->Enabled = false;
-			}else if(MemberList[listBoxMember->SelectedIndex]->TYPE == CT_SERVER || MTOPTION.CONNECTION_TYPE != CT_SERVER){
-				toolStripMenuItemKick->Enabled = false;
-			}else {
-				toolStripMenuItemKick->Enabled = true;
-			}
-
-		}
-
-		System::Void MainForm_DragEnter(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
-			e->Effect = DragDropEffects::None;
-
-			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
-				array<String^>^ file = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false));
-				String^ extension = Path::GetExtension(file[0])->ToLower();
-				FileVersionInfo^ info = FileVersionInfo::GetVersionInfo(file[0]);
-
-				if(extension == ".mtr" || (extension == ".exe" && (info->LegalCopyright == "(C)2001 ENTERBRAIN,INC / OUTBACK" || info->FileDescription == "２Ｄ格闘ツクール2nd." || info->FileDescription == "２Ｄ格闘ツクール９５" || info->FileDescription == "Fighting is Magic: Aurora"))){
-					e->Effect = DragDropEffects::All;
-				}
-			}
-		}
-
+		//Game executable/replay file drag and drop system.
 		System::Void MainForm_DragDrop(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
 			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
 				array<String^>^ file = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false));
@@ -3730,101 +3638,188 @@ private: System::Windows::Forms::Button^  buttonClear;
 			}
 		}
 
-		// ƒvƒƒtƒ@ƒCƒ‹•ÏX
-		System::Void toolStripDropDownItemProfile_Click(System::Object^ sender, System::EventArgs^ e) {
-			if(((ToolStripDropDownItem^)sender)->Text == gcnew String(MTOPTION.PROFILE)){
+		System::Void MainForm_DragEnter(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
+			e->Effect = DragDropEffects::None;
+
+			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
+				array<String^>^ file = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false));
+				String^ extension = Path::GetExtension(file[0])->ToLower();
+				FileVersionInfo^ info = FileVersionInfo::GetVersionInfo(file[0]);
+
+				if(extension == ".mtr" || (extension == ".exe" && (info->LegalCopyright == "(C)2001 ENTERBRAIN,INC / OUTBACK" || info->FileDescription == "２Ｄ格闘ツクール2nd." || info->FileDescription == "２Ｄ格闘ツクール９５" || info->FileDescription == "Fighting is Magic: Aurora"))){
+					e->Effect = DragDropEffects::All;
+				}
+			}
+		}
+#pragma endregion
+#pragma region Message Log Context Menu
+		//Copy selected text.
+		System::Void contextMenuItemCopy_Click(System::Object^  sender, System::EventArgs^  e) {
+			richTextBoxLog->Copy();
+		}
+#pragma endregion
+#pragma region Member Context Menu
+		//Load member context menu settings.
+		System::Void contextMenuStripMember_Opening(System::Object^  sender, System::ComponentModel::CancelEventArgs^  e) {
+			
+			toolStripMenuItemKick->Enabled     = false;
+
+			if(listBoxMember->SelectedIndex == -1){
+				toolStripMenuItemVS->Enabled			= false;
+				toolStripMenuItemWatch->Enabled			= false;
+				toolStripMenuItemPing->Enabled			= false;
+				toolStripMenuItemClipBoardCopy->Enabled	= false;
 				return;
 			}
-			String^ buf = ((ToolStripDropDownItem^)sender)->Text;
 
-			IntPtr mp = Runtime::InteropServices::Marshal::StringToHGlobalAuto(buf);
-			_tcscpy_s(MTOPTION.PROFILE, static_cast<PTCHAR>(mp.ToPointer()));
-			Runtime::InteropServices::Marshal::FreeHGlobal(mp);
+			int state = MemberList[listBoxMember->SelectedIndex]->STATE;
 
-			toolStripDropDownButtonProfile->Text = buf;
+			toolStripMenuItemVS->Enabled			= false;
+			toolStripMenuItemWatch->Enabled			= true;
+			toolStripMenuItemPing->Enabled			= true;
+			toolStripMenuItemClipBoardCopy->Enabled	= true;
 
-			LoadMTOption();
+			if(( ( state == MS_FREE || state == MS_SEEK) && ( MemberList[0]->STATE == MS_FREE || MemberList[0]->STATE == MS_SEEK )) || ListView == LV_BLIND){
+				toolStripMenuItemVS->Enabled       = true;
+			}
+			if(listBoxMember->SelectedIndex == 0){
+				if(state != MS_WATCH && state != MS_COUCH){
+					toolStripMenuItemWatch->Enabled = false;
+				}
+				toolStripMenuItemPing->Enabled = false;
+				toolStripMenuItemKick->Enabled = false;
+			}else if(MemberList[listBoxMember->SelectedIndex]->TYPE == CT_SERVER || MTOPTION.CONNECTION_TYPE != CT_SERVER){
+				toolStripMenuItemKick->Enabled = false;
+			}else {
+				toolStripMenuItemKick->Enabled = true;
+			}
+
 		}
+		//Start a net battle with the selected member.
+		System::Void toolStripMenuItemVS_Click(System::Object^  sender, System::EventArgs^  e) {
+			if(listBoxMember->SelectedIndex == -1){
+				return;
+			}
+
+			if(ListView == LV_BLIND){
+				RandomVersus();
+			}
+			else if(MTOPTION.CONNECTION_TYPE == CT_FREE || listBoxMember->SelectedIndex == 0){
+				StartGame(RT_FREE);
+			}
+			else{
+				StartGame(RT_VS);
+			}
+
+		}
+		//Spectate the selected member's game.
+		System::Void toolStripMenuItemWatch_Click(System::Object^  sender, System::EventArgs^  e) {
+			
+			if(listBoxMember->SelectedIndex == -1){return;}
+
+			int state = MemberList[0]->STATE;
+			array<BYTE>^ send = gcnew array<BYTE>(3);
+
+			if(state == MS_FREE || state == MS_REST){
+				StartGame(RT_FREE);
+
+				this->TopMost = true;
+
+				MessageBox::Show("Please close the game window that just appeared.","Spectate Mode");
+
+				this->TopMost = false;
+
+				// ŠÏíŠJŽn
+				if(state == MS_FREE) ChangeState((BYTE)MS_WATCH);
+				if(state == MS_REST) ChangeState((BYTE)MS_COUCH);
+
+				WatchTarget = MemberList[listBoxMember->SelectedIndex]->IP_EP;
+				TargetID    = MemberList[listBoxMember->SelectedIndex]->ID;
+				WatchFrame  = 0;
+
+				send[0] = PH_REQ_WATCH;
+				Array::Copy(BitConverter::GetBytes(MemberList[0]->ID), 0, send, 1, 2);
+				UDP->BeginSend(send, send->Length, WatchTarget, gcnew AsyncCallback(SendPackets), UDP);
+
+				toolStripMenuItemWatch->Text = gcnew String("Stop spectating");
+			}
+			else{
+				QuitWatch(true);
+			}
+		}
+		//Enable/disable net battle seeking.
 		System::Void toolStripMenuItemSeek_Click(System::Object^ sender, System::EventArgs^ e) {
 			this->SeekToolStripMenuItem_Click(nullptr, nullptr);
 		}
-		// If checked, enables auto resting after a specified period of time.
-		System::Void toolStripMenuItemAutoRestEnable_Click(System::Object^  sender, System::EventArgs^  e) {
-			toolStripMenuItemAutoRestEnable->Checked ^= 1;
-			MTOPTION.AUTO_REST = toolStripMenuItemAutoRestEnable->Checked;
-			if(MTOPTION.AUTO_REST){
-				if(UDP != nullptr && AutoRestThread == nullptr && MemberList[0]->STATE == MS_FREE){
-					AutoRestThread = gcnew Thread(gcnew ThreadStart(this, &MainForm::RunAutoRest));
-					AutoRestThread->Start();
-				}
+		//Ping the selected member and get a response in milliseconds.
+		System::Void toolStripMenuItemPing_Click(System::Object^  sender, System::EventArgs^  e) {
+			if(listBoxMember->SelectedIndex == -1){return;}
+
+			int si = listBoxMember->SelectedIndex;
+			array<BYTE>^ ping = gcnew array<BYTE>(1){ PH_PING };
+
+			Ping = timeGetTime();
+			UDP->BeginSend(ping, 1, MemberList[si]->IP_EP, gcnew AsyncCallback(SendPackets), UDP);
+		}
+		//Copy the selected member's username.
+		System::Void toolStripMenuItemClipBoardCopy_Click(System::Object^  sender, System::EventArgs^  e) {
+			if(listBoxMember->SelectedIndex == -1){return;}
+
+			int si = listBoxMember->SelectedIndex;
+			System::Windows::Forms::Clipboard::SetDataObject(MemberList[si]->NAME, true);
+		}
+		//Server administrator only: Kicks the selected member from the server.
+		System::Void toolStripMenuItemKick_Click(System::Object^  sender, System::EventArgs^  e) {
+			if(listBoxMember->SelectedIndex == -1 || MTOPTION.CONNECTION_TYPE != CT_SERVER){return;}
+
+			int index = listBoxMember->SelectedIndex;
+			int id = MemberList[index]->ID;
+
+			if(MessageBox::Show(String::Format("[ {0} ](ID:{1}) will be kicked.\nAre you sure you want to kick?", MemberList[index]->NAME, MemberList[index]->ID), "KICK", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == ::DialogResult::Yes){
 			}else{
-				if(AutoRestThread != nullptr && AutoRestThread->IsAlive){
-					AutoRestRanging = false;
-					AutoRestThread->Abort();
-					AutoRestThread = nullptr;
+				return;
+			}
+			
+			try{
+				// –{l‚É’Ê’m
+				array<BYTE>^ send = gcnew array<BYTE>(3){ PH_LOST, 0xFF, 0xFF };
+				UDP->BeginSend(send, send->Length, MemberList[index]->IP_EP, gcnew AsyncCallback(SendPackets), UDP);
+
+				if(ListView != LV_BLIND){
+					WriteTime(0, SystemMessageColor);
+					WriteMessage(String::Format("{0}(ID:{1}) was kicked.\n", MemberList[index]->NAME, MemberList[index]->ID), SystemMessageColor);
+				}
+				if(MemberList[0]->STATE == MS_WATCH || MemberList[0]->STATE == MS_COUCH){
+					if(TargetID == MemberList[index]->ID){
+						QuitWatch(false);
+					}
+				}
+
+				// ƒOƒbƒoƒC
+				MemberList->RemoveAt(index);
+				listBoxMember->Items->RemoveAt(index);
+
+				// ‘¼‚Ìƒƒ“ƒo[‚É’Ê’m
+				array<BYTE>^ quit = gcnew array<BYTE>(3){ PH_QUIT };
+				Array::Copy(BitConverter::GetBytes(id), 0, quit, 1, 2);
+
+				for(int i = 1; i < MemberList->Count; i++){
+					UDP->BeginSend(quit, quit->Length, MemberList[i]->IP_EP, gcnew AsyncCallback(SendPackets), UDP);
+					if(MTINFO.DEBUG){
+						WriteMessage(String::Format("{0} was notified.\n", MemberList[i]->ID), DebugMessageColor);
+					}
 				}
 			}
-		}
-		// Auto rest after 5 minutes.
-		System::Void toolStripMenuItemAutoRestTime5_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(5);
-			toolStripMenuItemAutoRestTime5->Checked = 1;
-		}
-		// Auto rest after 10 minutes.
-		System::Void toolStripMenuItemAutoRestTime10_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(10);
-			toolStripMenuItemAutoRestTime10->Checked = 1;
-		}
-		// Auto rest after 15 minutes.
-		System::Void toolStripMenuItemAutoRestTime15_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(15);
-			toolStripMenuItemAutoRestTime15->Checked = 1;
-		}
-		// Auto rest after 20 minutes.
-		System::Void toolStripMenuItemAutoRestTime20_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(20);
-			toolStripMenuItemAutoRestTime20->Checked = 1;
-		}
-		// Auto rest after 30 minutes.
-		System::Void toolStripMenuItemAutoRestTime30_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(30);
-			toolStripMenuItemAutoRestTime30->Checked = 1;
-		}
-		// Auto rest after 60 minutes.
-		System::Void toolStripMenuItemAutoRestTime60_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(60);
-			toolStripMenuItemAutoRestTime60->Checked = 1;
-		}
-		// Auto rest after 120 minutes.
-		System::Void toolStripMenuItemAutoRestTime120_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(120);
-			toolStripMenuItemAutoRestTime120->Checked = 1;
-		}
-		System::Void toolStripMenuItemAutoRestTime8h_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(480);
-			toolStripMenuItemAutoRestTime8h->Checked = 1;
-		 }
-		System::Void toolStripMenuItem12h_Click(System::Object^  sender, System::EventArgs^  e) {
-			SetAutoRestTime(720);
-			toolStripMenuItem12h->Checked = 1;
-		 }
-		// Determines if the log text should be wrapped at the end of the window or not.·
-		System::Void toolStripMenuItemWordWrap_Click(System::Object^ sender, System::EventArgs^  e) {
-			ChangeLogWordWrap();
-		}
-		System::Void toolStripMenuItemDelay_Click(System::Object^  sender, System::EventArgs^  e) {
-			 }
-		// Writes the update log of the application to the chat log.
-		System::Void whatsNewToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			 WriteWhatsNew();
-			 }
-
-		// Toggles rest as soon as the server initialises or you join another server as a host/client.
-		System::Void restOnconnectToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			restOnconnectToolStripMenuItem->Checked ^= 1;
-			MTOPTION.REST_CONNECT = restOnconnectToolStripMenuItem->Checked;
+			catch(Exception^ e){
+				if(MTINFO.DEBUG){
+					WriteMessage(String::Format("{0}\n", e->ToString()), DebugMessageColor);
+				}
+			}
+			
 		}
 
+#pragma endregion
+#pragma region Chat Context Menu
 		// Below is code specifically for the custom context menu on the message box.
 		System::Void contextMenuStripTextbox_Opening(System::Object^  sender, System::ComponentModel::CancelEventArgs^  e) {
 			if (textBoxInput->SelectedText == ""){
@@ -3852,14 +3847,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 		System::Void pasteToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 textBoxInput->Paste();
 		 }
-		// Sends user to GitHub releases page so they can see if there's a new update.
-		System::Void checkForUpdatesToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			Process::Start("https://github.com/windowslogic-productions/M0rningStar/releases");
-		 }
-		// Sends user to FM95/FM2K server invite link.
-		System::Void dFighterMaker952ndDiscordServerToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			Process::Start("https://discord.gg/5W73Qe9ucp");
-		 }
+#pragma endregion
 #pragma region System Tray
 		// Everything under here is to do with the system tray menu.
 		void SysTrayRestore(){
@@ -3929,6 +3917,21 @@ private: System::Windows::Forms::Button^  buttonClear;
 		System::Void buttonClear_Click(System::Object^  sender, System::EventArgs^  e) {
 			ClearLog();
 		 }
+		// Profile selection.
+		System::Void toolStripDropDownItemProfile_Click(System::Object^ sender, System::EventArgs^ e) {
+			if(((ToolStripDropDownItem^)sender)->Text == gcnew String(MTOPTION.PROFILE)){
+				return;
+			}
+			String^ buf = ((ToolStripDropDownItem^)sender)->Text;
+
+			IntPtr mp = Runtime::InteropServices::Marshal::StringToHGlobalAuto(buf);
+			_tcscpy_s(MTOPTION.PROFILE, static_cast<PTCHAR>(mp.ToPointer()));
+			Runtime::InteropServices::Marshal::FreeHGlobal(mp);
+
+			toolStripDropDownButtonProfile->Text = buf;
+
+			LoadMTOption();
+		}
 #pragma endregion
 };
 }
