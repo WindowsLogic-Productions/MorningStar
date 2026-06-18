@@ -1083,7 +1083,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			this->richTextBoxLog->Location = System::Drawing::Point(0, 0);
 			this->richTextBoxLog->Name = L"richTextBoxLog";
 			this->richTextBoxLog->ReadOnly = true;
-			this->richTextBoxLog->Size = System::Drawing::Size(606, 361);
+			this->richTextBoxLog->Size = System::Drawing::Size(606, 343);
 			this->richTextBoxLog->TabIndex = 0;
 			this->richTextBoxLog->TabStop = false;
 			this->richTextBoxLog->Text = L"";

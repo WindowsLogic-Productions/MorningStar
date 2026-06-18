@@ -262,6 +262,7 @@ private: System::Windows::Forms::CheckBox^  checkBoxEnterSound;
 private: System::Windows::Forms::Label^  labelNotif;
 private: System::Windows::Forms::CheckBox^  checkBoxTalkSound;
 private: System::Windows::Forms::CheckBox^  checkBoxNameSound;
+private: System::Windows::Forms::CheckBox^  chkMuteMIDI;
 
 
 
@@ -411,6 +412,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->buttonRestState = (gcnew System::Windows::Forms::Button());
 			this->tabPageVolume = (gcnew System::Windows::Forms::TabPage());
 			this->groupBoxMidi = (gcnew System::Windows::Forms::GroupBox());
+			this->chkMuteMIDI = (gcnew System::Windows::Forms::CheckBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->labelMidi = (gcnew System::Windows::Forms::Label());
 			this->trackBarMidi = (gcnew System::Windows::Forms::TrackBar());
@@ -1627,12 +1629,13 @@ private: System::ComponentModel::IContainer^  components;
 			// groupBoxAA
 			// 
 			this->groupBoxAA->Controls->Add(this->checkBoxDarkMode);
-			this->groupBoxAA->Location = System::Drawing::Point(6, 6);
+			this->groupBoxAA->Location = System::Drawing::Point(12, 308);
 			this->groupBoxAA->Name = L"groupBoxAA";
 			this->groupBoxAA->Size = System::Drawing::Size(545, 52);
 			this->groupBoxAA->TabIndex = 6;
 			this->groupBoxAA->TabStop = false;
 			this->groupBoxAA->Text = L"Application Appearance Settings";
+			this->groupBoxAA->Visible = false;
 			// 
 			// checkBoxDarkMode
 			// 
@@ -1652,7 +1655,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->groupBoxCA->Controls->Add(this->groupBoxOthersColor);
 			this->groupBoxCA->Controls->Add(this->groupBoxMessageColor);
 			this->groupBoxCA->Controls->Add(this->groupBoxStateColor);
-			this->groupBoxCA->Location = System::Drawing::Point(6, 64);
+			this->groupBoxCA->Location = System::Drawing::Point(6, 6);
 			this->groupBoxCA->Name = L"groupBoxCA";
 			this->groupBoxCA->Size = System::Drawing::Size(545, 293);
 			this->groupBoxCA->TabIndex = 5;
@@ -1877,16 +1880,29 @@ private: System::ComponentModel::IContainer^  components;
 			// 
 			// groupBoxMidi
 			// 
+			this->groupBoxMidi->Controls->Add(this->chkMuteMIDI);
 			this->groupBoxMidi->Controls->Add(this->label2);
 			this->groupBoxMidi->Controls->Add(this->labelMidi);
 			this->groupBoxMidi->Controls->Add(this->trackBarMidi);
 			this->groupBoxMidi->Location = System::Drawing::Point(6, 162);
 			this->groupBoxMidi->Name = L"groupBoxMidi";
-			this->groupBoxMidi->Size = System::Drawing::Size(545, 63);
+			this->groupBoxMidi->Size = System::Drawing::Size(545, 86);
 			this->groupBoxMidi->TabIndex = 2;
 			this->groupBoxMidi->TabStop = false;
 			this->groupBoxMidi->Text = L"Musical Instrument Digital Interface";
 			this->groupBoxMidi->Visible = false;
+			// 
+			// chkMuteMIDI
+			// 
+			this->chkMuteMIDI->AutoSize = true;
+			this->chkMuteMIDI->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->chkMuteMIDI->Location = System::Drawing::Point(111, 61);
+			this->chkMuteMIDI->Name = L"chkMuteMIDI";
+			this->chkMuteMIDI->Size = System::Drawing::Size(56, 18);
+			this->chkMuteMIDI->TabIndex = 6;
+			this->chkMuteMIDI->Text = L"Mute";
+			this->chkMuteMIDI->UseVisualStyleBackColor = true;
+			this->chkMuteMIDI->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::chkMuteMIDI_CheckedChanged);
 			// 
 			// label2
 			// 
@@ -3024,6 +3040,7 @@ private: System::ComponentModel::IContainer^  components;
 
 				labelMidi->Text = gcnew String("xxx");
 				groupBoxMidi->Enabled = false;
+				chkMuteMIDI->Enabled = false;
 			}
 		}
 		System::Void chkMuteBGM_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
@@ -3121,7 +3138,20 @@ private: System::ComponentModel::IContainer^  components;
 		System::Void ApplyButtonEnable(System::Object^  sender, System::EventArgs^  e) {
 			buttonApply->Enabled = true;
 		}
+
+		System::Void chkMuteMIDI_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+			if (chkMuteMIDI->Checked == true) {
+				trackBarMidi->Value = 0;
+				trackBarMidi->Enabled = false;
+				labelMidi->Text = "0%";
+			}else{
+				trackBarMidi->Value = 30;
+				trackBarMidi->Enabled = true;
+				labelMidi->Text = String::Format("{0,3}%", trackBarSE->Value * 5);
+			}
+		}
 #pragma endregion
 
+		
 };
 }
