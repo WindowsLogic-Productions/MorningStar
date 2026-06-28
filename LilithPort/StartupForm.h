@@ -55,35 +55,35 @@ namespace LilithPort {
 	private: System::Windows::Forms::Button^  buttonCancel;
 
 	private: System::Windows::Forms::TextBox^  textBoxServerName;
-	private: System::Windows::Forms::GroupBox^  groupBoxConnection;
-	private: System::Windows::Forms::GroupBox^  groupBoxWelcome;
-	private: System::Windows::Forms::RichTextBox^  textBoxWelcome;
+
+
+
 	private: System::Windows::Forms::ToolTip^  toolTipStartupForm;
 	private: System::Windows::Forms::Button^  buttonConnect;
-	private: System::Windows::Forms::TabControl^  startupTabs;
-	private: System::Windows::Forms::TabPage^  tabPage1;
-	private: System::Windows::Forms::TabPage^  tabPage2;
-	private: System::Windows::Forms::Label^  labelComment;
-	private: System::Windows::Forms::Label^  labelName;
-	private: System::Windows::Forms::TextBox^  textBoxComment;
-	private: System::Windows::Forms::TextBox^  textBoxName;
-	private: System::Windows::Forms::TabPage^  tabPage3;
-	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::GroupBox^  groupBoxUser;
-	private: System::Windows::Forms::Label^  labelAvoiding;
-	private: System::Windows::Forms::TextBox^  textBoxAvoiding;
-	private: System::Windows::Forms::Label^  labelLooking;
-	private: System::Windows::Forms::TextBox^  textBoxLooking;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::CheckBox^  checkBoxUpnp;
 	private: System::Windows::Forms::CheckBox^  checkBoxLegacy;
 	private: System::Windows::Forms::CheckBox^  checkBoxRestConnect;
-	private: System::Windows::Forms::Label^  labelRegion;
-	private: System::Windows::Forms::ComboBox^  comboBoxRegion;
-	private: System::Windows::Forms::CheckBox^  checkBoxRegion;
+
+
+
 	private: System::Windows::Forms::TextBox^  textBoxGG;
-	private: System::Windows::Forms::GroupBox^  groupBoxGG;
-	private: System::Windows::Forms::CheckBox^  checkBoxGG;
-	private: System::Windows::Forms::Label^  labelGG;
+
+
+
 	internal: System::Windows::Forms::Label^  TitleLabel;
 	internal: System::Windows::Forms::PictureBox^  PictureBox1;
 	internal: System::Windows::Forms::Button^  btnUser;
@@ -94,7 +94,9 @@ namespace LilithPort {
 	internal: 
 	private: System::Windows::Forms::Panel^  pnlUser;
 	private: System::Windows::Forms::Panel^  pnlWelcome;
-	internal: System::Windows::Forms::Label^  label3;
+	internal: System::Windows::Forms::Label^  lblCIP;
+	private: 
+
 	private: 
 	internal: System::Windows::Forms::Label^  lblCD;
 	internal: System::Windows::Forms::Label^  lblC;
@@ -105,6 +107,53 @@ namespace LilithPort {
 	internal: System::Windows::Forms::Label^  label2;
 	internal: System::Windows::Forms::Label^  lblCTD;
 	internal: System::Windows::Forms::Label^  lblCT;
+	internal: System::Windows::Forms::Label^  label1;
+	internal: System::Windows::Forms::PictureBox^  pictureBox3;
+	private: System::Windows::Forms::CheckBox^  checkBoxRegion;
+	internal: 
+	private: System::Windows::Forms::ComboBox^  comboBoxRegion;
+	private: System::Windows::Forms::TextBox^  textBoxAvoiding;
+	private: System::Windows::Forms::TextBox^  textBoxLooking;
+	private: System::Windows::Forms::TextBox^  textBoxName;
+	private: System::Windows::Forms::TextBox^  textBoxComment;
+	private: System::Windows::Forms::Label^  lblRegion;
+
+	private: System::Windows::Forms::Label^  lblAvoiding;
+
+	private: System::Windows::Forms::Label^  lblLooking;
+
+	private: System::Windows::Forms::Label^  lblName;
+	private: System::Windows::Forms::Label^  lblComment;
+	internal: System::Windows::Forms::Label^  lblFEMD;
+	private: 
+
+	private: 
+
+
+
+
+internal: System::Windows::Forms::Label^  lblFEM;
+	private: 
+
+
+	internal: 
+
+internal: System::Windows::Forms::Label^  lblFight;
+	private: 
+
+
+	internal: 
+
+	internal: System::Windows::Forms::Label^  label13;
+	private: 
+	internal: System::Windows::Forms::Label^  lblU;
+	internal: System::Windows::Forms::PictureBox^  pictureBox6;
+private: System::Windows::Forms::CheckBox^  chkGG;
+private: System::Windows::Forms::RichTextBox^  textBoxWelcome;
+internal: System::Windows::Forms::Label^  label3;
+private: 
+internal: System::Windows::Forms::Label^  lblSWM;
+internal: 
 
 
 	private: 
@@ -142,64 +191,60 @@ namespace LilithPort {
 			this->buttonCancel = (gcnew System::Windows::Forms::Button());
 			this->checkBoxUpnp = (gcnew System::Windows::Forms::CheckBox());
 			this->textBoxServerName = (gcnew System::Windows::Forms::TextBox());
-			this->groupBoxConnection = (gcnew System::Windows::Forms::GroupBox());
 			this->checkBoxLegacy = (gcnew System::Windows::Forms::CheckBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->groupBoxWelcome = (gcnew System::Windows::Forms::GroupBox());
-			this->textBoxWelcome = (gcnew System::Windows::Forms::RichTextBox());
 			this->toolTipStartupForm = (gcnew System::Windows::Forms::ToolTip(this->components));
 			this->buttonConnect = (gcnew System::Windows::Forms::Button());
-			this->labelLooking = (gcnew System::Windows::Forms::Label());
-			this->labelAvoiding = (gcnew System::Windows::Forms::Label());
 			this->checkBoxRestConnect = (gcnew System::Windows::Forms::CheckBox());
-			this->labelRegion = (gcnew System::Windows::Forms::Label());
-			this->labelGG = (gcnew System::Windows::Forms::Label());
-			this->labelComment = (gcnew System::Windows::Forms::Label());
-			this->labelName = (gcnew System::Windows::Forms::Label());
-			this->textBoxName = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxComment = (gcnew System::Windows::Forms::TextBox());
+			this->lblRegion = (gcnew System::Windows::Forms::Label());
+			this->lblAvoiding = (gcnew System::Windows::Forms::Label());
+			this->lblLooking = (gcnew System::Windows::Forms::Label());
+			this->lblName = (gcnew System::Windows::Forms::Label());
+			this->lblComment = (gcnew System::Windows::Forms::Label());
+			this->textBoxWelcome = (gcnew System::Windows::Forms::RichTextBox());
 			this->textBoxGG = (gcnew System::Windows::Forms::TextBox());
-			this->startupTabs = (gcnew System::Windows::Forms::TabControl());
-			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
-			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
-			this->groupBoxGG = (gcnew System::Windows::Forms::GroupBox());
-			this->checkBoxGG = (gcnew System::Windows::Forms::CheckBox());
-			this->groupBoxUser = (gcnew System::Windows::Forms::GroupBox());
-			this->checkBoxRegion = (gcnew System::Windows::Forms::CheckBox());
-			this->comboBoxRegion = (gcnew System::Windows::Forms::ComboBox());
-			this->textBoxAvoiding = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxLooking = (gcnew System::Windows::Forms::TextBox());
-			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->TitleLabel = (gcnew System::Windows::Forms::Label());
 			this->PictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->btnUser = (gcnew System::Windows::Forms::Button());
 			this->btnConnection = (gcnew System::Windows::Forms::Button());
 			this->btnWelcome = (gcnew System::Windows::Forms::Button());
 			this->pnlConnection = (gcnew System::Windows::Forms::Panel());
-			this->pnlUser = (gcnew System::Windows::Forms::Panel());
-			this->pnlWelcome = (gcnew System::Windows::Forms::Panel());
-			this->lblCT = (gcnew System::Windows::Forms::Label());
-			this->lblCTD = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->lblSD = (gcnew System::Windows::Forms::Label());
-			this->lblS = (gcnew System::Windows::Forms::Label());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->lblCIP = (gcnew System::Windows::Forms::Label());
 			this->lblCD = (gcnew System::Windows::Forms::Label());
 			this->lblC = (gcnew System::Windows::Forms::Label());
+			this->lblSD = (gcnew System::Windows::Forms::Label());
+			this->lblS = (gcnew System::Windows::Forms::Label());
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->lblCTD = (gcnew System::Windows::Forms::Label());
+			this->lblCT = (gcnew System::Windows::Forms::Label());
+			this->pnlUser = (gcnew System::Windows::Forms::Panel());
+			this->chkGG = (gcnew System::Windows::Forms::CheckBox());
+			this->checkBoxRegion = (gcnew System::Windows::Forms::CheckBox());
+			this->comboBoxRegion = (gcnew System::Windows::Forms::ComboBox());
+			this->textBoxAvoiding = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxLooking = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxName = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxComment = (gcnew System::Windows::Forms::TextBox());
+			this->lblFEMD = (gcnew System::Windows::Forms::Label());
+			this->lblFEM = (gcnew System::Windows::Forms::Label());
+			this->lblFight = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->lblU = (gcnew System::Windows::Forms::Label());
+			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
+			this->pnlWelcome = (gcnew System::Windows::Forms::Panel());
 			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->lblSWM = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->numericUpDownOpenPort))->BeginInit();
-			this->groupBoxConnection->SuspendLayout();
-			this->groupBoxWelcome->SuspendLayout();
-			this->startupTabs->SuspendLayout();
-			this->tabPage2->SuspendLayout();
-			this->tabPage1->SuspendLayout();
-			this->groupBoxGG->SuspendLayout();
-			this->groupBoxUser->SuspendLayout();
-			this->tabPage3->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->PictureBox1))->BeginInit();
 			this->pnlConnection->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox2))->BeginInit();
+			this->pnlUser->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox6))->BeginInit();
+			this->pnlWelcome->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// radioButtonServer
@@ -252,9 +297,11 @@ namespace LilithPort {
 			// 
 			// textBoxIP
 			// 
-			this->textBoxIP->Location = System::Drawing::Point(81, 25);
+			this->textBoxIP->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxIP->Location = System::Drawing::Point(352, 184);
 			this->textBoxIP->Name = L"textBoxIP";
-			this->textBoxIP->Size = System::Drawing::Size(256, 22);
+			this->textBoxIP->Size = System::Drawing::Size(256, 25);
 			this->textBoxIP->TabIndex = 6;
 			this->textBoxIP->WordWrap = false;
 			// 
@@ -321,64 +368,20 @@ namespace LilithPort {
 			this->textBoxServerName->TabIndex = 3;
 			this->textBoxServerName->WordWrap = false;
 			// 
-			// groupBoxConnection
-			// 
-			this->groupBoxConnection->Controls->Add(this->checkBoxLegacy);
-			this->groupBoxConnection->Controls->Add(this->label1);
-			this->groupBoxConnection->Controls->Add(this->textBoxIP);
-			this->groupBoxConnection->Location = System::Drawing::Point(65, 33);
-			this->groupBoxConnection->Name = L"groupBoxConnection";
-			this->groupBoxConnection->Size = System::Drawing::Size(343, 74);
-			this->groupBoxConnection->TabIndex = 9;
-			this->groupBoxConnection->TabStop = false;
-			this->groupBoxConnection->Text = L"Client";
-			this->toolTipStartupForm->SetToolTip(this->groupBoxConnection, resources->GetString(L"groupBoxConnection.ToolTip"));
-			// 
 			// checkBoxLegacy
 			// 
 			this->checkBoxLegacy->AutoSize = true;
-			this->checkBoxLegacy->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxLegacy->Location = System::Drawing::Point(6, 51);
+			this->checkBoxLegacy->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxLegacy->ForeColor = System::Drawing::Color::White;
+			this->checkBoxLegacy->Location = System::Drawing::Point(450, 215);
 			this->checkBoxLegacy->Name = L"checkBoxLegacy";
-			this->checkBoxLegacy->Size = System::Drawing::Size(147, 18);
+			this->checkBoxLegacy->Size = System::Drawing::Size(158, 21);
 			this->checkBoxLegacy->TabIndex = 7;
 			this->checkBoxLegacy->Text = L"Enable legacy netcode";
 			this->toolTipStartupForm->SetToolTip(this->checkBoxLegacy, L"Allows connection to servers running 1.0.9.x or earlier.");
 			this->checkBoxLegacy->UseVisualStyleBackColor = true;
 			this->checkBoxLegacy->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxLegacy_CheckedChanged);
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(6, 28);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(70, 13);
-			this->label1->TabIndex = 11;
-			this->label1->Text = L"Address / IP:";
-			this->toolTipStartupForm->SetToolTip(this->label1, L"Specify the server address or IP you want to connect to.\r\n[<address/ip>:<port>]");
-			// 
-			// groupBoxWelcome
-			// 
-			this->groupBoxWelcome->Controls->Add(this->textBoxWelcome);
-			this->groupBoxWelcome->Location = System::Drawing::Point(6, 6);
-			this->groupBoxWelcome->Name = L"groupBoxWelcome";
-			this->groupBoxWelcome->Size = System::Drawing::Size(409, 223);
-			this->groupBoxWelcome->TabIndex = 11;
-			this->groupBoxWelcome->TabStop = false;
-			this->groupBoxWelcome->Text = L"Server Welcome Message";
-			this->toolTipStartupForm->SetToolTip(this->groupBoxWelcome, L"This Welcome message will be shown when players join your server.");
-			// 
-			// textBoxWelcome
-			// 
-			this->textBoxWelcome->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->textBoxWelcome->Location = System::Drawing::Point(6, 19);
-			this->textBoxWelcome->MaxLength = 254;
-			this->textBoxWelcome->Name = L"textBoxWelcome";
-			this->textBoxWelcome->Size = System::Drawing::Size(397, 198);
-			this->textBoxWelcome->TabIndex = 0;
-			this->textBoxWelcome->Text = L"";
-			this->toolTipStartupForm->SetToolTip(this->textBoxWelcome, L"When running a server, this message will appear to everyone who joins.");
-			this->textBoxWelcome->WordWrap = false;
 			// 
 			// toolTipStartupForm
 			// 
@@ -392,7 +395,7 @@ namespace LilithPort {
 			// buttonConnect
 			// 
 			this->buttonConnect->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonConnect->Location = System::Drawing::Point(362, 322);
+			this->buttonConnect->Location = System::Drawing::Point(408, 12);
 			this->buttonConnect->Name = L"buttonConnect";
 			this->buttonConnect->Size = System::Drawing::Size(80, 23);
 			this->buttonConnect->TabIndex = 8;
@@ -402,233 +405,108 @@ namespace LilithPort {
 			this->buttonConnect->Visible = false;
 			this->buttonConnect->Click += gcnew System::EventHandler(this, &StartupForm::buttonOK_Click);
 			// 
-			// labelLooking
-			// 
-			this->labelLooking->AutoSize = true;
-			this->labelLooking->Location = System::Drawing::Point(11, 78);
-			this->labelLooking->Name = L"labelLooking";
-			this->labelLooking->Size = System::Drawing::Size(70, 13);
-			this->labelLooking->TabIndex = 10;
-			this->labelLooking->Text = L"Looking for:";
-			this->toolTipStartupForm->SetToolTip(this->labelLooking, L"Specify what you\'re looking for in players.");
-			// 
-			// labelAvoiding
-			// 
-			this->labelAvoiding->AutoSize = true;
-			this->labelAvoiding->Location = System::Drawing::Point(23, 104);
-			this->labelAvoiding->Name = L"labelAvoiding";
-			this->labelAvoiding->Size = System::Drawing::Size(56, 13);
-			this->labelAvoiding->TabIndex = 12;
-			this->labelAvoiding->Text = L"Avoiding:";
-			this->toolTipStartupForm->SetToolTip(this->labelAvoiding, L"Specify what you\'re avoiding in players.");
-			// 
 			// checkBoxRestConnect
 			// 
 			this->checkBoxRestConnect->AutoSize = true;
-			this->checkBoxRestConnect->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxRestConnect->Location = System::Drawing::Point(99, 138);
+			this->checkBoxRestConnect->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxRestConnect->ForeColor = System::Drawing::Color::White;
+			this->checkBoxRestConnect->Location = System::Drawing::Point(62, 262);
 			this->checkBoxRestConnect->Name = L"checkBoxRestConnect";
-			this->checkBoxRestConnect->Size = System::Drawing::Size(278, 18);
+			this->checkBoxRestConnect->Size = System::Drawing::Size(145, 21);
 			this->checkBoxRestConnect->TabIndex = 8;
-			this->checkBoxRestConnect->Text = L"On connection, automatically go into rest mode";
+			this->checkBoxRestConnect->Text = L"Rest on connection";
 			this->toolTipStartupForm->SetToolTip(this->checkBoxRestConnect, L"Automatically toggles you to rest mode when you initialise a server or join anoth" 
 				L"er server as a host or client.");
 			this->checkBoxRestConnect->UseVisualStyleBackColor = true;
 			this->checkBoxRestConnect->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxRestConnect_CheckedChanged);
 			// 
-			// labelRegion
+			// lblRegion
 			// 
-			this->labelRegion->AutoSize = true;
-			this->labelRegion->Location = System::Drawing::Point(30, 130);
-			this->labelRegion->Name = L"labelRegion";
-			this->labelRegion->Size = System::Drawing::Size(47, 13);
-			this->labelRegion->TabIndex = 13;
-			this->labelRegion->Text = L"Region:";
-			this->toolTipStartupForm->SetToolTip(this->labelRegion, L"Specify a region to show on your profile.");
+			this->lblRegion->AutoSize = true;
+			this->lblRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblRegion->ForeColor = System::Drawing::Color::White;
+			this->lblRegion->Location = System::Drawing::Point(233, 161);
+			this->lblRegion->Name = L"lblRegion";
+			this->lblRegion->Size = System::Drawing::Size(52, 17);
+			this->lblRegion->TabIndex = 72;
+			this->lblRegion->Text = L"Region:";
+			this->toolTipStartupForm->SetToolTip(this->lblRegion, L"Specify a region to show on your profile.");
 			// 
-			// labelGG
+			// lblAvoiding
 			// 
-			this->labelGG->AutoSize = true;
-			this->labelGG->Location = System::Drawing::Point(11, 28);
-			this->labelGG->Name = L"labelGG";
-			this->labelGG->Size = System::Drawing::Size(77, 13);
-			this->labelGG->TabIndex = 16;
-			this->labelGG->Text = L"End message:";
-			this->toolTipStartupForm->SetToolTip(this->labelGG, L"Specify a message to type in chat after a fight.");
+			this->lblAvoiding->AutoSize = true;
+			this->lblAvoiding->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblAvoiding->ForeColor = System::Drawing::Color::White;
+			this->lblAvoiding->Location = System::Drawing::Point(223, 131);
+			this->lblAvoiding->Name = L"lblAvoiding";
+			this->lblAvoiding->Size = System::Drawing::Size(62, 17);
+			this->lblAvoiding->TabIndex = 71;
+			this->lblAvoiding->Text = L"Avoiding:";
+			this->toolTipStartupForm->SetToolTip(this->lblAvoiding, L"Specify what you\'re avoiding in players.");
 			// 
-			// labelComment
+			// lblLooking
 			// 
-			this->labelComment->AutoSize = true;
-			this->labelComment->Location = System::Drawing::Point(20, 52);
-			this->labelComment->Name = L"labelComment";
-			this->labelComment->Size = System::Drawing::Size(59, 13);
-			this->labelComment->TabIndex = 8;
-			this->labelComment->Text = L"Comment:";
-			this->toolTipStartupForm->SetToolTip(this->labelComment, L"You will automatically say this message when you join.");
+			this->lblLooking->AutoSize = true;
+			this->lblLooking->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblLooking->ForeColor = System::Drawing::Color::White;
+			this->lblLooking->Location = System::Drawing::Point(207, 100);
+			this->lblLooking->Name = L"lblLooking";
+			this->lblLooking->Size = System::Drawing::Size(78, 17);
+			this->lblLooking->TabIndex = 70;
+			this->lblLooking->Text = L"Looking for:";
+			this->toolTipStartupForm->SetToolTip(this->lblLooking, L"Specify what you\'re looking for in players.");
 			// 
-			// labelName
+			// lblName
 			// 
-			this->labelName->AutoSize = true;
-			this->labelName->Location = System::Drawing::Point(36, 25);
-			this->labelName->Name = L"labelName";
-			this->labelName->Size = System::Drawing::Size(39, 13);
-			this->labelName->TabIndex = 5;
-			this->labelName->Text = L"Name:";
-			this->toolTipStartupForm->SetToolTip(this->labelName, L"Your username. You cannot use special characters.");
+			this->lblName->AutoSize = true;
+			this->lblName->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblName->ForeColor = System::Drawing::Color::White;
+			this->lblName->Location = System::Drawing::Point(239, 38);
+			this->lblName->Name = L"lblName";
+			this->lblName->Size = System::Drawing::Size(46, 17);
+			this->lblName->TabIndex = 67;
+			this->lblName->Text = L"Name:";
+			this->toolTipStartupForm->SetToolTip(this->lblName, L"Your username. You cannot use special characters.");
 			// 
-			// textBoxName
+			// lblComment
 			// 
-			this->textBoxName->Location = System::Drawing::Point(80, 22);
-			this->textBoxName->Name = L"textBoxName";
-			this->textBoxName->Size = System::Drawing::Size(323, 22);
-			this->textBoxName->TabIndex = 0;
-			this->textBoxName->WordWrap = false;
+			this->lblComment->AutoSize = true;
+			this->lblComment->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblComment->ForeColor = System::Drawing::Color::White;
+			this->lblComment->Location = System::Drawing::Point(218, 69);
+			this->lblComment->Name = L"lblComment";
+			this->lblComment->Size = System::Drawing::Size(67, 17);
+			this->lblComment->TabIndex = 69;
+			this->lblComment->Text = L"Comment:";
+			this->toolTipStartupForm->SetToolTip(this->lblComment, L"You will automatically say this message when you join.");
 			// 
-			// textBoxComment
+			// textBoxWelcome
 			// 
-			this->textBoxComment->Location = System::Drawing::Point(80, 49);
-			this->textBoxComment->Name = L"textBoxComment";
-			this->textBoxComment->Size = System::Drawing::Size(323, 22);
-			this->textBoxComment->TabIndex = 1;
-			this->textBoxComment->WordWrap = false;
+			this->textBoxWelcome->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->textBoxWelcome->Location = System::Drawing::Point(230, 34);
+			this->textBoxWelcome->MaxLength = 254;
+			this->textBoxWelcome->Name = L"textBoxWelcome";
+			this->textBoxWelcome->Size = System::Drawing::Size(378, 198);
+			this->textBoxWelcome->TabIndex = 59;
+			this->textBoxWelcome->Text = L"";
+			this->toolTipStartupForm->SetToolTip(this->textBoxWelcome, L"When running a server, this message will appear to everyone who joins.");
+			this->textBoxWelcome->WordWrap = false;
 			// 
 			// textBoxGG
 			// 
 			this->textBoxGG->Enabled = false;
-			this->textBoxGG->Location = System::Drawing::Point(91, 25);
+			this->textBoxGG->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxGG->Location = System::Drawing::Point(419, 233);
 			this->textBoxGG->Name = L"textBoxGG";
-			this->textBoxGG->Size = System::Drawing::Size(189, 22);
+			this->textBoxGG->Size = System::Drawing::Size(189, 25);
 			this->textBoxGG->TabIndex = 6;
-			// 
-			// startupTabs
-			// 
-			this->startupTabs->Controls->Add(this->tabPage2);
-			this->startupTabs->Controls->Add(this->tabPage1);
-			this->startupTabs->Controls->Add(this->tabPage3);
-			this->startupTabs->Location = System::Drawing::Point(195, 247);
-			this->startupTabs->Name = L"startupTabs";
-			this->startupTabs->SelectedIndex = 0;
-			this->startupTabs->Size = System::Drawing::Size(429, 261);
-			this->startupTabs->TabIndex = 15;
-			// 
-			// tabPage2
-			// 
-			this->tabPage2->Controls->Add(this->checkBoxRestConnect);
-			this->tabPage2->Controls->Add(this->groupBoxConnection);
-			this->tabPage2->Location = System::Drawing::Point(4, 22);
-			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(421, 235);
-			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"Connection";
-			this->tabPage2->UseVisualStyleBackColor = true;
-			// 
-			// tabPage1
-			// 
-			this->tabPage1->Controls->Add(this->groupBoxGG);
-			this->tabPage1->Controls->Add(this->groupBoxUser);
-			this->tabPage1->Location = System::Drawing::Point(4, 22);
-			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(421, 235);
-			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"User Profile";
-			this->tabPage1->UseVisualStyleBackColor = true;
-			// 
-			// groupBoxGG
-			// 
-			this->groupBoxGG->Controls->Add(this->checkBoxGG);
-			this->groupBoxGG->Controls->Add(this->labelGG);
-			this->groupBoxGG->Controls->Add(this->textBoxGG);
-			this->groupBoxGG->Location = System::Drawing::Point(6, 173);
-			this->groupBoxGG->Name = L"groupBoxGG";
-			this->groupBoxGG->Size = System::Drawing::Size(409, 56);
-			this->groupBoxGG->TabIndex = 17;
-			this->groupBoxGG->TabStop = false;
-			this->groupBoxGG->Text = L"Fight End Message Settings";
-			// 
-			// checkBoxGG
-			// 
-			this->checkBoxGG->AutoSize = true;
-			this->checkBoxGG->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxGG->Location = System::Drawing::Point(286, 27);
-			this->checkBoxGG->Name = L"checkBoxGG";
-			this->checkBoxGG->Size = System::Drawing::Size(137, 18);
-			this->checkBoxGG->TabIndex = 7;
-			this->checkBoxGG->Text = L"Enable end message";
-			this->checkBoxGG->UseVisualStyleBackColor = true;
-			this->checkBoxGG->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxGG_CheckedChanged);
-			// 
-			// groupBoxUser
-			// 
-			this->groupBoxUser->Controls->Add(this->checkBoxRegion);
-			this->groupBoxUser->Controls->Add(this->comboBoxRegion);
-			this->groupBoxUser->Controls->Add(this->labelRegion);
-			this->groupBoxUser->Controls->Add(this->labelAvoiding);
-			this->groupBoxUser->Controls->Add(this->textBoxAvoiding);
-			this->groupBoxUser->Controls->Add(this->labelLooking);
-			this->groupBoxUser->Controls->Add(this->textBoxLooking);
-			this->groupBoxUser->Controls->Add(this->labelName);
-			this->groupBoxUser->Controls->Add(this->labelComment);
-			this->groupBoxUser->Controls->Add(this->textBoxName);
-			this->groupBoxUser->Controls->Add(this->textBoxComment);
-			this->groupBoxUser->Location = System::Drawing::Point(6, 6);
-			this->groupBoxUser->Name = L"groupBoxUser";
-			this->groupBoxUser->Size = System::Drawing::Size(409, 161);
-			this->groupBoxUser->TabIndex = 9;
-			this->groupBoxUser->TabStop = false;
-			this->groupBoxUser->Text = L"User Profile Settings";
-			// 
-			// checkBoxRegion
-			// 
-			this->checkBoxRegion->AutoSize = true;
-			this->checkBoxRegion->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxRegion->Location = System::Drawing::Point(239, 130);
-			this->checkBoxRegion->Name = L"checkBoxRegion";
-			this->checkBoxRegion->Size = System::Drawing::Size(160, 18);
-			this->checkBoxRegion->TabIndex = 5;
-			this->checkBoxRegion->Text = L"Display region on profile";
-			this->checkBoxRegion->UseVisualStyleBackColor = true;
-			this->checkBoxRegion->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxRegion_CheckedChanged);
-			// 
-			// comboBoxRegion
-			// 
-			this->comboBoxRegion->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
-			this->comboBoxRegion->Enabled = false;
-			this->comboBoxRegion->FormattingEnabled = true;
-			this->comboBoxRegion->Items->AddRange(gcnew cli::array< System::Object^  >(10) {L"North America", L"Europe", L"Russia", L"Asia", 
-				L"South America", L"Africa", L"Middle East", L"Australia", L"New Zealand", L"Antarctica"});
-			this->comboBoxRegion->Location = System::Drawing::Point(80, 127);
-			this->comboBoxRegion->Name = L"comboBoxRegion";
-			this->comboBoxRegion->Size = System::Drawing::Size(153, 21);
-			this->comboBoxRegion->TabIndex = 4;
-			// 
-			// textBoxAvoiding
-			// 
-			this->textBoxAvoiding->Location = System::Drawing::Point(80, 101);
-			this->textBoxAvoiding->Name = L"textBoxAvoiding";
-			this->textBoxAvoiding->Size = System::Drawing::Size(323, 22);
-			this->textBoxAvoiding->TabIndex = 3;
-			this->textBoxAvoiding->WordWrap = false;
-			// 
-			// textBoxLooking
-			// 
-			this->textBoxLooking->Location = System::Drawing::Point(80, 75);
-			this->textBoxLooking->Name = L"textBoxLooking";
-			this->textBoxLooking->Size = System::Drawing::Size(323, 22);
-			this->textBoxLooking->TabIndex = 2;
-			this->textBoxLooking->WordWrap = false;
-			// 
-			// tabPage3
-			// 
-			this->tabPage3->Controls->Add(this->groupBoxWelcome);
-			this->tabPage3->Location = System::Drawing::Point(4, 22);
-			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(421, 235);
-			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"Welcome Message";
-			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
 			// TitleLabel
 			// 
@@ -669,6 +547,7 @@ namespace LilithPort {
 			this->btnUser->TabIndex = 19;
 			this->btnUser->Text = L"User Profile";
 			this->btnUser->UseVisualStyleBackColor = false;
+			this->btnUser->Click += gcnew System::EventHandler(this, &StartupForm::btnUser_Click);
 			// 
 			// btnConnection
 			// 
@@ -687,6 +566,7 @@ namespace LilithPort {
 			this->btnConnection->TabIndex = 18;
 			this->btnConnection->Text = L"Connection";
 			this->btnConnection->UseVisualStyleBackColor = false;
+			this->btnConnection->Click += gcnew System::EventHandler(this, &StartupForm::btnConnection_Click);
 			// 
 			// btnWelcome
 			// 
@@ -705,12 +585,18 @@ namespace LilithPort {
 			this->btnWelcome->TabIndex = 20;
 			this->btnWelcome->Text = L"Welcome Message";
 			this->btnWelcome->UseVisualStyleBackColor = false;
+			this->btnWelcome->Click += gcnew System::EventHandler(this, &StartupForm::btnWelcome_Click);
 			// 
 			// pnlConnection
 			// 
 			this->pnlConnection->BackColor = System::Drawing::Color::Black;
-			this->pnlConnection->Controls->Add(this->label3);
+			this->pnlConnection->Controls->Add(this->label1);
+			this->pnlConnection->Controls->Add(this->pictureBox3);
+			this->pnlConnection->Controls->Add(this->checkBoxRestConnect);
+			this->pnlConnection->Controls->Add(this->checkBoxLegacy);
+			this->pnlConnection->Controls->Add(this->lblCIP);
 			this->pnlConnection->Controls->Add(this->lblCD);
+			this->pnlConnection->Controls->Add(this->textBoxIP);
 			this->pnlConnection->Controls->Add(this->lblC);
 			this->pnlConnection->Controls->Add(this->lblSD);
 			this->pnlConnection->Controls->Add(this->lblS);
@@ -721,9 +607,7 @@ namespace LilithPort {
 			this->pnlConnection->Controls->Add(this->textBoxServerName);
 			this->pnlConnection->Controls->Add(this->numericUpDownOpenPort);
 			this->pnlConnection->Controls->Add(this->lblCTD);
-			this->pnlConnection->Controls->Add(this->startupTabs);
 			this->pnlConnection->Controls->Add(this->lblCT);
-			this->pnlConnection->Controls->Add(this->buttonConnect);
 			this->pnlConnection->Controls->Add(this->radioButtonServer);
 			this->pnlConnection->Controls->Add(this->radioButtonHost);
 			this->pnlConnection->Controls->Add(this->PictureBox1);
@@ -733,79 +617,63 @@ namespace LilithPort {
 			this->pnlConnection->Size = System::Drawing::Size(650, 370);
 			this->pnlConnection->TabIndex = 21;
 			// 
-			// pnlUser
+			// label1
 			// 
-			this->pnlUser->BackColor = System::Drawing::Color::Black;
-			this->pnlUser->Location = System::Drawing::Point(160, 90);
-			this->pnlUser->Name = L"pnlUser";
-			this->pnlUser->Size = System::Drawing::Size(650, 370);
-			this->pnlUser->TabIndex = 22;
-			// 
-			// pnlWelcome
-			// 
-			this->pnlWelcome->BackColor = System::Drawing::Color::Black;
-			this->pnlWelcome->Location = System::Drawing::Point(160, 89);
-			this->pnlWelcome->Name = L"pnlWelcome";
-			this->pnlWelcome->Size = System::Drawing::Size(650, 370);
-			this->pnlWelcome->TabIndex = 22;
-			// 
-			// lblCT
-			// 
-			this->lblCT->AutoSize = true;
-			this->lblCT->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->lblCT->ForeColor = System::Drawing::Color::White;
-			this->lblCT->Location = System::Drawing::Point(59, 36);
-			this->lblCT->Name = L"lblCT";
-			this->lblCT->Size = System::Drawing::Size(109, 17);
-			this->lblCT->TabIndex = 31;
-			this->lblCT->Text = L"Connection type";
+			this->label1->ForeColor = System::Drawing::Color::White;
+			this->label1->Location = System::Drawing::Point(59, 286);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(371, 17);
+			this->label1->TabIndex = 44;
+			this->label1->Text = L"When connecting to a server, automatically go into rest mode.";
 			// 
-			// lblCTD
+			// pictureBox3
 			// 
-			this->lblCTD->AutoSize = true;
-			this->lblCTD->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(62, 242);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(546, 10);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox3->TabIndex = 43;
+			this->pictureBox3->TabStop = false;
+			// 
+			// lblCIP
+			// 
+			this->lblCIP->AutoSize = true;
+			this->lblCIP->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->lblCTD->ForeColor = System::Drawing::Color::White;
-			this->lblCTD->Location = System::Drawing::Point(59, 61);
-			this->lblCTD->Name = L"lblCTD";
-			this->lblCTD->Size = System::Drawing::Size(252, 17);
-			this->lblCTD->TabIndex = 32;
-			this->lblCTD->Text = L"Select how you want to start MorningStar.";
+			this->lblCIP->ForeColor = System::Drawing::Color::White;
+			this->lblCIP->Location = System::Drawing::Point(325, 187);
+			this->lblCIP->Name = L"lblCIP";
+			this->lblCIP->Size = System::Drawing::Size(21, 17);
+			this->lblCIP->TabIndex = 42;
+			this->lblCIP->Text = L"IP:";
 			// 
-			// label2
+			// lblCD
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->lblCD->AutoSize = true;
+			this->lblCD->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(245, 108);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(21, 17);
-			this->label2->TabIndex = 34;
-			this->label2->Text = L"IP:";
+			this->lblCD->ForeColor = System::Drawing::Color::White;
+			this->lblCD->Location = System::Drawing::Point(59, 215);
+			this->lblCD->Name = L"lblCD";
+			this->lblCD->Size = System::Drawing::Size(189, 17);
+			this->lblCD->TabIndex = 41;
+			this->lblCD->Text = L"Configure host / client settings.";
 			// 
-			// label4
+			// lblC
 			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->lblC->AutoSize = true;
+			this->lblC->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->label4->ForeColor = System::Drawing::Color::White;
-			this->label4->Location = System::Drawing::Point(538, 108);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(11, 17);
-			this->label4->TabIndex = 35;
-			this->label4->Text = L":";
-			// 
-			// pictureBox2
-			// 
-			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(62, 164);
-			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(546, 10);
-			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox2->TabIndex = 36;
-			this->pictureBox2->TabStop = false;
+			this->lblC->ForeColor = System::Drawing::Color::White;
+			this->lblC->Location = System::Drawing::Point(59, 187);
+			this->lblC->Name = L"lblC";
+			this->lblC->Size = System::Drawing::Size(87, 17);
+			this->lblC->TabIndex = 40;
+			this->lblC->Text = L"Host / Client";
 			// 
 			// lblSD
 			// 
@@ -831,29 +699,253 @@ namespace LilithPort {
 			this->lblS->TabIndex = 38;
 			this->lblS->Text = L"Server";
 			// 
-			// lblCD
+			// pictureBox2
 			// 
-			this->lblCD->AutoSize = true;
-			this->lblCD->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(62, 164);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(546, 10);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox2->TabIndex = 36;
+			this->pictureBox2->TabStop = false;
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->lblCD->ForeColor = System::Drawing::Color::White;
-			this->lblCD->Location = System::Drawing::Point(59, 212);
-			this->lblCD->Name = L"lblCD";
-			this->lblCD->Size = System::Drawing::Size(138, 17);
-			this->lblCD->TabIndex = 41;
-			this->lblCD->Text = L"Configure your server.";
+			this->label4->ForeColor = System::Drawing::Color::White;
+			this->label4->Location = System::Drawing::Point(538, 108);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(11, 17);
+			this->label4->TabIndex = 35;
+			this->label4->Text = L":";
 			// 
-			// lblC
+			// label2
 			// 
-			this->lblC->AutoSize = true;
-			this->lblC->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->lblC->ForeColor = System::Drawing::Color::White;
-			this->lblC->Location = System::Drawing::Point(59, 187);
-			this->lblC->Name = L"lblC";
-			this->lblC->Size = System::Drawing::Size(47, 17);
-			this->lblC->TabIndex = 40;
-			this->lblC->Text = L"Server";
+			this->label2->ForeColor = System::Drawing::Color::White;
+			this->label2->Location = System::Drawing::Point(245, 108);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(21, 17);
+			this->label2->TabIndex = 34;
+			this->label2->Text = L"IP:";
+			// 
+			// lblCTD
+			// 
+			this->lblCTD->AutoSize = true;
+			this->lblCTD->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblCTD->ForeColor = System::Drawing::Color::White;
+			this->lblCTD->Location = System::Drawing::Point(59, 61);
+			this->lblCTD->Name = L"lblCTD";
+			this->lblCTD->Size = System::Drawing::Size(252, 17);
+			this->lblCTD->TabIndex = 32;
+			this->lblCTD->Text = L"Select how you want to start MorningStar.";
+			// 
+			// lblCT
+			// 
+			this->lblCT->AutoSize = true;
+			this->lblCT->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblCT->ForeColor = System::Drawing::Color::White;
+			this->lblCT->Location = System::Drawing::Point(59, 36);
+			this->lblCT->Name = L"lblCT";
+			this->lblCT->Size = System::Drawing::Size(109, 17);
+			this->lblCT->TabIndex = 31;
+			this->lblCT->Text = L"Connection type";
+			// 
+			// pnlUser
+			// 
+			this->pnlUser->BackColor = System::Drawing::Color::Black;
+			this->pnlUser->Controls->Add(this->chkGG);
+			this->pnlUser->Controls->Add(this->checkBoxRegion);
+			this->pnlUser->Controls->Add(this->comboBoxRegion);
+			this->pnlUser->Controls->Add(this->textBoxGG);
+			this->pnlUser->Controls->Add(this->textBoxAvoiding);
+			this->pnlUser->Controls->Add(this->textBoxLooking);
+			this->pnlUser->Controls->Add(this->textBoxName);
+			this->pnlUser->Controls->Add(this->textBoxComment);
+			this->pnlUser->Controls->Add(this->lblRegion);
+			this->pnlUser->Controls->Add(this->lblAvoiding);
+			this->pnlUser->Controls->Add(this->lblLooking);
+			this->pnlUser->Controls->Add(this->lblName);
+			this->pnlUser->Controls->Add(this->lblComment);
+			this->pnlUser->Controls->Add(this->lblFEMD);
+			this->pnlUser->Controls->Add(this->lblFEM);
+			this->pnlUser->Controls->Add(this->lblFight);
+			this->pnlUser->Controls->Add(this->label13);
+			this->pnlUser->Controls->Add(this->lblU);
+			this->pnlUser->Controls->Add(this->pictureBox6);
+			this->pnlUser->Location = System::Drawing::Point(160, 90);
+			this->pnlUser->Name = L"pnlUser";
+			this->pnlUser->Size = System::Drawing::Size(650, 370);
+			this->pnlUser->TabIndex = 22;
+			// 
+			// chkGG
+			// 
+			this->chkGG->AutoSize = true;
+			this->chkGG->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->chkGG->ForeColor = System::Drawing::Color::White;
+			this->chkGG->Location = System::Drawing::Point(460, 264);
+			this->chkGG->Name = L"chkGG";
+			this->chkGG->Size = System::Drawing::Size(148, 21);
+			this->chkGG->TabIndex = 7;
+			this->chkGG->Text = L"Enable end message";
+			this->chkGG->UseVisualStyleBackColor = true;
+			this->chkGG->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxGG_CheckedChanged);
+			// 
+			// checkBoxRegion
+			// 
+			this->checkBoxRegion->AutoSize = true;
+			this->checkBoxRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxRegion->ForeColor = System::Drawing::Color::White;
+			this->checkBoxRegion->Location = System::Drawing::Point(436, 160);
+			this->checkBoxRegion->Name = L"checkBoxRegion";
+			this->checkBoxRegion->Size = System::Drawing::Size(172, 21);
+			this->checkBoxRegion->TabIndex = 78;
+			this->checkBoxRegion->Text = L"Display region on profile";
+			this->checkBoxRegion->UseVisualStyleBackColor = true;
+			this->checkBoxRegion->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxRegion_CheckedChanged);
+			// 
+			// comboBoxRegion
+			// 
+			this->comboBoxRegion->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->comboBoxRegion->Enabled = false;
+			this->comboBoxRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->comboBoxRegion->FormattingEnabled = true;
+			this->comboBoxRegion->Items->AddRange(gcnew cli::array< System::Object^  >(10) {L"North America", L"Europe", L"Russia", L"Asia", 
+				L"South America", L"Africa", L"Middle East", L"Australia", L"New Zealand", L"Antarctica"});
+			this->comboBoxRegion->Location = System::Drawing::Point(291, 159);
+			this->comboBoxRegion->Name = L"comboBoxRegion";
+			this->comboBoxRegion->Size = System::Drawing::Size(139, 25);
+			this->comboBoxRegion->TabIndex = 77;
+			// 
+			// textBoxAvoiding
+			// 
+			this->textBoxAvoiding->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxAvoiding->Location = System::Drawing::Point(291, 128);
+			this->textBoxAvoiding->Name = L"textBoxAvoiding";
+			this->textBoxAvoiding->Size = System::Drawing::Size(317, 25);
+			this->textBoxAvoiding->TabIndex = 76;
+			this->textBoxAvoiding->WordWrap = false;
+			// 
+			// textBoxLooking
+			// 
+			this->textBoxLooking->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxLooking->Location = System::Drawing::Point(291, 97);
+			this->textBoxLooking->Name = L"textBoxLooking";
+			this->textBoxLooking->Size = System::Drawing::Size(317, 25);
+			this->textBoxLooking->TabIndex = 75;
+			this->textBoxLooking->WordWrap = false;
+			// 
+			// textBoxName
+			// 
+			this->textBoxName->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxName->Location = System::Drawing::Point(291, 35);
+			this->textBoxName->Name = L"textBoxName";
+			this->textBoxName->Size = System::Drawing::Size(317, 25);
+			this->textBoxName->TabIndex = 73;
+			this->textBoxName->WordWrap = false;
+			// 
+			// textBoxComment
+			// 
+			this->textBoxComment->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxComment->Location = System::Drawing::Point(291, 66);
+			this->textBoxComment->Name = L"textBoxComment";
+			this->textBoxComment->Size = System::Drawing::Size(317, 25);
+			this->textBoxComment->TabIndex = 74;
+			this->textBoxComment->WordWrap = false;
+			// 
+			// lblFEMD
+			// 
+			this->lblFEMD->AutoSize = true;
+			this->lblFEMD->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblFEMD->ForeColor = System::Drawing::Color::White;
+			this->lblFEMD->Location = System::Drawing::Point(59, 262);
+			this->lblFEMD->Name = L"lblFEMD";
+			this->lblFEMD->Size = System::Drawing::Size(138, 17);
+			this->lblFEMD->TabIndex = 61;
+			this->lblFEMD->Text = L"Configure your server.";
+			// 
+			// lblFEM
+			// 
+			this->lblFEM->AutoSize = true;
+			this->lblFEM->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblFEM->ForeColor = System::Drawing::Color::White;
+			this->lblFEM->Location = System::Drawing::Point(59, 236);
+			this->lblFEM->Name = L"lblFEM";
+			this->lblFEM->Size = System::Drawing::Size(124, 17);
+			this->lblFEM->TabIndex = 60;
+			this->lblFEM->Text = L"Fight end message";
+			// 
+			// lblFight
+			// 
+			this->lblFight->AutoSize = true;
+			this->lblFight->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblFight->ForeColor = System::Drawing::Color::White;
+			this->lblFight->Location = System::Drawing::Point(291, 236);
+			this->lblFight->Name = L"lblFight";
+			this->lblFight->Size = System::Drawing::Size(122, 17);
+			this->lblFight->TabIndex = 57;
+			this->lblFight->Text = L"Fight End Message:";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->label13->ForeColor = System::Drawing::Color::White;
+			this->label13->Location = System::Drawing::Point(59, 187);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(246, 17);
+			this->label13->TabIndex = 56;
+			this->label13->Text = L"Choose what others will see when online.";
+			// 
+			// lblU
+			// 
+			this->lblU->AutoSize = true;
+			this->lblU->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblU->ForeColor = System::Drawing::Color::White;
+			this->lblU->Location = System::Drawing::Point(59, 35);
+			this->lblU->Name = L"lblU";
+			this->lblU->Size = System::Drawing::Size(80, 17);
+			this->lblU->TabIndex = 55;
+			this->lblU->Text = L"User profile";
+			// 
+			// pictureBox6
+			// 
+			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"pictureBox6.Image")));
+			this->pictureBox6->Location = System::Drawing::Point(62, 214);
+			this->pictureBox6->Name = L"pictureBox6";
+			this->pictureBox6->Size = System::Drawing::Size(546, 10);
+			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox6->TabIndex = 54;
+			this->pictureBox6->TabStop = false;
+			// 
+			// pnlWelcome
+			// 
+			this->pnlWelcome->BackColor = System::Drawing::Color::Black;
+			this->pnlWelcome->Controls->Add(this->textBoxWelcome);
+			this->pnlWelcome->Controls->Add(this->label3);
+			this->pnlWelcome->Controls->Add(this->lblSWM);
+			this->pnlWelcome->Location = System::Drawing::Point(160, 89);
+			this->pnlWelcome->Name = L"pnlWelcome";
+			this->pnlWelcome->Size = System::Drawing::Size(650, 370);
+			this->pnlWelcome->TabIndex = 22;
 			// 
 			// label3
 			// 
@@ -861,11 +953,23 @@ namespace LilithPort {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::Color::White;
-			this->label3->Location = System::Drawing::Point(261, 187);
+			this->label3->Location = System::Drawing::Point(59, 237);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(21, 17);
-			this->label3->TabIndex = 42;
-			this->label3->Text = L"IP:";
+			this->label3->Size = System::Drawing::Size(389, 17);
+			this->label3->TabIndex = 58;
+			this->label3->Text = L"Set a message that appears when people join the server (MOTD).";
+			// 
+			// lblSWM
+			// 
+			this->lblSWM->AutoSize = true;
+			this->lblSWM->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblSWM->ForeColor = System::Drawing::Color::White;
+			this->lblSWM->Location = System::Drawing::Point(59, 34);
+			this->lblSWM->Name = L"lblSWM";
+			this->lblSWM->Size = System::Drawing::Size(165, 17);
+			this->lblSWM->TabIndex = 57;
+			this->lblSWM->Text = L"Server Welcome Message";
 			// 
 			// StartupForm
 			// 
@@ -881,11 +985,12 @@ namespace LilithPort {
 			this->Controls->Add(this->btnConnection);
 			this->Controls->Add(this->btnWelcome);
 			this->Controls->Add(this->TitleLabel);
-			this->Controls->Add(this->pnlConnection);
-			this->Controls->Add(this->pnlUser);
-			this->Controls->Add(this->pnlWelcome);
 			this->Controls->Add(this->buttonOK);
 			this->Controls->Add(this->buttonCancel);
+			this->Controls->Add(this->buttonConnect);
+			this->Controls->Add(this->pnlUser);
+			this->Controls->Add(this->pnlWelcome);
+			this->Controls->Add(this->pnlConnection);
 			this->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
@@ -901,22 +1006,16 @@ namespace LilithPort {
 			this->FormClosed += gcnew System::Windows::Forms::FormClosedEventHandler(this, &StartupForm::StartupForm_FormClosed);
 			this->Load += gcnew System::EventHandler(this, &StartupForm::StartupForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->numericUpDownOpenPort))->EndInit();
-			this->groupBoxConnection->ResumeLayout(false);
-			this->groupBoxConnection->PerformLayout();
-			this->groupBoxWelcome->ResumeLayout(false);
-			this->startupTabs->ResumeLayout(false);
-			this->tabPage2->ResumeLayout(false);
-			this->tabPage2->PerformLayout();
-			this->tabPage1->ResumeLayout(false);
-			this->groupBoxGG->ResumeLayout(false);
-			this->groupBoxGG->PerformLayout();
-			this->groupBoxUser->ResumeLayout(false);
-			this->groupBoxUser->PerformLayout();
-			this->tabPage3->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->PictureBox1))->EndInit();
 			this->pnlConnection->ResumeLayout(false);
 			this->pnlConnection->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox2))->EndInit();
+			this->pnlUser->ResumeLayout(false);
+			this->pnlUser->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox6))->EndInit();
+			this->pnlWelcome->ResumeLayout(false);
+			this->pnlWelcome->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -934,6 +1033,15 @@ namespace LilithPort {
 #pragma region Load Settings
 		System::Void StartupForm_Load(System::Object^  sender, System::EventArgs^  e) {
 			ConnectionStart = false;
+
+			//Force connection panel to show at startup.
+			btnConnection->BackColor = Color::FromArgb(255, 82, 82, 82);
+			btnUser->BackColor = Color::FromArgb(255, 43, 44, 49);
+			btnWelcome->BackColor = Color::FromArgb(255, 43, 44, 49);
+			pnlConnection->Show();
+			pnlConnection->BringToFront();
+			pnlUser->Hide();
+			pnlWelcome->Hide();
 
 			textBoxServerName->MaxLength      = MAX_NAME;
 			textBoxIP->MaxLength              = MAX_ARRAY;
@@ -977,45 +1085,55 @@ namespace LilithPort {
 			checkBoxRegion->Checked = MTOPTION.SHOW_REGION;
 
 			textBoxGG->Text = gcnew String(MTOPTION.GG);
-			checkBoxGG->Checked = MTOPTION.GG_ENABLE;
+			chkGG->Checked = MTOPTION.GG_ENABLE;
 			// タブを改行に
 			ReplaceWelcomeTab(true);
 			textBoxWelcome->Text = gcnew String(MTOPTION.WELCOME);
 		}
 #pragma endregion
 #pragma region Functions
+
 		// Radio buttons for selecting a mode on startup. 
 		System::Void radioButtonServer_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			numericUpDownOpenPort->Enabled = true;
-			labelOpenPort->Enabled         = true;
-			labelServerName->Enabled       = true;
-			textBoxServerName->Enabled     = true;
-			textBoxIP->Enabled             = false;
-			groupBoxConnection->Enabled    = false;
-			groupBoxWelcome->Enabled       = true;
-			checkBoxUpnp->Enabled          = true;
+			textBoxServerName->Enabled = true;
+			textBoxIP->Enabled = false;
+			lblS->Enabled = true;
+			lblSD->Enabled = true;
+			lblC->Enabled = false;
+			lblCD->Enabled = false;
+			lblCIP->Enabled = false;
+			checkBoxUpnp->Enabled = true;
 			checkBoxLegacy->Checked = false;
+			checkBoxLegacy->Enabled = false;
 		}
+
 		System::Void radioButtonHost_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			numericUpDownOpenPort->Enabled = true;
-			labelOpenPort->Enabled         = true;
-			labelServerName->Enabled       = false;
 			textBoxServerName->Enabled     = false;
 			textBoxIP->Enabled             = true;
-			groupBoxConnection->Enabled    = true;
-			groupBoxWelcome->Enabled       = false;
+			lblS->Enabled = false;
+			lblSD->Enabled = false;
+			lblC->Enabled = true;
+			lblCD->Enabled = true;
+			lblCIP->Enabled = true;
 			checkBoxUpnp->Enabled          = true;
+			checkBoxLegacy->Enabled = true;
 		}
+
 		System::Void radioButtonClient_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			numericUpDownOpenPort->Enabled = false;
-			labelOpenPort->Enabled         = false;
-			labelServerName->Enabled       = false;
 			textBoxServerName->Enabled     = false;
 			textBoxIP->Enabled             = true;
-			groupBoxConnection->Enabled    = true;
-			groupBoxWelcome->Enabled       = false;
-			checkBoxUpnp->Enabled          = false;
+			lblS->Enabled = false;
+			lblSD->Enabled = false;
+			lblC->Enabled = true;
+			lblCD->Enabled = true;
+			lblCIP->Enabled = true;
+			checkBoxUpnp->Enabled = false;
+			checkBoxLegacy->Enabled = true;
 		}
+
 		//Checkbox for enabling/disabling UPnP.
 		System::Void checkBoxUpnp_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			if(checkBoxUpnp->Checked == true)
@@ -1029,6 +1147,7 @@ namespace LilithPort {
 				UPnP_PortOpenClose(false, false);
 			}
 		}
+
 		// Checkbox for enabling/disabling legacy netcode.
 		System::Void checkBoxLegacy_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			if (checkBoxLegacy->Checked == true){
@@ -1050,6 +1169,8 @@ namespace LilithPort {
 				checkBoxRegion->Enabled = true;
 			}
 		 }
+
+		//If the rest on connction checkbox is enabled, then change the connection state, otherwise don't.
 		System::Void checkBoxRestConnect_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			if (checkBoxRestConnect->Checked == true){
 				MTOPTION.REST_CONNECT = true;
@@ -1057,6 +1178,8 @@ namespace LilithPort {
 				MTOPTION.REST_CONNECT = false;
 			}
 		}
+
+		//If the region checkbox is enabled, then allow user to edit their region, otherwise don't.
 		System::Void checkBoxRegion_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			if (checkBoxRegion->Checked == true){
 				MTOPTION.SHOW_REGION = true;
@@ -1064,10 +1187,12 @@ namespace LilithPort {
 			}else{
 				MTOPTION.SHOW_REGION = false;
 				comboBoxRegion->Enabled = false;
-			}
-		 }
+			} 
+		}
+		
+		//If the GG checkbox is enabled, then allow user to edit their GG message, otherwise don't.
 		System::Void checkBoxGG_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-			if (checkBoxGG->Checked == true){
+			if (chkGG->Checked == true){
 				MTOPTION.GG_ENABLE = true;
 				textBoxGG->Enabled = true;
 			}else{
@@ -1109,6 +1234,7 @@ namespace LilithPort {
 
 			this->Close();
 		}
+
 		// Closes the 'Welcome' dialogue and sends the user to Free Play mode, skipping any type of connection. Effectively "offline" mode.
 		System::Void buttonCancel_Click(System::Object^  sender, System::EventArgs^  e) {
 			MTOPTION.CONNECTION_TYPE = CT_FREE;
@@ -1117,5 +1243,33 @@ namespace LilithPort {
 			this->Close();
 		}
 #pragma endregion
+		System::Void btnConnection_Click(System::Object^  sender, System::EventArgs^  e) {
+			btnConnection->BackColor = Color::FromArgb(255, 82, 82, 82);
+			btnUser->BackColor = Color::FromArgb(255, 43, 44, 49);
+			btnWelcome->BackColor = Color::FromArgb(255, 43, 44, 49);
+			pnlConnection->Show();
+			pnlConnection->BringToFront();
+			pnlUser->Hide();
+			pnlWelcome->Hide();
+		 }
+		System::Void btnUser_Click(System::Object^  sender, System::EventArgs^  e) {
+			btnConnection->BackColor = Color::FromArgb(255, 43, 44, 49);
+			btnUser->BackColor = Color::FromArgb(255, 82, 82, 82);
+			btnWelcome->BackColor = Color::FromArgb(255, 43, 44, 49);
+			pnlConnection->Hide();
+			pnlUser->Show();
+			pnlUser->BringToFront();
+			pnlWelcome->Hide();
+		 }
+		System::Void btnWelcome_Click(System::Object^  sender, System::EventArgs^  e) {
+			btnConnection->BackColor = Color::FromArgb(255, 43, 44, 49);
+			btnUser->BackColor = Color::FromArgb(255, 43, 44, 49);
+			btnWelcome->BackColor = Color::FromArgb(255, 82, 82, 82);
+			pnlConnection->Hide();
+			pnlUser->Hide();
+			pnlWelcome->Show();
+			pnlWelcome->BringToFront();
+		 }
+		
 };
 }
