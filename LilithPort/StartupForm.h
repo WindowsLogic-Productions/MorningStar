@@ -84,6 +84,19 @@ namespace LilithPort {
 	private: System::Windows::Forms::GroupBox^  groupBoxGG;
 	private: System::Windows::Forms::CheckBox^  checkBoxGG;
 	private: System::Windows::Forms::Label^  labelGG;
+	internal: System::Windows::Forms::Label^  TitleLabel;
+	internal: System::Windows::Forms::PictureBox^  PictureBox1;
+	internal: System::Windows::Forms::Button^  btnUser;
+
+	internal: System::Windows::Forms::Button^  btnConnection;
+	internal: System::Windows::Forms::Button^  btnWelcome;
+	private: System::Windows::Forms::Panel^  pnlConnection;
+	internal: 
+	private: System::Windows::Forms::Panel^  pnlUser;
+	private: System::Windows::Forms::Panel^  pnlWelcome;
+
+
+	private: 
 
 
 
@@ -149,6 +162,14 @@ namespace LilithPort {
 			this->textBoxAvoiding = (gcnew System::Windows::Forms::TextBox());
 			this->textBoxLooking = (gcnew System::Windows::Forms::TextBox());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->TitleLabel = (gcnew System::Windows::Forms::Label());
+			this->PictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->btnUser = (gcnew System::Windows::Forms::Button());
+			this->btnConnection = (gcnew System::Windows::Forms::Button());
+			this->btnWelcome = (gcnew System::Windows::Forms::Button());
+			this->pnlConnection = (gcnew System::Windows::Forms::Panel());
+			this->pnlUser = (gcnew System::Windows::Forms::Panel());
+			this->pnlWelcome = (gcnew System::Windows::Forms::Panel());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->numericUpDownOpenPort))->BeginInit();
 			this->groupBoxStartMode->SuspendLayout();
 			this->groupBoxConnection->SuspendLayout();
@@ -159,6 +180,7 @@ namespace LilithPort {
 			this->groupBoxGG->SuspendLayout();
 			this->groupBoxUser->SuspendLayout();
 			this->tabPage3->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->PictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// radioButtonServer
@@ -181,7 +203,7 @@ namespace LilithPort {
 			this->radioButtonHost->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->radioButtonHost->Location = System::Drawing::Point(6, 29);
 			this->radioButtonHost->Name = L"radioButtonHost";
-			this->radioButtonHost->Size = System::Drawing::Size(53, 18);
+			this->radioButtonHost->Size = System::Drawing::Size(55, 18);
 			this->radioButtonHost->TabIndex = 1;
 			this->radioButtonHost->Text = L"Host";
 			this->toolTipStartupForm->SetToolTip(this->radioButtonHost, L"Connect to the server. \r\nThe specified listening port (UDP) will be used for comm" 
@@ -195,7 +217,7 @@ namespace LilithPort {
 			this->radioButtonClient->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->radioButtonClient->Location = System::Drawing::Point(6, 52);
 			this->radioButtonClient->Name = L"radioButtonClient";
-			this->radioButtonClient->Size = System::Drawing::Size(57, 18);
+			this->radioButtonClient->Size = System::Drawing::Size(61, 18);
 			this->radioButtonClient->TabIndex = 2;
 			this->radioButtonClient->Text = L"Client";
 			this->toolTipStartupForm->SetToolTip(this->radioButtonClient, L"Connect to the server. \r\nThe port will be assigned automatically. \r\n(You can conn" 
@@ -208,7 +230,7 @@ namespace LilithPort {
 			this->labelServerName->AutoSize = true;
 			this->labelServerName->Location = System::Drawing::Point(9, 27);
 			this->labelServerName->Name = L"labelServerName";
-			this->labelServerName->Size = System::Drawing::Size(54, 13);
+			this->labelServerName->Size = System::Drawing::Size(53, 13);
 			this->labelServerName->TabIndex = 0;
 			this->labelServerName->Text = L"Server IP:";
 			this->toolTipStartupForm->SetToolTip(this->labelServerName, L"Set the IP address your server will use.\r\nDo not include the port number in this " 
@@ -218,7 +240,7 @@ namespace LilithPort {
 			// 
 			this->textBoxIP->Location = System::Drawing::Point(81, 25);
 			this->textBoxIP->Name = L"textBoxIP";
-			this->textBoxIP->Size = System::Drawing::Size(256, 20);
+			this->textBoxIP->Size = System::Drawing::Size(256, 22);
 			this->textBoxIP->TabIndex = 6;
 			this->textBoxIP->WordWrap = false;
 			// 
@@ -227,7 +249,7 @@ namespace LilithPort {
 			this->labelOpenPort->AutoSize = true;
 			this->labelOpenPort->Location = System::Drawing::Point(9, 56);
 			this->labelOpenPort->Name = L"labelOpenPort";
-			this->labelOpenPort->Size = System::Drawing::Size(62, 13);
+			this->labelOpenPort->Size = System::Drawing::Size(66, 13);
 			this->labelOpenPort->TabIndex = 0;
 			this->labelOpenPort->Text = L"Server port:";
 			this->toolTipStartupForm->SetToolTip(this->labelOpenPort, L"Set the server port from 1024 - 65535. Default port is 7500.\r\nWhen a server port " 
@@ -239,7 +261,7 @@ namespace LilithPort {
 			this->numericUpDownOpenPort->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) {65535, 0, 0, 0});
 			this->numericUpDownOpenPort->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) {1024, 0, 0, 0});
 			this->numericUpDownOpenPort->Name = L"numericUpDownOpenPort";
-			this->numericUpDownOpenPort->Size = System::Drawing::Size(53, 20);
+			this->numericUpDownOpenPort->Size = System::Drawing::Size(53, 22);
 			this->numericUpDownOpenPort->TabIndex = 4;
 			this->numericUpDownOpenPort->Tag = L"";
 			this->numericUpDownOpenPort->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) {7500, 0, 0, 0});
@@ -247,9 +269,9 @@ namespace LilithPort {
 			// buttonOK
 			// 
 			this->buttonOK->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonOK->Location = System::Drawing::Point(272, 279);
+			this->buttonOK->Location = System::Drawing::Point(654, 386);
 			this->buttonOK->Name = L"buttonOK";
-			this->buttonOK->Size = System::Drawing::Size(80, 26);
+			this->buttonOK->Size = System::Drawing::Size(75, 23);
 			this->buttonOK->TabIndex = 0;
 			this->buttonOK->Text = L"OK";
 			this->toolTipStartupForm->SetToolTip(this->buttonOK, L"Confirm the settings you\'ve chosen above.");
@@ -260,9 +282,9 @@ namespace LilithPort {
 			// 
 			this->buttonCancel->DialogResult = System::Windows::Forms::DialogResult::Cancel;
 			this->buttonCancel->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonCancel->Location = System::Drawing::Point(358, 279);
+			this->buttonCancel->Location = System::Drawing::Point(735, 386);
 			this->buttonCancel->Name = L"buttonCancel";
-			this->buttonCancel->Size = System::Drawing::Size(80, 26);
+			this->buttonCancel->Size = System::Drawing::Size(75, 23);
 			this->buttonCancel->TabIndex = 1;
 			this->buttonCancel->Text = L"Cancel";
 			this->toolTipStartupForm->SetToolTip(this->buttonCancel, L"Switch to offline free play mode.");
@@ -289,7 +311,7 @@ namespace LilithPort {
 			this->checkBoxUpnp->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->checkBoxUpnp->Location = System::Drawing::Point(12, 80);
 			this->checkBoxUpnp->Name = L"checkBoxUpnp";
-			this->checkBoxUpnp->Size = System::Drawing::Size(96, 18);
+			this->checkBoxUpnp->Size = System::Drawing::Size(97, 18);
 			this->checkBoxUpnp->TabIndex = 5;
 			this->checkBoxUpnp->Text = L"Enable UPnP";
 			this->checkBoxUpnp->UseVisualStyleBackColor = true;
@@ -299,7 +321,7 @@ namespace LilithPort {
 			// 
 			this->textBoxServerName->Location = System::Drawing::Point(77, 23);
 			this->textBoxServerName->Name = L"textBoxServerName";
-			this->textBoxServerName->Size = System::Drawing::Size(260, 20);
+			this->textBoxServerName->Size = System::Drawing::Size(260, 22);
 			this->textBoxServerName->TabIndex = 3;
 			this->textBoxServerName->WordWrap = false;
 			// 
@@ -322,7 +344,7 @@ namespace LilithPort {
 			this->checkBoxLegacy->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->checkBoxLegacy->Location = System::Drawing::Point(6, 51);
 			this->checkBoxLegacy->Name = L"checkBoxLegacy";
-			this->checkBoxLegacy->Size = System::Drawing::Size(141, 18);
+			this->checkBoxLegacy->Size = System::Drawing::Size(147, 18);
 			this->checkBoxLegacy->TabIndex = 7;
 			this->checkBoxLegacy->Text = L"Enable legacy netcode";
 			this->toolTipStartupForm->SetToolTip(this->checkBoxLegacy, L"Allows connection to servers running 1.0.9.x or earlier.");
@@ -334,7 +356,7 @@ namespace LilithPort {
 			this->label1->AutoSize = true;
 			this->label1->Location = System::Drawing::Point(6, 28);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(69, 13);
+			this->label1->Size = System::Drawing::Size(70, 13);
 			this->label1->TabIndex = 11;
 			this->label1->Text = L"Address / IP:";
 			this->toolTipStartupForm->SetToolTip(this->label1, L"Specify the server address or IP you want to connect to.\r\n[<address/ip>:<port>]");
@@ -374,13 +396,14 @@ namespace LilithPort {
 			// buttonConnect
 			// 
 			this->buttonConnect->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonConnect->Location = System::Drawing::Point(272, 279);
+			this->buttonConnect->Location = System::Drawing::Point(534, 386);
 			this->buttonConnect->Name = L"buttonConnect";
-			this->buttonConnect->Size = System::Drawing::Size(80, 26);
+			this->buttonConnect->Size = System::Drawing::Size(80, 23);
 			this->buttonConnect->TabIndex = 8;
 			this->buttonConnect->Text = L"Connect";
 			this->toolTipStartupForm->SetToolTip(this->buttonConnect, L"Start an online connection.");
 			this->buttonConnect->UseVisualStyleBackColor = true;
+			this->buttonConnect->Visible = false;
 			this->buttonConnect->Click += gcnew System::EventHandler(this, &StartupForm::buttonOK_Click);
 			// 
 			// labelLooking
@@ -388,7 +411,7 @@ namespace LilithPort {
 			this->labelLooking->AutoSize = true;
 			this->labelLooking->Location = System::Drawing::Point(11, 78);
 			this->labelLooking->Name = L"labelLooking";
-			this->labelLooking->Size = System::Drawing::Size(63, 13);
+			this->labelLooking->Size = System::Drawing::Size(70, 13);
 			this->labelLooking->TabIndex = 10;
 			this->labelLooking->Text = L"Looking for:";
 			this->toolTipStartupForm->SetToolTip(this->labelLooking, L"Specify what you\'re looking for in players.");
@@ -398,7 +421,7 @@ namespace LilithPort {
 			this->labelAvoiding->AutoSize = true;
 			this->labelAvoiding->Location = System::Drawing::Point(23, 104);
 			this->labelAvoiding->Name = L"labelAvoiding";
-			this->labelAvoiding->Size = System::Drawing::Size(51, 13);
+			this->labelAvoiding->Size = System::Drawing::Size(56, 13);
 			this->labelAvoiding->TabIndex = 12;
 			this->labelAvoiding->Text = L"Avoiding:";
 			this->toolTipStartupForm->SetToolTip(this->labelAvoiding, L"Specify what you\'re avoiding in players.");
@@ -409,7 +432,7 @@ namespace LilithPort {
 			this->checkBoxRestConnect->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->checkBoxRestConnect->Location = System::Drawing::Point(68, 197);
 			this->checkBoxRestConnect->Name = L"checkBoxRestConnect";
-			this->checkBoxRestConnect->Size = System::Drawing::Size(253, 18);
+			this->checkBoxRestConnect->Size = System::Drawing::Size(278, 18);
 			this->checkBoxRestConnect->TabIndex = 8;
 			this->checkBoxRestConnect->Text = L"On connection, automatically go into rest mode";
 			this->toolTipStartupForm->SetToolTip(this->checkBoxRestConnect, L"Automatically toggles you to rest mode when you initialise a server or join anoth" 
@@ -422,7 +445,7 @@ namespace LilithPort {
 			this->labelRegion->AutoSize = true;
 			this->labelRegion->Location = System::Drawing::Point(30, 130);
 			this->labelRegion->Name = L"labelRegion";
-			this->labelRegion->Size = System::Drawing::Size(44, 13);
+			this->labelRegion->Size = System::Drawing::Size(47, 13);
 			this->labelRegion->TabIndex = 13;
 			this->labelRegion->Text = L"Region:";
 			this->toolTipStartupForm->SetToolTip(this->labelRegion, L"Specify a region to show on your profile.");
@@ -432,7 +455,7 @@ namespace LilithPort {
 			this->labelGG->AutoSize = true;
 			this->labelGG->Location = System::Drawing::Point(11, 28);
 			this->labelGG->Name = L"labelGG";
-			this->labelGG->Size = System::Drawing::Size(74, 13);
+			this->labelGG->Size = System::Drawing::Size(77, 13);
 			this->labelGG->TabIndex = 16;
 			this->labelGG->Text = L"End message:";
 			this->toolTipStartupForm->SetToolTip(this->labelGG, L"Specify a message to type in chat after a fight.");
@@ -442,7 +465,7 @@ namespace LilithPort {
 			this->labelComment->AutoSize = true;
 			this->labelComment->Location = System::Drawing::Point(20, 52);
 			this->labelComment->Name = L"labelComment";
-			this->labelComment->Size = System::Drawing::Size(54, 13);
+			this->labelComment->Size = System::Drawing::Size(59, 13);
 			this->labelComment->TabIndex = 8;
 			this->labelComment->Text = L"Comment:";
 			this->toolTipStartupForm->SetToolTip(this->labelComment, L"You will automatically say this message when you join.");
@@ -452,7 +475,7 @@ namespace LilithPort {
 			this->labelName->AutoSize = true;
 			this->labelName->Location = System::Drawing::Point(36, 25);
 			this->labelName->Name = L"labelName";
-			this->labelName->Size = System::Drawing::Size(38, 13);
+			this->labelName->Size = System::Drawing::Size(39, 13);
 			this->labelName->TabIndex = 5;
 			this->labelName->Text = L"Name:";
 			this->toolTipStartupForm->SetToolTip(this->labelName, L"Your username. You cannot use special characters.");
@@ -461,7 +484,7 @@ namespace LilithPort {
 			// 
 			this->textBoxName->Location = System::Drawing::Point(80, 22);
 			this->textBoxName->Name = L"textBoxName";
-			this->textBoxName->Size = System::Drawing::Size(323, 20);
+			this->textBoxName->Size = System::Drawing::Size(323, 22);
 			this->textBoxName->TabIndex = 0;
 			this->textBoxName->WordWrap = false;
 			// 
@@ -469,7 +492,7 @@ namespace LilithPort {
 			// 
 			this->textBoxComment->Location = System::Drawing::Point(80, 49);
 			this->textBoxComment->Name = L"textBoxComment";
-			this->textBoxComment->Size = System::Drawing::Size(323, 20);
+			this->textBoxComment->Size = System::Drawing::Size(323, 22);
 			this->textBoxComment->TabIndex = 1;
 			this->textBoxComment->WordWrap = false;
 			// 
@@ -478,7 +501,7 @@ namespace LilithPort {
 			this->textBoxGG->Enabled = false;
 			this->textBoxGG->Location = System::Drawing::Point(91, 25);
 			this->textBoxGG->Name = L"textBoxGG";
-			this->textBoxGG->Size = System::Drawing::Size(189, 20);
+			this->textBoxGG->Size = System::Drawing::Size(189, 22);
 			this->textBoxGG->TabIndex = 6;
 			// 
 			// startupTabs
@@ -486,7 +509,7 @@ namespace LilithPort {
 			this->startupTabs->Controls->Add(this->tabPage2);
 			this->startupTabs->Controls->Add(this->tabPage1);
 			this->startupTabs->Controls->Add(this->tabPage3);
-			this->startupTabs->Location = System::Drawing::Point(9, 12);
+			this->startupTabs->Location = System::Drawing::Point(381, 119);
 			this->startupTabs->Name = L"startupTabs";
 			this->startupTabs->SelectedIndex = 0;
 			this->startupTabs->Size = System::Drawing::Size(429, 261);
@@ -538,7 +561,7 @@ namespace LilithPort {
 			this->checkBoxGG->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->checkBoxGG->Location = System::Drawing::Point(286, 27);
 			this->checkBoxGG->Name = L"checkBoxGG";
-			this->checkBoxGG->Size = System::Drawing::Size(131, 18);
+			this->checkBoxGG->Size = System::Drawing::Size(137, 18);
 			this->checkBoxGG->TabIndex = 7;
 			this->checkBoxGG->Text = L"Enable end message";
 			this->checkBoxGG->UseVisualStyleBackColor = true;
@@ -570,7 +593,7 @@ namespace LilithPort {
 			this->checkBoxRegion->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->checkBoxRegion->Location = System::Drawing::Point(239, 130);
 			this->checkBoxRegion->Name = L"checkBoxRegion";
-			this->checkBoxRegion->Size = System::Drawing::Size(144, 18);
+			this->checkBoxRegion->Size = System::Drawing::Size(160, 18);
 			this->checkBoxRegion->TabIndex = 5;
 			this->checkBoxRegion->Text = L"Display region on profile";
 			this->checkBoxRegion->UseVisualStyleBackColor = true;
@@ -592,7 +615,7 @@ namespace LilithPort {
 			// 
 			this->textBoxAvoiding->Location = System::Drawing::Point(80, 101);
 			this->textBoxAvoiding->Name = L"textBoxAvoiding";
-			this->textBoxAvoiding->Size = System::Drawing::Size(323, 20);
+			this->textBoxAvoiding->Size = System::Drawing::Size(323, 22);
 			this->textBoxAvoiding->TabIndex = 3;
 			this->textBoxAvoiding->WordWrap = false;
 			// 
@@ -600,7 +623,7 @@ namespace LilithPort {
 			// 
 			this->textBoxLooking->Location = System::Drawing::Point(80, 75);
 			this->textBoxLooking->Name = L"textBoxLooking";
-			this->textBoxLooking->Size = System::Drawing::Size(323, 20);
+			this->textBoxLooking->Size = System::Drawing::Size(323, 22);
 			this->textBoxLooking->TabIndex = 2;
 			this->textBoxLooking->WordWrap = false;
 			// 
@@ -615,19 +638,130 @@ namespace LilithPort {
 			this->tabPage3->Text = L"Welcome Message";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
+			// TitleLabel
+			// 
+			this->TitleLabel->AutoSize = true;
+			this->TitleLabel->Font = (gcnew System::Drawing::Font(L"Segoe UI", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->TitleLabel->ForeColor = System::Drawing::Color::White;
+			this->TitleLabel->Location = System::Drawing::Point(25, 33);
+			this->TitleLabel->Name = L"TitleLabel";
+			this->TitleLabel->Size = System::Drawing::Size(99, 30);
+			this->TitleLabel->TabIndex = 16;
+			this->TitleLabel->Text = L"Welcome";
+			// 
+			// PictureBox1
+			// 
+			this->PictureBox1->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"PictureBox1.Image")));
+			this->PictureBox1->Location = System::Drawing::Point(381, 53);
+			this->PictureBox1->Name = L"PictureBox1";
+			this->PictureBox1->Size = System::Drawing::Size(300, 10);
+			this->PictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->PictureBox1->TabIndex = 17;
+			this->PictureBox1->TabStop = false;
+			// 
+			// btnUser
+			// 
+			this->btnUser->BackColor = System::Drawing::Color::Transparent;
+			this->btnUser->FlatAppearance->BorderSize = 0;
+			this->btnUser->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Black;
+			this->btnUser->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(82)), 
+				static_cast<System::Int32>(static_cast<System::Byte>(82)), static_cast<System::Int32>(static_cast<System::Byte>(82)));
+			this->btnUser->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->btnUser->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->btnUser->ForeColor = System::Drawing::Color::White;
+			this->btnUser->Location = System::Drawing::Point(0, 125);
+			this->btnUser->Name = L"btnUser";
+			this->btnUser->Size = System::Drawing::Size(161, 36);
+			this->btnUser->TabIndex = 19;
+			this->btnUser->Text = L"User Profile";
+			this->btnUser->UseVisualStyleBackColor = false;
+			// 
+			// btnConnection
+			// 
+			this->btnConnection->BackColor = System::Drawing::Color::Transparent;
+			this->btnConnection->FlatAppearance->BorderSize = 0;
+			this->btnConnection->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Black;
+			this->btnConnection->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(82)), 
+				static_cast<System::Int32>(static_cast<System::Byte>(82)), static_cast<System::Int32>(static_cast<System::Byte>(82)));
+			this->btnConnection->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->btnConnection->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->btnConnection->ForeColor = System::Drawing::Color::White;
+			this->btnConnection->Location = System::Drawing::Point(0, 89);
+			this->btnConnection->Name = L"btnConnection";
+			this->btnConnection->Size = System::Drawing::Size(161, 36);
+			this->btnConnection->TabIndex = 18;
+			this->btnConnection->Text = L"Connection";
+			this->btnConnection->UseVisualStyleBackColor = false;
+			// 
+			// btnWelcome
+			// 
+			this->btnWelcome->BackColor = System::Drawing::Color::Transparent;
+			this->btnWelcome->FlatAppearance->BorderSize = 0;
+			this->btnWelcome->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Black;
+			this->btnWelcome->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(82)), 
+				static_cast<System::Int32>(static_cast<System::Byte>(82)), static_cast<System::Int32>(static_cast<System::Byte>(82)));
+			this->btnWelcome->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->btnWelcome->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->btnWelcome->ForeColor = System::Drawing::Color::White;
+			this->btnWelcome->Location = System::Drawing::Point(0, 161);
+			this->btnWelcome->Name = L"btnWelcome";
+			this->btnWelcome->Size = System::Drawing::Size(161, 36);
+			this->btnWelcome->TabIndex = 20;
+			this->btnWelcome->Text = L"Welcome Message";
+			this->btnWelcome->UseVisualStyleBackColor = false;
+			// 
+			// pnlConnection
+			// 
+			this->pnlConnection->BackColor = System::Drawing::Color::Black;
+			this->pnlConnection->Location = System::Drawing::Point(47, 280);
+			this->pnlConnection->Name = L"pnlConnection";
+			this->pnlConnection->Size = System::Drawing::Size(200, 100);
+			this->pnlConnection->TabIndex = 21;
+			// 
+			// pnlUser
+			// 
+			this->pnlUser->BackColor = System::Drawing::Color::Black;
+			this->pnlUser->Location = System::Drawing::Point(79, 267);
+			this->pnlUser->Name = L"pnlUser";
+			this->pnlUser->Size = System::Drawing::Size(200, 100);
+			this->pnlUser->TabIndex = 22;
+			// 
+			// pnlWelcome
+			// 
+			this->pnlWelcome->BackColor = System::Drawing::Color::Black;
+			this->pnlWelcome->Location = System::Drawing::Point(129, 252);
+			this->pnlWelcome->Name = L"pnlWelcome";
+			this->pnlWelcome->Size = System::Drawing::Size(200, 100);
+			this->pnlWelcome->TabIndex = 22;
+			// 
 			// StartupForm
 			// 
 			this->AcceptButton = this->buttonOK;
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::Black;
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(43)), static_cast<System::Int32>(static_cast<System::Byte>(44)), 
+				static_cast<System::Int32>(static_cast<System::Byte>(49)));
 			this->CancelButton = this->buttonCancel;
-			this->ClientSize = System::Drawing::Size(450, 317);
+			this->ClientSize = System::Drawing::Size(810, 460);
 			this->ControlBox = false;
+			this->Controls->Add(this->pnlUser);
+			this->Controls->Add(this->pnlWelcome);
+			this->Controls->Add(this->pnlConnection);
+			this->Controls->Add(this->btnUser);
+			this->Controls->Add(this->btnConnection);
+			this->Controls->Add(this->btnWelcome);
+			this->Controls->Add(this->PictureBox1);
+			this->Controls->Add(this->TitleLabel);
 			this->Controls->Add(this->startupTabs);
 			this->Controls->Add(this->buttonOK);
 			this->Controls->Add(this->buttonCancel);
 			this->Controls->Add(this->buttonConnect);
+			this->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^  >(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
@@ -655,7 +789,9 @@ namespace LilithPort {
 			this->groupBoxUser->ResumeLayout(false);
 			this->groupBoxUser->PerformLayout();
 			this->tabPage3->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->PictureBox1))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
