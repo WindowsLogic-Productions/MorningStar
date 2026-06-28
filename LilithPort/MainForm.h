@@ -1083,7 +1083,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			this->richTextBoxLog->Location = System::Drawing::Point(0, 0);
 			this->richTextBoxLog->Name = L"richTextBoxLog";
 			this->richTextBoxLog->ReadOnly = true;
-			this->richTextBoxLog->Size = System::Drawing::Size(606, 343);
+			this->richTextBoxLog->Size = System::Drawing::Size(606, 340);
 			this->richTextBoxLog->TabIndex = 0;
 			this->richTextBoxLog->TabStop = false;
 			this->richTextBoxLog->Text = L"";
@@ -1981,13 +1981,11 @@ private: System::Windows::Forms::Button^  buttonClear;
 				}*/
 				if(MTOPTION.NAME_SOUND_ENABLE){
 					inname = 1;
-					try{
-						/*Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.NAME_SOUND));
-						wav->Play();*/
+					if (this->Focused == true){
+						return;
+					}else{
 						WindowFlash();
 						notifyIconSysTray->ShowBalloonTip(1, "MorningStar - Notification", "Your nickname (" + gcnew String(MTOPTION.NAME) + ") was mentioned.", ToolTipIcon::Info);
-					}
-					catch(Exception^){
 					}
 				}
 			}
@@ -2021,13 +2019,11 @@ private: System::Windows::Forms::Button^  buttonClear;
 				}*/
 				// ”­Œ¾‚Å‰¹‚ðÄ¶
 				if(MTOPTION.TALK_SOUND_ENABLE && !inkeyword){
-					try{
-						/*Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.TALK_SOUND));
-						wav->Play();*/
+					if (this->Focused == true){
+						return;
+					}else{
 						WindowFlash();
 						notifyIconSysTray->ShowBalloonTip(1, "MorningStar - Notification", "A new message was sent in the chat.", ToolTipIcon::Info);
-					}
-					catch(Exception^){
 					}
 				}
 			}
@@ -2075,15 +2071,13 @@ private: System::Windows::Forms::Button^  buttonClear;
 			}
 		}
 		void WriteNotice(String^ msg){
-			// ‰¹‚Å‚¨’m‚ç‚¹
+			//If the app is focused do not send a notification (message), if it's not then send a notification (message).
 			if(MTOPTION.CONNECTION_TYPE != CT_SERVER){
 				if(MTOPTION.NOTICE_SOUND_ENABLE){
-					try{
-						/*Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.NOTICE_SOUND));
-						wav->Play();*/
+					if (this->Focused == true){
+						return;
+					}else{
 						notifyIconSysTray->ShowBalloonTip(1, "MorningStar - Notification", gcnew String(msg), ToolTipIcon::Info);
-					}
-					catch(Exception^){
 					}
 				}
 			}
@@ -2120,14 +2114,12 @@ private: System::Windows::Forms::Button^  buttonClear;
 				return;
 			}
 
-			// Play a chosen sound on member join.
+			//If the app is focused do not send a notification (user join), if it's not then send a notification (user join).
 			if(MTOPTION.ENTER_SOUND_ENABLE){
-				try{
-					/*Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.ENTER_SOUND));
-					wav->Play();*/
+				if (this->Focused == true){
+					return;
+				}else{
 					notifyIconSysTray->ShowBalloonTip(1, "MorningStar - Notification", "A user joined the chat.", ToolTipIcon::Info);
-				}
-				catch(Exception^){
 				}
 			}
 
@@ -2236,6 +2228,11 @@ private: System::Windows::Forms::Button^  buttonClear;
 
 		void WriteWhatsNew(){
 			WriteMessage(
+				L"\n"
+				L"~.Version 2.1.1.0.~\n"
+				L"\n"
+				L"- Fixed a bug where notifications would send even if the app was focused. (Thanks @Fantasy for this bug report.)\n"
+				L"- Fixed a bug where the chat would not resize properly to the window. (Thanks @unxipe for this bug report.)\n"
 				L"\n"
 				L"~.Version 2.1.0.0.~\n"
 				L"\n"
@@ -3553,7 +3550,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 		}
 		// Get the version string of MorningStar.
 		System::Void toolStripMenuItemVersion_Click(System::Object^  sender, System::EventArgs^  e) {
-			WriteMessage("MorningStar 2.1.0.0 by WindowsLogic Productions.\n", SystemMessageColor);
+			WriteMessage("MorningStar 2.1.1.0 by WindowsLogic Productions.\n", SystemMessageColor);
 			WriteMessage("Donate towards development: https://paypal.me/windowslogic \n\n", SystemMessageColor);
 		}
 #pragma endregion
