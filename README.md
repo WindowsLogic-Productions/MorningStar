@@ -137,4 +137,4 @@ You can find all releases of this software on the [releases](https://github.com/
 
 This software is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-Original source code is Copyright © Joe, all changes in this repo are Copyright © WindowsLogic Productions & BattleCapacity.
+Original source code is Copyright © Joe, all changes in this repo are Copyright © WindowsLogic Productios.
