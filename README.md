@@ -12,9 +12,11 @@ Any game that uses 2D Fighter Maker (95/2nd.) will work. MorningStar is also bac
  - [WonderfulWorld](http://www55.atwiki.jp/ainefill_oinusama/pages/111.html)
  - and many more...
 
+^Provided Legacy Netcode is enabled. 
+
 ## Instructions
 When you start MorningStar, a Welcome menu appears. There are 4 main modes of operation:
-- **Free Play** - just play locally and configure options. To go to Free Play mode, just disconnect from a server (`Commands > Leave`) or press `Cancel` on the Welcome dialog.
+- **Free Play** - just play locally and configure options. To go to Free Play mode, just disconnect from a server (`Commands > Leave`) or press `Cancel` on the Welcome dialogue.
 - **Client** - connect to a server without match hosting capabilities. Useful if you cannot forward ports on your network.
 - **Host** - connect to a server with match hosting capabilities.
   - *Listen port* - port used for hosting matches
