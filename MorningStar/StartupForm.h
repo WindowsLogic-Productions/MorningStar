@@ -395,7 +395,7 @@ internal:
 			// buttonConnect
 			// 
 			this->buttonConnect->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->buttonConnect->Location = System::Drawing::Point(408, 12);
+			this->buttonConnect->Location = System::Drawing::Point(637, 12);
 			this->buttonConnect->Name = L"buttonConnect";
 			this->buttonConnect->Size = System::Drawing::Size(80, 23);
 			this->buttonConnect->TabIndex = 8;

@@ -1971,14 +1971,10 @@ private: System::Windows::Forms::Button^  buttonClear;
 				Monitor::Exit(MemberList);
 			}
 
-			// Notify user on nickname mention.
+			////If the app is focused do not send a notification (nickname), if it's not then send a notification (nickname).
 			String ^tmpMsg = Encoding::Unicode->GetString(msg, 4, msg[3]);
 			bool inname = 0;
 			if(tmpMsg->Contains(gcnew String(MTOPTION.NAME))) {
-				// –¼‘O‚ªŒÄ‚Î‚ê‚½‚çƒEƒBƒ“ƒhƒE“_–Å
-				/*if(MTOPTION.NAME_FLASH) {
-					WindowFlash();
-				}*/
 				if(MTOPTION.NAME_SOUND_ENABLE){
 					inname = 1;
 					if (this->Focused == true){
@@ -1989,10 +1985,10 @@ private: System::Windows::Forms::Button^  buttonClear;
 					}
 				}
 			}
-			// Notify user on keyword mention.
+
+			////If the app is focused do not send a notification (keyword), if it's not then send a notification (keyword).
 			bool inkeyword = 0;
 			if(MTOPTION.KEYWORD_SOUND_ENABLE && !inname){
-				// •ªŠ„ƒoƒbƒtƒ@
 				TCHAR *tok, *next;
 				TCHAR s1[MAX_KEYWORD];
 				_tcscpy_s(s1, MTOPTION.KEYWORD);
@@ -2000,24 +1996,18 @@ private: System::Windows::Forms::Button^  buttonClear;
 				while(tok != NULL){
 					if(tmpMsg->Contains(gcnew String(tok))) {
 						inkeyword = 1;
-						try{
-							/*Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.KEYWORD_SOUND));
-							wav->Play();*/
+						if (this->Focused == true){
+							return;
+						}else{
 							notifyIconSysTray->ShowBalloonTip(1, "MorningStar - Notification", "Keyword (" + gcnew String(tok) + ") was mentioned.", ToolTipIcon::Info);
 						}
-						catch(Exception^){
-						}
-						break;
 					}
 					tok = wcstok_s(NULL, _T(","), &next);
 				}
 			}
-			// Play sound on chat message.
+
+			//Notify user on chat message if the window is focused.
 			if(MemberList[0]->ID != id && !inname) {
-				/*if(MTOPTION.TALK_FLASH) {
-					WindowFlash();
-				}*/
-				// ”­Œ¾‚Å‰¹‚ðÄ¶
 				if(MTOPTION.TALK_SOUND_ENABLE && !inkeyword){
 					if (this->Focused == true){
 						return;
@@ -2039,6 +2029,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 			WriteMessage(String::Format("{0}\n", tmpMsg), TalkMessageColor);
 		}
 
+		//Writes a specified message in the chat.
 		void WriteMessage(String^ msg, Color color){
 			if(richTextBoxLog->InvokeRequired){
 				WriteMessageDelegate^ wmd = gcnew WriteMessageDelegate(this, &MainForm::WriteMessage);
@@ -2063,6 +2054,8 @@ private: System::Windows::Forms::Button^  buttonClear;
 				}
 			}	
 		}
+
+		//Write the time in the chat as a text message.
 		void WriteTime(bool f, Color color){
 			if(f){
 				WriteMessage(String::Format("[{0}]", DateTime::Now.ToString("HH:mm")), color);
@@ -2070,8 +2063,9 @@ private: System::Windows::Forms::Button^  buttonClear;
 				WriteMessage(String::Format("[{0}] ", DateTime::Now.ToString("HH:mm")), color);
 			}
 		}
+
+		//If the app is focused do not send a notification (message), if it's not then send a notification (message).
 		void WriteNotice(String^ msg){
-			//If the app is focused do not send a notification (message), if it's not then send a notification (message).
 			if(MTOPTION.CONNECTION_TYPE != CT_SERVER){
 				if(MTOPTION.NOTICE_SOUND_ENABLE){
 					if (this->Focused == true){
