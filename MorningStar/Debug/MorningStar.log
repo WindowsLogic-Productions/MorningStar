@@ -1,45 +1,12 @@
-﻿Build started 30/06/2026 10:09:42.
+﻿Build started 01/07/2026 21:30:41.
      1>Project "J:\Projects\M0rningStar\MorningStar\MorningStar.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\MorningStar.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\MorningStar.unsuccessfulbuild".
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
-         D:\Programs\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\MorningStar.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt stdafx.cpp /clr:nostdlib 
-         stdafx.cpp
-     1>stdafx.cpp(43): warning C4551: function call missing argument list
-     1>stdafx.cpp(41): warning C4101: 'ex' : unreferenced local variable
-     1>stdafx.cpp(59): warning C4551: function call missing argument list
-     1>stdafx.cpp(57): warning C4101: 'ex' : unreferenced local variable
-     1>stdafx.cpp(111): warning C4800: 'UINT' : forcing value to bool 'true' or 'false' (performance warning)
-         D:\Programs\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MorningStar.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt AssemblyInfo.cpp MorningStar.cpp MainForm.cpp OptionForm.cpp StartupForm.cpp /clr:nostdlib 
-         AssemblyInfo.cpp
-         MorningStar.cpp
-         MainForm.cpp
-     1>MainForm.cpp(324): warning C4101: 'ex' : unreferenced local variable
-     1>MainForm.cpp(332): warning C4101: 'ex' : unreferenced local variable
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\uFF12' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\uFF24' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u683C' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u95D8' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u30C4' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u30AF' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u30FC' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u30EB' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\uFF12' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\uFF24' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u683C' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u95D8' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u30C4' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u30AF' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u30FC' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\u30EB' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\uFF19' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(1263): warning C4566: character represented by universal-character-name '\uFF15' cannot be represented in the current code page (1252)
-     1>MainForm.cpp(596): warning C4101: 'ex' : unreferenced local variable
-     1>MainForm.cpp(604): warning C4101: 'ex' : unreferenced local variable
-     1>MainForm.cpp(901): warning C4101: 'ex' : unreferenced local variable
-     1>MainForm.cpp(908): warning C4101: 'ex' : unreferenced local variable
+         All outputs are up-to-date.
+         D:\Programs\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MorningStar.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt OptionForm.cpp /clr:nostdlib 
          OptionForm.cpp
      1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF12' cannot be represented in the current code page (1252)
      1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF24' cannot be represented in the current code page (1252)
@@ -59,8 +26,6 @@
      1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30EB' cannot be represented in the current code page (1252)
      1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF19' cannot be represented in the current code page (1252)
      1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF15' cannot be represented in the current code page (1252)
-         StartupForm.cpp
-         Generating Code...
          All outputs are up-to-date.
        CoreResGen:
          "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile MainForm.resX,Debug\LilithPort.MainForm.resources OptionForm.resx,Debug\LilithPort.OptionForm.resources StartupForm.resx,Debug\LilithPort.StartupForm.resources
@@ -68,7 +33,7 @@
          Processing resource file "OptionForm.resx" into "Debug\LilithPort.OptionForm.resources".
          Processing resource file "StartupForm.resx" into "Debug\LilithPort.StartupForm.resources".
        ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+         All outputs are up-to-date.
        Link:
          D:\Programs\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"J:\Projects\M0rningStar\Debug\MorningStar.exe" /INCREMENTAL /NOLOGO ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Debug\LilithPort.MainForm.resources /ASSEMBLYRESOURCE:Debug\LilithPort.OptionForm.resources /ASSEMBLYRESOURCE:Debug\LilithPort.StartupForm.resources /MANIFEST /ManifestFile:"Debug\MorningStar.exe.intermediate.manifest" /MANIFESTUAC:NO /DEBUG /PDB:"J:\Projects\M0rningStar\Debug\MorningStar.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
          Debug\AssemblyInfo.obj
@@ -88,4 +53,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.75
+Time Elapsed 00:00:05.56

@@ -2140,13 +2140,6 @@ private: System::ComponentModel::IContainer^  components;
 
 			textBoxGameExe->MaxLength          = _MAX_PATH;
 			textBoxReplayFolder->MaxLength     = _MAX_PATH;
-			textBoxVSSound->MaxLength          = _MAX_PATH;
-			textBoxNoticeSound->MaxLength      = _MAX_PATH;
-			textBoxEnterSound->MaxLength       = _MAX_PATH;
-			textBoxTalkSound->MaxLength        = _MAX_PATH;
-			textBoxSeekSound->MaxLength        = _MAX_PATH;
-
-			// textBoxComment->MaxLength = MAX_NAME;
 
 			comboBoxProfile->Items->Clear();
 			for(int i=0; i < Profile::ProfileList->Count; i++){
@@ -2158,23 +2151,11 @@ private: System::ComponentModel::IContainer^  components;
 
 			textBoxGameExe->Text          = gcnew String(MTOPTION.GAME_EXE);
 			textBoxReplayFolder->Text     = gcnew String(MTOPTION.REPLAY_FOLDER);
-			textBoxVSSound->Text          = gcnew String(MTOPTION.VS_SOUND);
-			textBoxNoticeSound->Text      = gcnew String(MTOPTION.NOTICE_SOUND);
-			textBoxEnterSound->Text       = gcnew String(MTOPTION.ENTER_SOUND);
-			textBoxNameSound->Text        = gcnew String(MTOPTION.NAME_SOUND);
-			textBoxTalkSound->Text        = gcnew String(MTOPTION.TALK_SOUND);
-			textBoxSeekSound->Text        = gcnew String(MTOPTION.SEEK_SOUND);
 			textBoxKeyword->Text          = gcnew String(MTOPTION.KEYWORD);
 
 			// ƒpƒX‚ÌƒZƒŒƒNƒVƒ‡ƒ“‚ð––”ö‚É
 			textBoxGameExe->SelectionStart          = textBoxGameExe->Text->Length;
 			textBoxReplayFolder->SelectionStart     = textBoxReplayFolder->Text->Length;
-			textBoxVSSound->SelectionStart          = textBoxVSSound->Text->Length;
-			textBoxNoticeSound->SelectionStart      = textBoxNoticeSound->Text->Length;
-			textBoxEnterSound->SelectionStart       = textBoxEnterSound->Text->Length;
-			textBoxNameSound->SelectionStart        = textBoxNameSound->Text->Length;
-			textBoxTalkSound->SelectionStart        = textBoxTalkSound->Text->Length;
-			textBoxSeekSound->SelectionStart        = textBoxSeekSound->Text->Length;
 
 			checkBoxVSSound->Checked          = MTOPTION.VS_SOUND_ENABLE;
 			checkBoxNoticeSound->Checked      = MTOPTION.NOTICE_SOUND_ENABLE;
@@ -2245,8 +2226,6 @@ private: System::ComponentModel::IContainer^  components;
 
 				// Colour second tab page black.
 				tabPageSound->BackColor = Color::Black;
-				groupBoxVSSound->ForeColor = Color::White;
-				groupBoxNoticeSound->ForeColor = Color::White;
 			}else{
 
 				// Colour first tab page white.
@@ -2556,52 +2535,6 @@ private: System::ComponentModel::IContainer^  components;
 		 }
 #pragma endregion
 #pragma region Sounds
-		System::Void buttonVSSound_Click(System::Object^  sender, System::EventArgs^  e) {
-			TooManyWaves();
-
-			if(openFileDialog1->ShowDialog() == ::DialogResult::OK){
-				textBoxVSSound->Text = openFileDialog1->FileName;
-			}
-		}
-		System::Void buttonNoticeSound_Click(System::Object^  sender, System::EventArgs^  e) {
-			TooManyWaves();
-
-			if(openFileDialog1->ShowDialog() == ::DialogResult::OK){
-				textBoxNoticeSound->Text = openFileDialog1->FileName;
-			}
-		}
-
-		System::Void buttonEnterSound_Click(System::Object^  sender, System::EventArgs^  e) {
-			TooManyWaves();
-
-			if(openFileDialog1->ShowDialog() == ::DialogResult::OK){
-				textBoxEnterSound->Text = openFileDialog1->FileName;
-			}
-		}
-
-		System::Void buttonNameSound_Click(System::Object^  sender, System::EventArgs^  e) {
-			TooManyWaves();
-
-			if(openFileDialog1->ShowDialog() == ::DialogResult::OK){
-				textBoxNameSound->Text = openFileDialog1->FileName;
-			}
-		}
-
-		System::Void buttonTalkSound_Click(System::Object^  sender, System::EventArgs^  e) {
-			TooManyWaves();
-
-			if(openFileDialog1->ShowDialog() == ::DialogResult::OK){
-				textBoxTalkSound->Text = openFileDialog1->FileName;
-			}
-		}
-
-		System::Void buttonSeekSound_Click(System::Object^  sender, System::EventArgs^  e) {
-			TooManyWaves();
-
-			if(openFileDialog1->ShowDialog() == ::DialogResult::OK){
-				textBoxSeekSound->Text = openFileDialog1->FileName;
-			}
-		}
 		System::Void textBoxSound_DragEnter(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
 			e->Effect = DragDropEffects::None;
 
@@ -2615,99 +2548,6 @@ private: System::ComponentModel::IContainer^  components;
 			}
 		}
 
-		System::Void textBoxVSSound_DragDrop(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
-			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
-				textBoxVSSound->Text = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false))[0];
-			}
-		}
-
-		System::Void textBoxNoticeSound_DragDrop(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
-			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
-				textBoxNoticeSound->Text = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false))[0];
-			}
-		}
-
-		System::Void textBoxEnterSound_DragDrop(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
-			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
-				textBoxEnterSound->Text = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false))[0];
-			}
-		}
-
-		System::Void textBoxNameSound_DragDrop(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
-			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
-				textBoxNameSound->Text = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false))[0];
-			}
-		}
-
-		System::Void textBoxTalkSound_DragDrop(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
-			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
-				textBoxTalkSound->Text = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false))[0];
-			}
-		}
-
-		System::Void textBoxSeekSound_DragDrop(System::Object^  sender, System::Windows::Forms::DragEventArgs^  e) {
-			if(e->Data->GetDataPresent(DataFormats::FileDrop)){
-				textBoxSeekSound->Text = safe_cast<array<String^>^>(e->Data->GetData(DataFormats::FileDrop, false))[0];
-			}
-		}
-
-		// Ä¶ƒ{ƒ^ƒ“
-		System::Void buttonVSSoundPlay_Click(System::Object^  sender, System::EventArgs^  e) {
-			try{
-				Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.VS_SOUND));
-				wav->Play();
-			}
-			catch(Exception^){
-			}
-		}
-		System::Void buttonEnterSoundPlay_Click(System::Object^  sender, System::EventArgs^  e) {
-			try{
-				Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.ENTER_SOUND));
-				wav->Play();
-			}
-			catch(Exception^){
-			}
-		}
-		System::Void buttonNoticeSoundPlay_Click(System::Object^  sender, System::EventArgs^  e) {
-			try{
-				Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.NOTICE_SOUND));
-				wav->Play();
-			}
-			catch(Exception^){
-			}
-		}
-		System::Void buttonNameSoundPlay_Click(System::Object^  sender, System::EventArgs^  e) {
-			try{
-				Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.NAME_SOUND));
-				wav->Play();
-			}
-			catch(Exception^){
-			}
-		}
-		System::Void buttonTalkSoundPlay_Click(System::Object^  sender, System::EventArgs^  e) {
-			try{
-				Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.TALK_SOUND));
-				wav->Play();
-			}
-			catch(Exception^){
-			}
-		}
-		System::Void buttonSeekSoundPlay_Click(System::Object^  sender, System::EventArgs^  e) {
-			try{
-				Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.SEEK_SOUND));
-				wav->Play();
-			}
-			catch(Exception^){
-			}
-		}
-		System::Void buttonKeywordSoundPlay_Click(System::Object^  sender, System::EventArgs^  e) {
-			try{
-				Media::SoundPlayer^ wav = gcnew Media::SoundPlayer(gcnew String(MTOPTION.KEYWORD_SOUND));
-				wav->Play();
-			}
-			catch(Exception^){
-			}
-		}
 		System::Void checkBoxKeywordSound_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 			 buttonApply->Enabled = true;
 		}
