@@ -1971,7 +1971,7 @@ private: System::Windows::Forms::Button^  buttonClear;
 				Monitor::Exit(MemberList);
 			}
 
-			////If the app is focused do not send a notification (nickname), if it's not then send a notification (nickname).
+			//If the app is focused do not send a notification (nickname), if it's not then send a notification (nickname).
 			String ^tmpMsg = Encoding::Unicode->GetString(msg, 4, msg[3]);
 			bool inname = 0;
 			if(tmpMsg->Contains(gcnew String(MTOPTION.NAME))) {

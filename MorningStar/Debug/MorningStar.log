@@ -1,37 +1,24 @@
-﻿Build started 01/07/2026 21:30:41.
+﻿Build started 02/07/2026 14:43:54.
      1>Project "J:\Projects\M0rningStar\MorningStar\MorningStar.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\MorningStar.unsuccessfulbuild".
+         Creating "Debug\MorningStar.unsuccessfulbuild" because "AlwaysCreate" was specified.
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
          All outputs are up-to-date.
-         D:\Programs\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MorningStar.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt OptionForm.cpp /clr:nostdlib 
+         D:\Programs\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MorningStar.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt MainForm.cpp OptionForm.cpp /clr:nostdlib 
+         MainForm.cpp
+     1>MainForm.cpp(324): warning C4101: 'ex' : unreferenced local variable
+     1>MainForm.cpp(332): warning C4101: 'ex' : unreferenced local variable
+     1>MainForm.cpp(596): warning C4101: 'ex' : unreferenced local variable
+     1>MainForm.cpp(604): warning C4101: 'ex' : unreferenced local variable
+     1>MainForm.cpp(901): warning C4101: 'ex' : unreferenced local variable
+     1>MainForm.cpp(908): warning C4101: 'ex' : unreferenced local variable
          OptionForm.cpp
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF12' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF24' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u683C' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u95D8' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30C4' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30AF' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30FC' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30EB' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF12' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF24' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u683C' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u95D8' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30C4' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30AF' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30FC' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\u30EB' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF19' cannot be represented in the current code page (1252)
-     1>OptionForm.cpp(14): warning C4566: character represented by universal-character-name '\uFF15' cannot be represented in the current code page (1252)
+         Generating Code...
          All outputs are up-to-date.
        CoreResGen:
-         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile MainForm.resX,Debug\LilithPort.MainForm.resources OptionForm.resx,Debug\LilithPort.OptionForm.resources StartupForm.resx,Debug\LilithPort.StartupForm.resources
-         Processing resource file "MainForm.resX" into "Debug\LilithPort.MainForm.resources".
-         Processing resource file "OptionForm.resx" into "Debug\LilithPort.OptionForm.resources".
-         Processing resource file "StartupForm.resx" into "Debug\LilithPort.StartupForm.resources".
+         No resources are out of date with respect to their source files. Skipping resource generation.
        ResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -53,4 +40,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.56
+Time Elapsed 00:00:05.22
