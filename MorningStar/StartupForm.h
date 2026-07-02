@@ -109,21 +109,21 @@ namespace LilithPort {
 	internal: System::Windows::Forms::Label^  lblCT;
 	internal: System::Windows::Forms::Label^  label1;
 	internal: System::Windows::Forms::PictureBox^  pictureBox3;
-	private: System::Windows::Forms::CheckBox^  checkBoxRegion;
+
 	internal: 
-	private: System::Windows::Forms::ComboBox^  comboBoxRegion;
-	private: System::Windows::Forms::TextBox^  textBoxAvoiding;
-	private: System::Windows::Forms::TextBox^  textBoxLooking;
-	private: System::Windows::Forms::TextBox^  textBoxName;
-	private: System::Windows::Forms::TextBox^  textBoxComment;
-	private: System::Windows::Forms::Label^  lblRegion;
 
-	private: System::Windows::Forms::Label^  lblAvoiding;
 
-	private: System::Windows::Forms::Label^  lblLooking;
 
-	private: System::Windows::Forms::Label^  lblName;
-	private: System::Windows::Forms::Label^  lblComment;
+
+
+
+
+
+
+
+
+
+
 	internal: System::Windows::Forms::Label^  lblFEMD;
 	private: 
 
@@ -145,14 +145,28 @@ internal: System::Windows::Forms::Label^  lblFight;
 	internal: 
 
 	internal: System::Windows::Forms::Label^  label13;
+internal: System::Windows::Forms::Label^  lblU;
+
 	private: 
-	internal: System::Windows::Forms::Label^  lblU;
+
 	internal: System::Windows::Forms::PictureBox^  pictureBox6;
 private: System::Windows::Forms::CheckBox^  chkGG;
 private: System::Windows::Forms::RichTextBox^  textBoxWelcome;
 internal: System::Windows::Forms::Label^  label3;
 private: 
 internal: System::Windows::Forms::Label^  lblSWM;
+private: System::Windows::Forms::CheckBox^  checkBoxRegion;
+internal: 
+private: System::Windows::Forms::ComboBox^  comboBoxRegion;
+private: System::Windows::Forms::TextBox^  textBoxAvoiding;
+private: System::Windows::Forms::TextBox^  textBoxLooking;
+private: System::Windows::Forms::TextBox^  textBoxName;
+private: System::Windows::Forms::TextBox^  textBoxComment;
+private: System::Windows::Forms::Label^  lblRegion;
+private: System::Windows::Forms::Label^  lblAvoiding;
+private: System::Windows::Forms::Label^  lblLooking;
+private: System::Windows::Forms::Label^  lblName;
+private: System::Windows::Forms::Label^  lblComment;
 internal: 
 
 
@@ -195,11 +209,6 @@ internal:
 			this->toolTipStartupForm = (gcnew System::Windows::Forms::ToolTip(this->components));
 			this->buttonConnect = (gcnew System::Windows::Forms::Button());
 			this->checkBoxRestConnect = (gcnew System::Windows::Forms::CheckBox());
-			this->lblRegion = (gcnew System::Windows::Forms::Label());
-			this->lblAvoiding = (gcnew System::Windows::Forms::Label());
-			this->lblLooking = (gcnew System::Windows::Forms::Label());
-			this->lblName = (gcnew System::Windows::Forms::Label());
-			this->lblComment = (gcnew System::Windows::Forms::Label());
 			this->textBoxWelcome = (gcnew System::Windows::Forms::RichTextBox());
 			this->textBoxGG = (gcnew System::Windows::Forms::TextBox());
 			this->TitleLabel = (gcnew System::Windows::Forms::Label());
@@ -222,12 +231,6 @@ internal:
 			this->lblCT = (gcnew System::Windows::Forms::Label());
 			this->pnlUser = (gcnew System::Windows::Forms::Panel());
 			this->chkGG = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBoxRegion = (gcnew System::Windows::Forms::CheckBox());
-			this->comboBoxRegion = (gcnew System::Windows::Forms::ComboBox());
-			this->textBoxAvoiding = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxLooking = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxName = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxComment = (gcnew System::Windows::Forms::TextBox());
 			this->lblFEMD = (gcnew System::Windows::Forms::Label());
 			this->lblFEM = (gcnew System::Windows::Forms::Label());
 			this->lblFight = (gcnew System::Windows::Forms::Label());
@@ -237,6 +240,17 @@ internal:
 			this->pnlWelcome = (gcnew System::Windows::Forms::Panel());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->lblSWM = (gcnew System::Windows::Forms::Label());
+			this->lblComment = (gcnew System::Windows::Forms::Label());
+			this->lblName = (gcnew System::Windows::Forms::Label());
+			this->lblLooking = (gcnew System::Windows::Forms::Label());
+			this->lblAvoiding = (gcnew System::Windows::Forms::Label());
+			this->lblRegion = (gcnew System::Windows::Forms::Label());
+			this->textBoxComment = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxName = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxLooking = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxAvoiding = (gcnew System::Windows::Forms::TextBox());
+			this->comboBoxRegion = (gcnew System::Windows::Forms::ComboBox());
+			this->checkBoxRegion = (gcnew System::Windows::Forms::CheckBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->numericUpDownOpenPort))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->PictureBox1))->BeginInit();
 			this->pnlConnection->SuspendLayout();
@@ -420,71 +434,6 @@ internal:
 				L"er server as a host or client.");
 			this->checkBoxRestConnect->UseVisualStyleBackColor = true;
 			this->checkBoxRestConnect->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxRestConnect_CheckedChanged);
-			// 
-			// lblRegion
-			// 
-			this->lblRegion->AutoSize = true;
-			this->lblRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->lblRegion->ForeColor = System::Drawing::Color::White;
-			this->lblRegion->Location = System::Drawing::Point(233, 161);
-			this->lblRegion->Name = L"lblRegion";
-			this->lblRegion->Size = System::Drawing::Size(52, 17);
-			this->lblRegion->TabIndex = 72;
-			this->lblRegion->Text = L"Region:";
-			this->toolTipStartupForm->SetToolTip(this->lblRegion, L"Specify a region to show on your profile.");
-			// 
-			// lblAvoiding
-			// 
-			this->lblAvoiding->AutoSize = true;
-			this->lblAvoiding->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->lblAvoiding->ForeColor = System::Drawing::Color::White;
-			this->lblAvoiding->Location = System::Drawing::Point(223, 131);
-			this->lblAvoiding->Name = L"lblAvoiding";
-			this->lblAvoiding->Size = System::Drawing::Size(62, 17);
-			this->lblAvoiding->TabIndex = 71;
-			this->lblAvoiding->Text = L"Avoiding:";
-			this->toolTipStartupForm->SetToolTip(this->lblAvoiding, L"Specify what you\'re avoiding in players.");
-			// 
-			// lblLooking
-			// 
-			this->lblLooking->AutoSize = true;
-			this->lblLooking->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->lblLooking->ForeColor = System::Drawing::Color::White;
-			this->lblLooking->Location = System::Drawing::Point(207, 100);
-			this->lblLooking->Name = L"lblLooking";
-			this->lblLooking->Size = System::Drawing::Size(78, 17);
-			this->lblLooking->TabIndex = 70;
-			this->lblLooking->Text = L"Looking for:";
-			this->toolTipStartupForm->SetToolTip(this->lblLooking, L"Specify what you\'re looking for in players.");
-			// 
-			// lblName
-			// 
-			this->lblName->AutoSize = true;
-			this->lblName->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->lblName->ForeColor = System::Drawing::Color::White;
-			this->lblName->Location = System::Drawing::Point(239, 38);
-			this->lblName->Name = L"lblName";
-			this->lblName->Size = System::Drawing::Size(46, 17);
-			this->lblName->TabIndex = 67;
-			this->lblName->Text = L"Name:";
-			this->toolTipStartupForm->SetToolTip(this->lblName, L"Your username. You cannot use special characters.");
-			// 
-			// lblComment
-			// 
-			this->lblComment->AutoSize = true;
-			this->lblComment->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->lblComment->ForeColor = System::Drawing::Color::White;
-			this->lblComment->Location = System::Drawing::Point(218, 69);
-			this->lblComment->Name = L"lblComment";
-			this->lblComment->Size = System::Drawing::Size(67, 17);
-			this->lblComment->TabIndex = 69;
-			this->lblComment->Text = L"Comment:";
-			this->toolTipStartupForm->SetToolTip(this->lblComment, L"You will automatically say this message when you join.");
 			// 
 			// textBoxWelcome
 			// 
@@ -798,74 +747,6 @@ internal:
 			this->chkGG->UseVisualStyleBackColor = true;
 			this->chkGG->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxGG_CheckedChanged);
 			// 
-			// checkBoxRegion
-			// 
-			this->checkBoxRegion->AutoSize = true;
-			this->checkBoxRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->checkBoxRegion->ForeColor = System::Drawing::Color::White;
-			this->checkBoxRegion->Location = System::Drawing::Point(436, 160);
-			this->checkBoxRegion->Name = L"checkBoxRegion";
-			this->checkBoxRegion->Size = System::Drawing::Size(172, 21);
-			this->checkBoxRegion->TabIndex = 78;
-			this->checkBoxRegion->Text = L"Display region on profile";
-			this->checkBoxRegion->UseVisualStyleBackColor = true;
-			this->checkBoxRegion->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxRegion_CheckedChanged);
-			// 
-			// comboBoxRegion
-			// 
-			this->comboBoxRegion->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
-			this->comboBoxRegion->Enabled = false;
-			this->comboBoxRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->comboBoxRegion->FormattingEnabled = true;
-			this->comboBoxRegion->Items->AddRange(gcnew cli::array< System::Object^  >(10) {L"North America", L"Europe", L"Russia", L"Asia", 
-				L"South America", L"Africa", L"Middle East", L"Australia", L"New Zealand", L"Antarctica"});
-			this->comboBoxRegion->Location = System::Drawing::Point(291, 159);
-			this->comboBoxRegion->Name = L"comboBoxRegion";
-			this->comboBoxRegion->Size = System::Drawing::Size(139, 25);
-			this->comboBoxRegion->TabIndex = 77;
-			// 
-			// textBoxAvoiding
-			// 
-			this->textBoxAvoiding->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->textBoxAvoiding->Location = System::Drawing::Point(291, 128);
-			this->textBoxAvoiding->Name = L"textBoxAvoiding";
-			this->textBoxAvoiding->Size = System::Drawing::Size(317, 25);
-			this->textBoxAvoiding->TabIndex = 76;
-			this->textBoxAvoiding->WordWrap = false;
-			// 
-			// textBoxLooking
-			// 
-			this->textBoxLooking->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->textBoxLooking->Location = System::Drawing::Point(291, 97);
-			this->textBoxLooking->Name = L"textBoxLooking";
-			this->textBoxLooking->Size = System::Drawing::Size(317, 25);
-			this->textBoxLooking->TabIndex = 75;
-			this->textBoxLooking->WordWrap = false;
-			// 
-			// textBoxName
-			// 
-			this->textBoxName->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->textBoxName->Location = System::Drawing::Point(291, 35);
-			this->textBoxName->Name = L"textBoxName";
-			this->textBoxName->Size = System::Drawing::Size(317, 25);
-			this->textBoxName->TabIndex = 73;
-			this->textBoxName->WordWrap = false;
-			// 
-			// textBoxComment
-			// 
-			this->textBoxComment->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
-				static_cast<System::Byte>(0)));
-			this->textBoxComment->Location = System::Drawing::Point(291, 66);
-			this->textBoxComment->Name = L"textBoxComment";
-			this->textBoxComment->Size = System::Drawing::Size(317, 25);
-			this->textBoxComment->TabIndex = 74;
-			this->textBoxComment->WordWrap = false;
-			// 
 			// lblFEMD
 			// 
 			this->lblFEMD->AutoSize = true;
@@ -971,6 +852,139 @@ internal:
 			this->lblSWM->TabIndex = 57;
 			this->lblSWM->Text = L"Server Welcome Message";
 			// 
+			// lblComment
+			// 
+			this->lblComment->AutoSize = true;
+			this->lblComment->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblComment->ForeColor = System::Drawing::Color::White;
+			this->lblComment->Location = System::Drawing::Point(218, 69);
+			this->lblComment->Name = L"lblComment";
+			this->lblComment->Size = System::Drawing::Size(67, 17);
+			this->lblComment->TabIndex = 69;
+			this->lblComment->Text = L"Comment:";
+			this->toolTipStartupForm->SetToolTip(this->lblComment, L"You will automatically say this message when you join.");
+			// 
+			// lblName
+			// 
+			this->lblName->AutoSize = true;
+			this->lblName->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblName->ForeColor = System::Drawing::Color::White;
+			this->lblName->Location = System::Drawing::Point(239, 38);
+			this->lblName->Name = L"lblName";
+			this->lblName->Size = System::Drawing::Size(46, 17);
+			this->lblName->TabIndex = 67;
+			this->lblName->Text = L"Name:";
+			this->toolTipStartupForm->SetToolTip(this->lblName, L"Your username. You cannot use special characters.");
+			// 
+			// lblLooking
+			// 
+			this->lblLooking->AutoSize = true;
+			this->lblLooking->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblLooking->ForeColor = System::Drawing::Color::White;
+			this->lblLooking->Location = System::Drawing::Point(207, 100);
+			this->lblLooking->Name = L"lblLooking";
+			this->lblLooking->Size = System::Drawing::Size(78, 17);
+			this->lblLooking->TabIndex = 70;
+			this->lblLooking->Text = L"Looking for:";
+			this->toolTipStartupForm->SetToolTip(this->lblLooking, L"Specify what you\'re looking for in players.");
+			// 
+			// lblAvoiding
+			// 
+			this->lblAvoiding->AutoSize = true;
+			this->lblAvoiding->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblAvoiding->ForeColor = System::Drawing::Color::White;
+			this->lblAvoiding->Location = System::Drawing::Point(223, 131);
+			this->lblAvoiding->Name = L"lblAvoiding";
+			this->lblAvoiding->Size = System::Drawing::Size(62, 17);
+			this->lblAvoiding->TabIndex = 71;
+			this->lblAvoiding->Text = L"Avoiding:";
+			this->toolTipStartupForm->SetToolTip(this->lblAvoiding, L"Specify what you\'re avoiding in players.");
+			// 
+			// lblRegion
+			// 
+			this->lblRegion->AutoSize = true;
+			this->lblRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblRegion->ForeColor = System::Drawing::Color::White;
+			this->lblRegion->Location = System::Drawing::Point(233, 161);
+			this->lblRegion->Name = L"lblRegion";
+			this->lblRegion->Size = System::Drawing::Size(52, 17);
+			this->lblRegion->TabIndex = 72;
+			this->lblRegion->Text = L"Region:";
+			this->toolTipStartupForm->SetToolTip(this->lblRegion, L"Specify a region to show on your profile.");
+			// 
+			// textBoxComment
+			// 
+			this->textBoxComment->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxComment->Location = System::Drawing::Point(291, 66);
+			this->textBoxComment->Name = L"textBoxComment";
+			this->textBoxComment->Size = System::Drawing::Size(317, 25);
+			this->textBoxComment->TabIndex = 74;
+			this->textBoxComment->WordWrap = false;
+			// 
+			// textBoxName
+			// 
+			this->textBoxName->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxName->Location = System::Drawing::Point(291, 35);
+			this->textBoxName->Name = L"textBoxName";
+			this->textBoxName->Size = System::Drawing::Size(317, 25);
+			this->textBoxName->TabIndex = 73;
+			this->textBoxName->WordWrap = false;
+			// 
+			// textBoxLooking
+			// 
+			this->textBoxLooking->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxLooking->Location = System::Drawing::Point(291, 97);
+			this->textBoxLooking->Name = L"textBoxLooking";
+			this->textBoxLooking->Size = System::Drawing::Size(317, 25);
+			this->textBoxLooking->TabIndex = 75;
+			this->textBoxLooking->WordWrap = false;
+			// 
+			// textBoxAvoiding
+			// 
+			this->textBoxAvoiding->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxAvoiding->Location = System::Drawing::Point(291, 128);
+			this->textBoxAvoiding->Name = L"textBoxAvoiding";
+			this->textBoxAvoiding->Size = System::Drawing::Size(317, 25);
+			this->textBoxAvoiding->TabIndex = 76;
+			this->textBoxAvoiding->WordWrap = false;
+			// 
+			// comboBoxRegion
+			// 
+			this->comboBoxRegion->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->comboBoxRegion->Enabled = false;
+			this->comboBoxRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->comboBoxRegion->FormattingEnabled = true;
+			this->comboBoxRegion->Items->AddRange(gcnew cli::array< System::Object^  >(10) {L"North America", L"Europe", L"Russia", L"Asia", 
+				L"South America", L"Africa", L"Middle East", L"Australia", L"New Zealand", L"Antarctica"});
+			this->comboBoxRegion->Location = System::Drawing::Point(291, 159);
+			this->comboBoxRegion->Name = L"comboBoxRegion";
+			this->comboBoxRegion->Size = System::Drawing::Size(139, 25);
+			this->comboBoxRegion->TabIndex = 77;
+			// 
+			// checkBoxRegion
+			// 
+			this->checkBoxRegion->AutoSize = true;
+			this->checkBoxRegion->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxRegion->ForeColor = System::Drawing::Color::White;
+			this->checkBoxRegion->Location = System::Drawing::Point(436, 160);
+			this->checkBoxRegion->Name = L"checkBoxRegion";
+			this->checkBoxRegion->Size = System::Drawing::Size(172, 21);
+			this->checkBoxRegion->TabIndex = 78;
+			this->checkBoxRegion->Text = L"Display region on profile";
+			this->checkBoxRegion->UseVisualStyleBackColor = true;
+			this->checkBoxRegion->CheckedChanged += gcnew System::EventHandler(this, &StartupForm::checkBoxRegion_CheckedChanged);
+			// 
 			// StartupForm
 			// 
 			this->AcceptButton = this->buttonOK;
@@ -988,9 +1002,9 @@ internal:
 			this->Controls->Add(this->buttonOK);
 			this->Controls->Add(this->buttonCancel);
 			this->Controls->Add(this->buttonConnect);
+			this->Controls->Add(this->pnlConnection);
 			this->Controls->Add(this->pnlUser);
 			this->Controls->Add(this->pnlWelcome);
-			this->Controls->Add(this->pnlConnection);
 			this->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
