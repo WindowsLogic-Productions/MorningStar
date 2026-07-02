@@ -226,8 +226,8 @@ private: System::Windows::Forms::RadioButton^  radioButtonLogRTF;
 private: System::Windows::Forms::CheckBox^  checkBoxShowGameOption;
 private: System::Windows::Forms::CheckBox^  checkBoxGetIP;
 private: System::Windows::Forms::Button^  buttonApply;
-private: System::Windows::Forms::GroupBox^  groupBoxNotif;
-private: System::Windows::Forms::GroupBox^  groupBoxKeyword;
+
+
 private: System::Windows::Forms::CheckBox^  checkBoxKeywordSound;
 private: System::Windows::Forms::TextBox^  textBoxKeyword;
 
@@ -238,7 +238,7 @@ private: System::Windows::Forms::TextBox^  textBoxKeyword;
 
 
 
-private: System::Windows::Forms::Label^  labelKeywordSound;
+
 
 
 
@@ -257,9 +257,9 @@ private: System::Windows::Forms::Label^  labelKeywordSound;
 
 private: System::Windows::Forms::CheckBox^  checkBoxNoticeSound;
 private: System::Windows::Forms::CheckBox^  checkBoxSeekSound;
-private: System::Windows::Forms::CheckBox^  checkBoxVSSound;
+
 private: System::Windows::Forms::CheckBox^  checkBoxEnterSound;
-private: System::Windows::Forms::Label^  labelNotif;
+
 private: System::Windows::Forms::CheckBox^  checkBoxTalkSound;
 private: System::Windows::Forms::CheckBox^  checkBoxNameSound;
 private: System::Windows::Forms::CheckBox^  chkMuteMIDI;
@@ -297,7 +297,8 @@ private:
 
 
 internal: System::Windows::Forms::Label^  label13;
-internal: System::Windows::Forms::Label^  lblU;
+internal: System::Windows::Forms::Label^  lblP;
+
 internal: System::Windows::Forms::PictureBox^  pictureBox6;
 internal: System::Windows::Forms::Label^  label1;
 internal: System::Windows::Forms::Label^  label7;
@@ -314,6 +315,14 @@ internal: System::Windows::Forms::Label^  lblL;
 internal: System::Windows::Forms::PictureBox^  pictureBox3;
 internal: System::Windows::Forms::Label^  label8;
 internal: System::Windows::Forms::Label^  lblN;
+private: System::Windows::Forms::Panel^  pnlNotifications;
+internal: 
+internal: System::Windows::Forms::Label^  label18;
+private: 
+internal: System::Windows::Forms::Label^  lblK;
+internal: System::Windows::Forms::Label^  label21;
+internal: System::Windows::Forms::Label^  lblNotif;
+internal: System::Windows::Forms::PictureBox^  pictureBox10;
 
 
 
@@ -348,16 +357,11 @@ private: System::ComponentModel::IContainer^  components;
 			this->folderBrowserDialog1 = (gcnew System::Windows::Forms::FolderBrowserDialog());
 			this->colorDialog1 = (gcnew System::Windows::Forms::ColorDialog());
 			this->tabPageSound = (gcnew System::Windows::Forms::TabPage());
-			this->groupBoxNotif = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBoxKeyword = (gcnew System::Windows::Forms::GroupBox());
 			this->checkBoxKeywordSound = (gcnew System::Windows::Forms::CheckBox());
 			this->textBoxKeyword = (gcnew System::Windows::Forms::TextBox());
-			this->labelKeywordSound = (gcnew System::Windows::Forms::Label());
 			this->checkBoxNoticeSound = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBoxSeekSound = (gcnew System::Windows::Forms::CheckBox());
-			this->checkBoxVSSound = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBoxEnterSound = (gcnew System::Windows::Forms::CheckBox());
-			this->labelNotif = (gcnew System::Windows::Forms::Label());
 			this->checkBoxTalkSound = (gcnew System::Windows::Forms::CheckBox());
 			this->checkBoxNameSound = (gcnew System::Windows::Forms::CheckBox());
 			this->tabPagePath = (gcnew System::Windows::Forms::TabPage());
@@ -467,7 +471,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->btnIP = (gcnew System::Windows::Forms::Button());
 			this->pnlGeneral = (gcnew System::Windows::Forms::Panel());
 			this->label13 = (gcnew System::Windows::Forms::Label());
-			this->lblU = (gcnew System::Windows::Forms::Label());
+			this->lblP = (gcnew System::Windows::Forms::Label());
 			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->lblG = (gcnew System::Windows::Forms::Label());
@@ -483,9 +487,12 @@ private: System::ComponentModel::IContainer^  components;
 			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->lblN = (gcnew System::Windows::Forms::Label());
-			this->tabPageSound->SuspendLayout();
-			this->groupBoxNotif->SuspendLayout();
-			this->groupBoxKeyword->SuspendLayout();
+			this->pnlNotifications = (gcnew System::Windows::Forms::Panel());
+			this->label18 = (gcnew System::Windows::Forms::Label());
+			this->lblK = (gcnew System::Windows::Forms::Label());
+			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->lblNotif = (gcnew System::Windows::Forms::Label());
+			this->pictureBox10 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->numericUpDownMaxConnection))->BeginInit();
 			this->groupBoxSave->SuspendLayout();
 			this->tabControlOption->SuspendLayout();
@@ -522,6 +529,8 @@ private: System::ComponentModel::IContainer^  components;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox4))->BeginInit();
+			this->pnlNotifications->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox10))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// buttonOK
@@ -558,51 +567,23 @@ private: System::ComponentModel::IContainer^  components;
 			// 
 			this->tabPageSound->AutoScroll = true;
 			this->tabPageSound->AutoScrollMinSize = System::Drawing::Size(0, 460);
-			this->tabPageSound->Controls->Add(this->groupBoxNotif);
 			this->tabPageSound->Location = System::Drawing::Point(4, 22);
 			this->tabPageSound->Name = L"tabPageSound";
 			this->tabPageSound->Padding = System::Windows::Forms::Padding(3);
-			this->tabPageSound->Size = System::Drawing::Size(623, 113);
+			this->tabPageSound->Size = System::Drawing::Size(605, 113);
 			this->tabPageSound->TabIndex = 3;
 			this->tabPageSound->Text = L"Notifications";
 			this->tabPageSound->UseVisualStyleBackColor = true;
 			// 
-			// groupBoxNotif
-			// 
-			this->groupBoxNotif->Controls->Add(this->groupBoxKeyword);
-			this->groupBoxNotif->Controls->Add(this->checkBoxNoticeSound);
-			this->groupBoxNotif->Controls->Add(this->checkBoxSeekSound);
-			this->groupBoxNotif->Controls->Add(this->checkBoxVSSound);
-			this->groupBoxNotif->Controls->Add(this->checkBoxEnterSound);
-			this->groupBoxNotif->Controls->Add(this->labelNotif);
-			this->groupBoxNotif->Controls->Add(this->checkBoxTalkSound);
-			this->groupBoxNotif->Controls->Add(this->checkBoxNameSound);
-			this->groupBoxNotif->Location = System::Drawing::Point(6, 6);
-			this->groupBoxNotif->Name = L"groupBoxNotif";
-			this->groupBoxNotif->Size = System::Drawing::Size(528, 270);
-			this->groupBoxNotif->TabIndex = 8;
-			this->groupBoxNotif->TabStop = false;
-			this->groupBoxNotif->Text = L"Notification Settings";
-			// 
-			// groupBoxKeyword
-			// 
-			this->groupBoxKeyword->Controls->Add(this->checkBoxKeywordSound);
-			this->groupBoxKeyword->Controls->Add(this->textBoxKeyword);
-			this->groupBoxKeyword->Controls->Add(this->labelKeywordSound);
-			this->groupBoxKeyword->Location = System::Drawing::Point(9, 127);
-			this->groupBoxKeyword->Name = L"groupBoxKeyword";
-			this->groupBoxKeyword->Size = System::Drawing::Size(513, 73);
-			this->groupBoxKeyword->TabIndex = 11;
-			this->groupBoxKeyword->TabStop = false;
-			this->groupBoxKeyword->Text = L"Notify on keyword(s)";
-			// 
 			// checkBoxKeywordSound
 			// 
 			this->checkBoxKeywordSound->AutoSize = true;
-			this->checkBoxKeywordSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxKeywordSound->Location = System::Drawing::Point(342, 45);
+			this->checkBoxKeywordSound->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxKeywordSound->ForeColor = System::Drawing::Color::White;
+			this->checkBoxKeywordSound->Location = System::Drawing::Point(400, 196);
 			this->checkBoxKeywordSound->Name = L"checkBoxKeywordSound";
-			this->checkBoxKeywordSound->Size = System::Drawing::Size(194, 18);
+			this->checkBoxKeywordSound->Size = System::Drawing::Size(206, 21);
 			this->checkBoxKeywordSound->TabIndex = 10;
 			this->checkBoxKeywordSound->Text = L"Enable notification on keyword";
 			this->checkBoxKeywordSound->UseVisualStyleBackColor = true;
@@ -610,29 +591,23 @@ private: System::ComponentModel::IContainer^  components;
 			// 
 			// textBoxKeyword
 			// 
-			this->textBoxKeyword->Location = System::Drawing::Point(6, 45);
+			this->textBoxKeyword->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->textBoxKeyword->Location = System::Drawing::Point(208, 165);
 			this->textBoxKeyword->Name = L"textBoxKeyword";
-			this->textBoxKeyword->Size = System::Drawing::Size(330, 22);
+			this->textBoxKeyword->Size = System::Drawing::Size(398, 25);
 			this->textBoxKeyword->TabIndex = 6;
 			this->textBoxKeyword->TextChanged += gcnew System::EventHandler(this, &OptionForm::textBoxKeyword_TextChanged);
-			// 
-			// labelKeywordSound
-			// 
-			this->labelKeywordSound->AutoSize = true;
-			this->labelKeywordSound->Location = System::Drawing::Point(6, 16);
-			this->labelKeywordSound->Name = L"labelKeywordSound";
-			this->labelKeywordSound->Size = System::Drawing::Size(498, 26);
-			this->labelKeywordSound->TabIndex = 7;
-			this->labelKeywordSound->Text = L"If enabled, will send a notification when a keyword is mentioned. Separate multip" 
-				L"le words with\r\ncommas (,)";
 			// 
 			// checkBoxNoticeSound
 			// 
 			this->checkBoxNoticeSound->AutoSize = true;
-			this->checkBoxNoticeSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxNoticeSound->Location = System::Drawing::Point(238, 69);
+			this->checkBoxNoticeSound->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxNoticeSound->ForeColor = System::Drawing::Color::White;
+			this->checkBoxNoticeSound->Location = System::Drawing::Point(346, 85);
 			this->checkBoxNoticeSound->Name = L"checkBoxNoticeSound";
-			this->checkBoxNoticeSound->Size = System::Drawing::Size(261, 18);
+			this->checkBoxNoticeSound->Size = System::Drawing::Size(282, 21);
 			this->checkBoxNoticeSound->TabIndex = 3;
 			this->checkBoxNoticeSound->Text = L"Enable notification on server announcement";
 			this->checkBoxNoticeSound->UseVisualStyleBackColor = true;
@@ -641,56 +616,40 @@ private: System::ComponentModel::IContainer^  components;
 			// checkBoxSeekSound
 			// 
 			this->checkBoxSeekSound->AutoSize = true;
-			this->checkBoxSeekSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxSeekSound->Location = System::Drawing::Point(9, 93);
+			this->checkBoxSeekSound->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxSeekSound->ForeColor = System::Drawing::Color::White;
+			this->checkBoxSeekSound->Location = System::Drawing::Point(346, 103);
 			this->checkBoxSeekSound->Name = L"checkBoxSeekSound";
-			this->checkBoxSeekSound->Size = System::Drawing::Size(242, 18);
+			this->checkBoxSeekSound->Size = System::Drawing::Size(260, 21);
 			this->checkBoxSeekSound->TabIndex = 2;
 			this->checkBoxSeekSound->Text = L"Enable notification on challenge request";
 			this->checkBoxSeekSound->UseVisualStyleBackColor = true;
 			this->checkBoxSeekSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
-			// checkBoxVSSound
-			// 
-			this->checkBoxVSSound->AutoSize = true;
-			this->checkBoxVSSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxVSSound->Location = System::Drawing::Point(74, 277);
-			this->checkBoxVSSound->Name = L"checkBoxVSSound";
-			this->checkBoxVSSound->Size = System::Drawing::Size(203, 18);
-			this->checkBoxVSSound->TabIndex = 3;
-			this->checkBoxVSSound->Text = L"Enable notification on challenge ";
-			this->checkBoxVSSound->UseVisualStyleBackColor = true;
-			this->checkBoxVSSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
-			// 
 			// checkBoxEnterSound
 			// 
 			this->checkBoxEnterSound->AutoSize = true;
-			this->checkBoxEnterSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxEnterSound->Location = System::Drawing::Point(9, 69);
+			this->checkBoxEnterSound->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxEnterSound->ForeColor = System::Drawing::Color::White;
+			this->checkBoxEnterSound->Location = System::Drawing::Point(346, 68);
 			this->checkBoxEnterSound->Name = L"checkBoxEnterSound";
-			this->checkBoxEnterSound->Size = System::Drawing::Size(195, 18);
+			this->checkBoxEnterSound->Size = System::Drawing::Size(207, 21);
 			this->checkBoxEnterSound->TabIndex = 3;
 			this->checkBoxEnterSound->Text = L"Enable notification on user join";
 			this->checkBoxEnterSound->UseVisualStyleBackColor = true;
 			this->checkBoxEnterSound->CheckedChanged += gcnew System::EventHandler(this, &OptionForm::ApplyButtonEnable);
 			// 
-			// labelNotif
-			// 
-			this->labelNotif->AutoSize = true;
-			this->labelNotif->Location = System::Drawing::Point(6, 16);
-			this->labelNotif->Name = L"labelNotif";
-			this->labelNotif->Size = System::Drawing::Size(509, 26);
-			this->labelNotif->TabIndex = 5;
-			this->labelNotif->Text = L"Below you can enable/disable real-time notifications. These will also flash the t" 
-				L"askbar/window on\r\nnotification.";
-			// 
 			// checkBoxTalkSound
 			// 
 			this->checkBoxTalkSound->AutoSize = true;
-			this->checkBoxTalkSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxTalkSound->Location = System::Drawing::Point(238, 45);
+			this->checkBoxTalkSound->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxTalkSound->ForeColor = System::Drawing::Color::White;
+			this->checkBoxTalkSound->Location = System::Drawing::Point(346, 51);
 			this->checkBoxTalkSound->Name = L"checkBoxTalkSound";
-			this->checkBoxTalkSound->Size = System::Drawing::Size(219, 18);
+			this->checkBoxTalkSound->Size = System::Drawing::Size(237, 21);
 			this->checkBoxTalkSound->TabIndex = 2;
 			this->checkBoxTalkSound->Text = L"Enable notification on chat message";
 			this->checkBoxTalkSound->UseVisualStyleBackColor = true;
@@ -699,10 +658,12 @@ private: System::ComponentModel::IContainer^  components;
 			// checkBoxNameSound
 			// 
 			this->checkBoxNameSound->AutoSize = true;
-			this->checkBoxNameSound->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->checkBoxNameSound->Location = System::Drawing::Point(9, 45);
+			this->checkBoxNameSound->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->checkBoxNameSound->ForeColor = System::Drawing::Color::White;
+			this->checkBoxNameSound->Location = System::Drawing::Point(346, 34);
 			this->checkBoxNameSound->Name = L"checkBoxNameSound";
-			this->checkBoxNameSound->Size = System::Drawing::Size(245, 18);
+			this->checkBoxNameSound->Size = System::Drawing::Size(262, 21);
 			this->checkBoxNameSound->TabIndex = 4;
 			this->checkBoxNameSound->Text = L"Enable notification on nickname mention";
 			this->checkBoxNameSound->UseVisualStyleBackColor = true;
@@ -715,7 +676,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->tabPagePath->Location = System::Drawing::Point(4, 22);
 			this->tabPagePath->Name = L"tabPagePath";
 			this->tabPagePath->Padding = System::Windows::Forms::Padding(3);
-			this->tabPagePath->Size = System::Drawing::Size(430, 113);
+			this->tabPagePath->Size = System::Drawing::Size(605, 113);
 			this->tabPagePath->TabIndex = 0;
 			this->tabPagePath->Text = L"General";
 			this->tabPagePath->UseVisualStyleBackColor = true;
@@ -1012,10 +973,10 @@ private: System::ComponentModel::IContainer^  components;
 			this->tabControlOption->Controls->Add(this->tabPageColor);
 			this->tabControlOption->Controls->Add(this->tabPageVolume);
 			this->tabControlOption->Controls->Add(this->tabPageIP);
-			this->tabControlOption->Location = System::Drawing::Point(137, 16);
+			this->tabControlOption->Location = System::Drawing::Point(18, 12);
 			this->tabControlOption->Name = L"tabControlOption";
 			this->tabControlOption->SelectedIndex = 0;
-			this->tabControlOption->Size = System::Drawing::Size(438, 139);
+			this->tabControlOption->Size = System::Drawing::Size(613, 139);
 			this->tabControlOption->TabIndex = 0;
 			// 
 			// tabPageGame
@@ -1030,7 +991,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->tabPageGame->Location = System::Drawing::Point(4, 22);
 			this->tabPageGame->Name = L"tabPageGame";
 			this->tabPageGame->Padding = System::Windows::Forms::Padding(3);
-			this->tabPageGame->Size = System::Drawing::Size(623, 113);
+			this->tabPageGame->Size = System::Drawing::Size(605, 113);
 			this->tabPageGame->TabIndex = 4;
 			this->tabPageGame->Text = L"Game";
 			this->tabPageGame->UseVisualStyleBackColor = true;
@@ -1862,7 +1823,7 @@ private: System::ComponentModel::IContainer^  components;
 			// 
 			// buttonApply
 			// 
-			this->buttonApply->Location = System::Drawing::Point(620, 12);
+			this->buttonApply->Location = System::Drawing::Point(637, 12);
 			this->buttonApply->Name = L"buttonApply";
 			this->buttonApply->Size = System::Drawing::Size(75, 23);
 			this->buttonApply->TabIndex = 15;
@@ -2029,7 +1990,7 @@ private: System::ComponentModel::IContainer^  components;
 			this->pnlGeneral->Controls->Add(this->buttonDeleteProfile);
 			this->pnlGeneral->Controls->Add(this->buttonCopyProfile);
 			this->pnlGeneral->Controls->Add(this->label13);
-			this->pnlGeneral->Controls->Add(this->lblU);
+			this->pnlGeneral->Controls->Add(this->lblP);
 			this->pnlGeneral->Controls->Add(this->pictureBox6);
 			this->pnlGeneral->Location = System::Drawing::Point(160, 89);
 			this->pnlGeneral->Name = L"pnlGeneral";
@@ -2048,17 +2009,17 @@ private: System::ComponentModel::IContainer^  components;
 			this->label13->TabIndex = 56;
 			this->label13->Text = L"Create and manage different settings profiles.";
 			// 
-			// lblU
+			// lblP
 			// 
-			this->lblU->AutoSize = true;
-			this->lblU->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+			this->lblP->AutoSize = true;
+			this->lblP->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
-			this->lblU->ForeColor = System::Drawing::Color::White;
-			this->lblU->Location = System::Drawing::Point(59, 35);
-			this->lblU->Name = L"lblU";
-			this->lblU->Size = System::Drawing::Size(49, 17);
-			this->lblU->TabIndex = 55;
-			this->lblU->Text = L"Profile";
+			this->lblP->ForeColor = System::Drawing::Color::White;
+			this->lblP->Location = System::Drawing::Point(59, 35);
+			this->lblP->Name = L"lblP";
+			this->lblP->Size = System::Drawing::Size(55, 17);
+			this->lblP->TabIndex = 55;
+			this->lblP->Text = L"Profiles";
 			// 
 			// pictureBox6
 			// 
@@ -2230,6 +2191,85 @@ private: System::ComponentModel::IContainer^  components;
 			this->lblN->TabIndex = 75;
 			this->lblN->Text = L"Networking";
 			// 
+			// pnlNotifications
+			// 
+			this->pnlNotifications->AutoScroll = true;
+			this->pnlNotifications->BackColor = System::Drawing::Color::Black;
+			this->pnlNotifications->Controls->Add(this->checkBoxKeywordSound);
+			this->pnlNotifications->Controls->Add(this->textBoxKeyword);
+			this->pnlNotifications->Controls->Add(this->checkBoxNoticeSound);
+			this->pnlNotifications->Controls->Add(this->label18);
+			this->pnlNotifications->Controls->Add(this->checkBoxSeekSound);
+			this->pnlNotifications->Controls->Add(this->lblK);
+			this->pnlNotifications->Controls->Add(this->label21);
+			this->pnlNotifications->Controls->Add(this->checkBoxEnterSound);
+			this->pnlNotifications->Controls->Add(this->lblNotif);
+			this->pnlNotifications->Controls->Add(this->pictureBox10);
+			this->pnlNotifications->Controls->Add(this->checkBoxTalkSound);
+			this->pnlNotifications->Controls->Add(this->checkBoxNameSound);
+			this->pnlNotifications->Location = System::Drawing::Point(160, 89);
+			this->pnlNotifications->Name = L"pnlNotifications";
+			this->pnlNotifications->Size = System::Drawing::Size(650, 371);
+			this->pnlNotifications->TabIndex = 29;
+			// 
+			// label18
+			// 
+			this->label18->AutoSize = true;
+			this->label18->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->label18->ForeColor = System::Drawing::Color::White;
+			this->label18->Location = System::Drawing::Point(59, 220);
+			this->label18->Name = L"label18";
+			this->label18->Size = System::Drawing::Size(476, 17);
+			this->label18->TabIndex = 64;
+			this->label18->Text = L"Sends a notification on a keyword. Seperate multiple keywords with a comma (,).";
+			// 
+			// lblK
+			// 
+			this->lblK->AutoSize = true;
+			this->lblK->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblK->ForeColor = System::Drawing::Color::White;
+			this->lblK->Location = System::Drawing::Point(59, 168);
+			this->lblK->Name = L"lblK";
+			this->lblK->Size = System::Drawing::Size(143, 17);
+			this->lblK->TabIndex = 63;
+			this->lblK->Text = L"Keyword notifications";
+			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->label21->ForeColor = System::Drawing::Color::White;
+			this->label21->Location = System::Drawing::Point(59, 124);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(359, 17);
+			this->label21->TabIndex = 56;
+			this->label21->Text = L"Enable / Disable real-time notifications and window flashing.";
+			// 
+			// lblNotif
+			// 
+			this->lblNotif->AutoSize = true;
+			this->lblNotif->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+				static_cast<System::Byte>(0)));
+			this->lblNotif->ForeColor = System::Drawing::Color::White;
+			this->lblNotif->Location = System::Drawing::Point(59, 35);
+			this->lblNotif->Name = L"lblNotif";
+			this->lblNotif->Size = System::Drawing::Size(149, 17);
+			this->lblNotif->TabIndex = 55;
+			this->lblNotif->Text = L"Real-time notifications";
+			// 
+			// pictureBox10
+			// 
+			this->pictureBox10->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"pictureBox10.Image")));
+			this->pictureBox10->Location = System::Drawing::Point(62, 150);
+			this->pictureBox10->Name = L"pictureBox10";
+			this->pictureBox10->Size = System::Drawing::Size(546, 10);
+			this->pictureBox10->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox10->TabIndex = 54;
+			this->pictureBox10->TabStop = false;
+			// 
 			// OptionForm
 			// 
 			this->AcceptButton = this->buttonOK;
@@ -2239,7 +2279,9 @@ private: System::ComponentModel::IContainer^  components;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(43)), static_cast<System::Int32>(static_cast<System::Byte>(44)), 
 				static_cast<System::Int32>(static_cast<System::Byte>(49)));
 			this->ClientSize = System::Drawing::Size(810, 460);
+			this->Controls->Add(this->pnlNotifications);
 			this->Controls->Add(this->pnlGeneral);
+			this->Controls->Add(this->tabControlOption);
 			this->Controls->Add(this->btnVolume);
 			this->Controls->Add(this->btnAppearance);
 			this->Controls->Add(this->btnIP);
@@ -2250,7 +2292,6 @@ private: System::ComponentModel::IContainer^  components;
 			this->Controls->Add(this->buttonApply);
 			this->Controls->Add(this->buttonCancel);
 			this->Controls->Add(this->buttonOK);
-			this->Controls->Add(this->tabControlOption);
 			this->Font = (gcnew System::Drawing::Font(L"Segoe UI", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
 				static_cast<System::Byte>(0)));
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
@@ -2265,11 +2306,6 @@ private: System::ComponentModel::IContainer^  components;
 			this->FormClosed += gcnew System::Windows::Forms::FormClosedEventHandler(this, &OptionForm::OptionForm_FormClosed);
 			this->Load += gcnew System::EventHandler(this, &OptionForm::OptionForm_Load);
 			this->Shown += gcnew System::EventHandler(this, &OptionForm::OptionForm_Shown);
-			this->tabPageSound->ResumeLayout(false);
-			this->groupBoxNotif->ResumeLayout(false);
-			this->groupBoxNotif->PerformLayout();
-			this->groupBoxKeyword->ResumeLayout(false);
-			this->groupBoxKeyword->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->numericUpDownMaxConnection))->EndInit();
 			this->groupBoxSave->ResumeLayout(false);
 			this->groupBoxSave->PerformLayout();
@@ -2318,6 +2354,9 @@ private: System::ComponentModel::IContainer^  components;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox4))->EndInit();
+			this->pnlNotifications->ResumeLayout(false);
+			this->pnlNotifications->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox10))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
